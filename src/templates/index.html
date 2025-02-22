@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign In / Sign Up</title>
+    <title>Sign In</title>
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='main.css') }}"
@@ -32,6 +32,7 @@
 
         <div class="session-links">
           <a href="{{ url_for('get_session') }}">Check Session</a> |
+
           <a href="{{ url_for('signup') }}">Sign Up</a>
         </div>
       </div>
