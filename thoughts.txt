@@ -1,0 +1,8 @@
+Pipeline
+
+- Website starts
+- Clients connect to Website
+    - if client IP is flagged, middleware on website will block resource alloc to client post-check
+
+- Website checks attack suspicion on nth connections with quantum regression algorithm
+    - if attack is suspected, user data and activity is added to a "sus bucket" and is FLAGGED

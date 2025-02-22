@@ -1,21 +1,61 @@
 <!-- templates/index.html -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flask App</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flask App</title>
+    </head>
+    <body>
+        <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+        
+        <script>
+            var socket = io();
+            var ip;
+
+            async function grabIP() {
+                try {
+                    const response = await fetch('https://api.ipify.org?format=json');
+                    const data = await response.json();
+                    ip = data.ip
+                    console.log(`Your IP Address: ${data.ip}`);
+                } catch (error) {
+                    console.error('Error fetching IP address:', error);
+                }
+            }
+
+            grabIP()
+
+    </script>
+
     <h1>Welcome to the Flask App!</h1>
-    <form action="/set_session" method="POST">
+    <form action="/start_session" method="POST">
+        <input type="hidden" name="spend_per_month" value=`${ip}` id="minput" />
+
         <label for="username">Enter your username:</label>
         <input type="text" id="username" name="username" required>
         <label for="username">Enter your password:</label>
-        <input type="text" id="password" name="password" required>
+        <input type="password" id="password" name="password" required>
         <button type="submit">Set Session</button>
     </form>
     <a href="/get_session">Get Session</a>
     <a href="/logout">Logout</a>
+
+    <p id="test"></p>
+    
+    <script> 
+
+
+        var cursorX;
+        var cursorY;
+
+        document.addEventListener("mousemove", function(e) {
+            cursorX = e.clientX;
+            cursorY = e.clientY;
+
+            // Send the cursor position to the server
+            socket.emit('activity', { movement: { x: cursorX, y: cursorY } });
+        });
+    </script>
 </body>
 </html>

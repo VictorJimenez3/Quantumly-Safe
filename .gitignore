@@ -1,0 +1,16 @@
+# Python environment
+/src/__pycache__/
+/src/*.py[cod]
+/src/*.pyo
+/src/*.pyd
+/src/env/
+/src/venv/
+/src/ENV/
+/src/env.bak/
+/src/venv.bak/
+/src/*.egg-info/
+/src/*.egg
+
+# Ignore all files in the proxy directory except test.py
+proxy/*
+!proxy/test.py
