@@ -59,11 +59,12 @@ print(classification_report(y_test, y_pred))
 import pickle
 
 # Save the trained model
-with open("quantum_rf_model.pkl", "wb") as model_file:
+with open("quantum_rf_model_qrf.pkl", "wb") as model_file:
     pickle.dump(clf, model_file)
 
 # Save the scaler (important for transforming new inputs later)
-with open("scaler.pkl", "wb") as scaler_file:
+with open("scaler.pkl_qrf", "wb") as scaler_file:
     pickle.dump(scaler, scaler_file)
 
 print("Model and scaler saved successfully!")
+
