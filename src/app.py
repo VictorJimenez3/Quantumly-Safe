@@ -10,19 +10,28 @@ def log_page_load():
 def index():
     return render_template('index.html')  # Render the index.html file
 
+@app.route('/signup')
+def signup():
+    return render_template('signup.html')  # Render the signup.html file
+    
 @app.route('/set_session', methods=['POST'])
 def set_session():
     session['username'] = request.form['username']
-    return redirect(url_for('index'))
+    print(f'Setting session username to: {session['username']}')
+    return redirect(url_for('get_session'))
 
 @app.route('/get_session')
 def get_session():
     username = session.get('username', 'Guest')
-    return f'Hello, {username}!'
+    print(f'Getting session username: {username}')
+    return render_template('get_session.html', message=f'Hello, {username}!')
+
+
 
 @app.route('/logout')
 def logout():
-    session.pop('username', None)
+    username = session.pop('username', None)
+    print(f'Logging out, removed username from session: {username}')
     return redirect(url_for('index'))
 
 if __name__ == '__main__':
