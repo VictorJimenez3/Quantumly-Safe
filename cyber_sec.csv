@@ -1,0 +1,4 @@
+session_id,network_packet_size,protocol_type,login_attempts,session_duration,encryption_used,ip_reputation_score,failed_logins,browser_type,unusual_time_access,attack_detected
+session_1,1200,TCP,2,75.5,1,85.0,0,Chrome,0,0
+session_2,1500,UDP,1,60,0,90.0,1,Firefox,1,1
+session_3,2000,TCP,3,90,1,70.5,2,Edge,0,1
