@@ -1,6 +1,7 @@
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
-const customMiddleware = async (req) => {
+// Add proper type for `req`
+const customMiddleware = async (req: NextRequest) => {
   const url = req.nextUrl.clone();
 
   // Check if the request is a login attempt
@@ -9,7 +10,7 @@ const customMiddleware = async (req) => {
     const isLoginFailed = true; // Replace with actual login failure check
 
     // Get IP address
-    const ipAddress = req.headers.get("x-forwarded-for") || req.ip;
+    const ipAddress = req.headers.get("x-forwarded-for") || req.ip || "Unknown";
 
     // Get user agent (browser type)
     const userAgent = req.headers.get("user-agent");
