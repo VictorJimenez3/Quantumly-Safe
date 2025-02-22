@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-const customMiddleware = async (req, ev) => {
+const customMiddleware = async (req) => {
   const url = req.nextUrl.clone();
 
   // Check if the request is a login attempt
@@ -16,14 +16,6 @@ const customMiddleware = async (req, ev) => {
 
     // Get domain name
     const domainName = req.headers.get("host");
-
-    const response = await fetch("/api/loginAttempts", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ success: !isLoginFailed }),
-    });
 
     if (isLoginFailed) {
       console.log("Failed login attempt detected");
