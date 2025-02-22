@@ -26,6 +26,7 @@ def handle_client(client_sock):
         if method == "CONNECT":
             target_host, target_port = path.split(":") if ":" in path else (path, 443)
             target_port = int(target_port)
+            
             # Send a 200 response for CONNECT requests
             client_sock.sendall(b"HTTP/1.1 200 Connection Established\r\n\r\n")
 
