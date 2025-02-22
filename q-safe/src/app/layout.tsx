@@ -99,7 +99,7 @@ export default function RootLayout({
         setError("Invalid username or password");
         setLoginStatsSession((prev) => ({
           ...prev,
-          failedfulLoginAttempts: prev.failedLoginAttempts + 1,
+          failedLoginAttempts: prev.failedLoginAttempts + 1,
         }));
         // Record failed login attempt
         await fetch("/api/loginAttempts", {
@@ -121,6 +121,73 @@ export default function RootLayout({
     }
   };
 
+  useEffect(() => {
+    const fetchLoginStats = async () => {
+      const response = await fetch("/api/loginAttempts");
+      const data = await response.json();
+      setLoginStats(data);
+    };
+
+    const fetchUserInfo = async () => {
+      const response = await fetch("/api/userInfo");
+      const data = await response.json();
+      setUserInfo(data);
+    };
+
+    fetchLoginStats();
+    fetchUserInfo();
+  }, []);
+
+  useEffect(() => {
+    const fetchLoginStats = async () => {
+      const response = await fetch("/api/loginAttempts");
+      const data = await response.json();
+      setLoginStats(data);
+    };
+
+    const fetchUserInfo = async () => {
+      const response = await fetch("/api/userInfo");
+      const data = await response.json();
+      setUserInfo(data);
+    };
+
+    fetchLoginStats();
+    fetchUserInfo();
+  }, []);
+
+  useEffect(() => {
+    const fetchLoginStats = async () => {
+      const response = await fetch("/api/loginAttempts");
+      const data = await response.json();
+      setLoginStats(data);
+    };
+
+    const fetchUserInfo = async () => {
+      const response = await fetch("/api/userInfo");
+      const data = await response.json();
+      setUserInfo(data);
+    };
+
+    fetchLoginStats();
+    fetchUserInfo();
+  }, []);
+
+  useEffect(() => {
+    const fetchLoginStats = async () => {
+      const response = await fetch("/api/loginAttempts");
+      const data = await response.json();
+      setLoginStats(data);
+    };
+
+    const fetchUserInfo = async () => {
+      const response = await fetch("/api/userInfo");
+      const data = await response.json();
+      setUserInfo(data);
+    };
+
+    fetchLoginStats();
+    fetchUserInfo();
+  }, []);
   useEffect(() => {
     const fetchLoginStats = async () => {
       const response = await fetch("/api/loginAttempts");
