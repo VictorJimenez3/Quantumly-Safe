@@ -47,6 +47,76 @@ class DB:
             "user_agent": user_agent
         })
     
+
+
+def get_data_by_domain(self, domain: str):
+    #lord knows, i dont
+    #it returns a list of the rows with the same domain name, gives the entire row data per each element in the list
+    rows = self.query_api.query_stream(
+        f'from(bucket: "{bucket_name}") |> range(start: -inf)'  # Stream all rows
+    )
+
+    results = []
+
+    try:
+        for row in rows:
+            row_data = dict(json.loads(row.get_value()))
+            row_data.update({"timestamp" : row.get_time().timestamp()})  # parse jason
+            if row_data.get("domain", None) == domain:  # domain matches?
+                results.append(row_data)# do str(row_data) if he doesnt want the list to have json in it
+
+    except Exception as e:
+        print(f"Error retrieving data for domain '{domain}': {e}")
+
+    return results  # Return list of json, idk if he wants strings tho
+
+
+def grab_domain_values(self):
+    domains = set()
+    try:
+        rows = self.query_api.query_stream(
+            f'from(bucket: "{bucket_name}") |> range(start: -inf)'  # Stream all rows
+        )
+        fullrows = [dict(json.loads(x)) for x in rows]
+
+    except Exception as e:
+        print(f"uh oh: {e}")
+        return list()
+
+    [domains.add(x.get("domain")) for x in rows]
+    
+    return domains
+    # domain_counts = {}
+
+    # try:
+    #     for row in rows:
+    #         try:
+    #             row_data = json.loads(row.get_value()) if isinstance(row.get_value(), str) else row.get_value()
+                
+    #             domain_name = row_data.get("domain")
+    #             if domain_name:  # Ensure domain_name is valid
+    #                 if domain_name in domain_counts:
+    #                     domain_counts[domain_name] += 1
+    #                 else:
+    #                     domain_counts[domain_name] = 1
+    #         except (json.JSONDecodeError, TypeError) as parse_error:
+    #             print(f"Skipping row due to parsing error: {parse_error}")
+
+    # except Exception as e:
+    #     print(f"Error retrieving data for domain: {e}")
+
+    # domain_list = []
+    # count = 0
+    # for key,tree in domain_counts:
+    #     domain_list[count] = key
+    #     count += 1
+    # print(domain_list) # for me to check
+
+    # return domain_list
+
+
+
+
     def aggregate_user_signin(self, ip: str, domain: str, username: str, failed_log_in_count: int, total_log_in_count: int):
 
         rows = self.query_api.query_stream( #row iterable of all rows in table
@@ -161,6 +231,8 @@ db.aggregate_user_signin(
     failed_log_in_count= 5,
     total_log_in_count = 7,
 )
+
+
 
 pprint(db.grab_rows())
 
