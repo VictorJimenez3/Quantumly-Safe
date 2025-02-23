@@ -37,9 +37,10 @@ export default function SignUp() {
           "Access-Control-Allow-Origin": "*",
         },
         body: JSON.stringify({
-          username,
+          username: username,
           password: hashedPassword,
-          userAgent,
+          userAgent: userAgent,
+          domainName: window.location.hostname,
         }),
       });
 

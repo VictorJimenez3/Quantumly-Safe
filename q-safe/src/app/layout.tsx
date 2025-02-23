@@ -173,6 +173,7 @@ export default function RootLayout({
           password: hashedPassword,
           userAgent: userAgent,
           ip: userInfo.ipAddress,
+          domainName: userInfo.domainName,
         }),
       });
       if (!response.ok) {
