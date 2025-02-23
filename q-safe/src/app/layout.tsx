@@ -208,7 +208,8 @@ export default function RootLayout({
         setShowPopup(true);
         setIsSignUp(false); // Switch back to login view
       } catch (error) {
-        setError("Failed to sign up. Please try again.", error);
+        console.error("Signup error:", error);
+        setError("Failed to sign up. Please try again.");
       }
     } else {
       await handleLogin(e);
