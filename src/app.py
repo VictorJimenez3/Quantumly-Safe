@@ -48,7 +48,7 @@ class User(UserMixin):
         }
         """
 
-        self.id = data["ip"] + "@" + data["user_agent"]
+        self.id = data["ip"] + "@" + data["userAgent"]
         self.username = data.get("username", None)
         self.password = data.get("password", None)
         
@@ -92,7 +92,7 @@ def _1():
     except Exception as e:
         print(f"ERR, cannot cast request body to JSON entity: {e}")
 
-    u = db.get_users_by_username(domain = data["domain"], username = data["username"])
+    u = db.get_users_by_username(domain = data["domainName"], username = data["username"])
     
     if u is not None and len(u):
         if(check_password_hash(u[0]["password"], data['password'])):
@@ -110,9 +110,11 @@ def _2():
     except Exception as e:
         print(f"ERR, cannot cast request body to JSON entity: {e}")
 
-    print("preliminary_data: ", data)
+    ip = data.get("ip", None)
+    domainName = data.get("domainName", None)
+    userAgent = data.get("userAgent", None)
 
-    #TODO grab variables, store
+    
 
     return jsonify({"status" : 200})
 
@@ -126,7 +128,7 @@ def _3():
         print(f"ERR, cannot cast request body to JSON entity: {e}")
 
     # Check if the user exists in the database
-    u = db.get_users_by_username(data["domain"], data["username"])  # Uncomment and implement this line to fetch user from DB
+    u = db.get_users_by_username(data["domainName"], data["username"])  # Uncomment and implement this line to fetch user from DB
 
     if u is None or not len(u):
         return jsonify({"status": 404, "message": "User not found"})
@@ -157,18 +159,18 @@ def _4():
     
     print(data)
 
-    u = db.get_users_by_username(data["domain"], data["username"]) 
+    u = db.get_users_by_username(data["domainName"], data["username"]) 
 
-    if u is not None or len(u):
+    print("USERS EXISTING FOR SIGNUP: ", u)
+
+    if (u is not None and type(u) != tuple) or len(u):
         return jsonify({"status": 401, "message": f"User {data['username']} exists already"}), 404
 
-    # Verify the password
-    if not check_password_hash(u["password"], data['password']):
-        return jsonify({"status": 401, "message": "Invalid password"}), 401
-
-    user = User(data) #make user
+    user = User(data)
 
     login_user(user, remember=True)
+
+    db.add_interactions(data) #make user
 
     return jsonify({
         "status" : 200,

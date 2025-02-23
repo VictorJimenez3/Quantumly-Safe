@@ -38,13 +38,13 @@ class DB:
         
     def add_user_record(self, username: str, password: str, ip: str, domain: str, user_agent: str):
         self.add_interactions({
-            "total_log_in_count": 0,
-            "failed_log_in_count": 0,
+            "totalAttempts": 0,
+            "failedAttempts": 0,
             "ip": ip,
-            "domain": domain,
+            "domainName": domain,
             "username": username,
             "password": password,
-            "user_agent": user_agent
+            "userAgent": user_agent
         })
     
     def aggregate_user_signin(self, ip: str, domain: str, username: str, failed_log_in_count: int, total_log_in_count: int):
@@ -72,13 +72,13 @@ class DB:
         
         #Add failed and total login count to existing record
         updated_data = {
-            "total_log_in_count": int(data.get("total_log_in_count", 0)) + total_log_in_count,
-            "failed_log_in_count": int(data.get("failed_log_in_count", 0)) + failed_log_in_count,
+            "totalAttempts": int(data.get("totalAttempts", 0)) + total_log_in_count,
+            "failedAttempts": int(data.get("failedAttempts", 0)) + failed_log_in_count,
             "ip": ip,
-            "domain": domain,
+            "domainName": domain,
             "username": username,
             "password": data.get("password", None),  # Retain existing password if needed
-            "user_agent": data.get("user_agent", None)  # Retain existing user agent if needed
+            "userAgent": data.get("userAgent", None)  # Retain existing user agent if needed
         }
 
         p = influxdb_client.Point(measurement).field("interactionData", json.dumps(updated_data))
@@ -93,15 +93,21 @@ class DB:
                 f'from(bucket: "{bucket_name}") |> range(start: {start})'
         )
 
+        retval = []
+            
         try:
-            return sorted([(x.get_time().timestamp(), dict(json.loads(x.get_value()))) for x in rows], key=lambda x: x[0]) #exhaust rows from generator
+            for x in rows:
+                y = dict(json.loads(x.get_value()))
+                y.update({"timestamp" : x.get_time().timestamp()})
+                retval.append(y)
+            return retval #exhaust rows from generator
         except Exception as e:
             print(f"data improperly formatted in influx, please fix: {e}")
 
     def get_users_by_username(self, domain: str, username: str):
-        return tuple([y[1] for y in filter(
-            lambda x: (x[1].get("domain", None) == domain and
-                       x[1].get("username", None) == username
+        return tuple([y for y in filter(
+            lambda x: (x.get("domain", None) == domain and
+                       x.get("username", None) == username
         ), self.grab_rows())])
     
     def get_user(self, user_uuid: str):
@@ -139,7 +145,7 @@ def initilize_bucket(bucket:str):
     retval = buckets_api.create_bucket(bucket_name=bucket, org=org)
     # print(f"Created new bucket: {bucket} {retval}")
 
-initilize_bucket(bucket_name)
+# initilize_bucket(bucket_name)
 
 # person = {
 #     #id is randomly generated
@@ -162,8 +168,4 @@ initilize_bucket(bucket_name)
 #     total_log_in_count = 7,
 # )
 
-# pprint(db.grab_rows())
-
-
-
-
+pprint(db.grab_rows())
