@@ -1,97 +1,131 @@
 import influxdb_client
+from influxdb_client import InfluxDBClient
 from influxdb_client.client.write_api import SYNCHRONOUS
 
 from dotenv import load_dotenv
+from pprint import pprint
 import uuid, json, os
-
-org = "Q-Safe"
-token = os.environ.get("INFLUX_TOKEN", "")
-
-url="http://localhost:8086"
-
-class DB:    
-    def __init__(self):
-        self.client = influxdb_client.InfluxDBClient(
-            url=url,
-            token=token,
-            org=org
-        )
-
-        self.write_api = self.client.write_api(write_options=SYNCHRONOUS)
-    #maybe serialize json so strings and boolean dont mess up the DB, or just have clean data
-    def add_interactions(self, data: dict):
-        #measurement name for each column, add later when data is finalized
-        
-        id_ = str(uuid.uuid4())
-        data = json.dumps(data)
-        #print(data, type(data))
-        p = influxdb_client.Point(id_).field("interactionData", data)
-
-        self.write_api.write(bucket="Interactions", org=org, record=p)
-        
-    
-    def add_user_record(self, username:str, password:str, ip:str, domain:str, user_agent:str):
-        self.add_interactions({
-            "total_log_in_count":0,
-            "failed_log_in_count": 0,
-            "ip":ip,
-            "domain":domain,
-            "username":username,
-            "password":password,
-            "user_agent":user_agent
-        })
-    
-    def aggregate_user_signin(ip:str, domain:str, username:str, failed_log_in_count:int, total_log_in_count:int):
-        #Find the input with ip, domain, & username equal to parameters
-        #
-        #Add failed and total login count to existing record
-        
-
-
-        for row in range(8): #moving through dictionary? lowk confused myself with the local non local shi ask
-            if row["ip"] == ip and row["domain"] == domain and row[username] == "username":
-                row["failed_log_in_count"] += 1
-                row["total_log_in_count"] += 1
-
-        
-    
-
-    '''
-    def add_activity(self, data: dict):
-        """
-        activities will have similar and often time identical interactionID's (uid)
-        any activity will have it's own unique id attr in the data dict however
-
-        indexing by uid will help to make searching faster for IP's on certain servers
-        """
-        id_ = data["id"]
-
-        data = json.dumps(data)
-        p = influxdb_client.Point(id_).field("interactiondata", data)
-
-
-        self.write_api.write(bucket="activites", org=org, record=p)
-        
-        return True
-        
-    '''
 
 org = "Q-Safe"
 
 load_dotenv()
 
-# Environment and connection settings
-token = os.getenv("INFLUXDB_TOKEN")
+token = os.environ.get("INFLUX_TOKEN", "")
 
+bucket_name = "Interactions"
 url="http://localhost:8086"
 
-bucket1 = "Interactions"
+class DB:    
+    def __init__(self):
+        self.client = InfluxDBClient(
+            url=url,
+            token=token,
+            org=org
+        )
+
+        self.query_api = self.client.query_api()
+        self.delete_api = self.client.delete_api()
+        self.write_api = self.client.write_api(write_options=SYNCHRONOUS)
+
+    def add_interactions(self, data: dict):
+        
+        id_ = str(uuid.uuid4())
+        data = json.dumps(data)
+        
+        p = influxdb_client.Point(id_).field("interactionData", data)
+
+        self.write_api.write(bucket = bucket_name, org = org, record = p)
+        
+    def add_user_record(self, username: str, password: str, ip: str, domain: str, user_agent: str):
+        self.add_interactions({
+            "total_log_in_count": 0,
+            "failed_log_in_count": 0,
+            "ip": ip,
+            "domain": domain,
+            "username": username,
+            "password": password,
+            "user_agent": user_agent
+        })
+    
+    def aggregate_user_signin(self, ip: str, domain: str, username: str, failed_log_in_count: int, total_log_in_count: int):
+
+        rows = self.query_api.query_stream( #row iterable of all rows in table
+            f'from(bucket: "{bucket_name}") |> range(start: -inf)'
+        )
+
+        while (row := rows.__next__()) != None:  
+            #Find the row with ip, domain, & username equal to parameters
+            try:
+                measurement = row.get_measurement()
+                data = dict(json.loads(row.get_value()))
+            except Exception as e:
+                print(f"Failed to cast stringed row into dictionary: {e}")
+                continue
+            
+            if data.get("ip", None) == ip and data.get("domain", None) and data.get("username", None) == username:
+                #row found
+                # Delete the existing record before updating
+                self.delete_api.delete(start='1970-01-01T00:00:00Z', stop='2030-01-01T00:00:00Z', predicate=f'_measurement="{measurement}"', bucket=bucket_name, org=org)
+                break
+        else:
+            return False
+        
+        #Add failed and total login count to existing record
+        updated_data = {
+            "total_log_in_count": int(data.get("total_log_in_count", 0)) + total_log_in_count,
+            "failed_log_in_count": int(data.get("failed_log_in_count", 0)) + failed_log_in_count,
+            "ip": ip,
+            "domain": domain,
+            "username": username,
+            "password": data.get("password", None),  # Retain existing password if needed
+            "user_agent": data.get("user_agent", None)  # Retain existing user agent if needed
+        }
+
+        p = influxdb_client.Point(measurement).field("interactionData", json.dumps(updated_data))
+
+        # Write the updated point back to the InfluxDB
+        self.write_api.write(bucket=bucket_name, org=org, record=p)
+
+        return True
+
+    def grab_rows(self, start="-inf"):
+        rows = self.query_api.query_stream( #row iterable of all rows in table
+                f'from(bucket: "{bucket_name}") |> range(start: {start})'
+        )
+
+        try:
+            return sorted([(x.get_time().timestamp(), dict(json.loads(x.get_value()))) for x in rows], key=lambda x: x[0]) #exhaust rows from generator
+        except Exception as e:
+            print(f"data improperly formatted in influx, please fix: {e}")
+
+    def get_users_by_username(self, domain: str, username: str):
+        return tuple(filter(
+            lambda x: (x[1].get("domain", None) == domain and
+                       x[1].get("username", None) == username
+        ), self.grab_rows()))
+    
+    def get_user(self, user_uuid: str):
+        rows = self.query_api.query_stream( #row iterable of all rows in table
+            f'from(bucket: "{bucket_name}") |> range(start: -inf)'
+        )
+
+        try:
+            for row in rows:
+                if row.get_measurement() == user_uuid:
+                    data = dict(json.loads(row.get_value()))
+                    return data  # Return the user data if found
+                
+        except Exception as e:
+            print(f"Error retrieving user by UUID: {e}")
+
+        return None  # Return None if no user is found
+
 db = DB()
 
 client = InfluxDBClient(url=url, token=token, org=org)
 
 def initilize_bucket(bucket:str):
-    #this is for testing, it makes the current data dissapear for the new data, remove in final version
+    #this is for testing, it makes the current data disapear for the new data, remove in final version
 
     buckets_api = client.buckets_api()
     try:
@@ -103,9 +137,9 @@ def initilize_bucket(bucket:str):
         print(f"Bucket {bucket} not found or already deleted. Error: {e}")
         
     retval = buckets_api.create_bucket(bucket_name=bucket, org=org)
-    print(f"Created new bucket: {bucket} {retval}")
+    # print(f"Created new bucket: {bucket} {retval}")
 
-initilize_bucket(bucket1)
+initilize_bucket(bucket_name)
 
 person = {
     #id is randomly generated
@@ -119,5 +153,17 @@ person = {
 }
 
 db.add_interactions(person)
+
+db.aggregate_user_signin(
+    ip="1.255.453",
+    domain="apple.com",
+    username="Stebe Jobs",
+    failed_log_in_count= 5,
+    total_log_in_count = 7,
+)
+
+pprint(db.grab_rows())
+
+
 
 

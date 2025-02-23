@@ -11,7 +11,7 @@ import time, threading, json
 import os
 
 #local files
-# from db import add_user, get_user
+from db import get_user, get_users_by_username
 quantum_random_forest = lambda data: None 
 
 #app definition
@@ -39,14 +39,14 @@ class User(UserMixin):
         data:
         {
             "ip" : client_ip,
-            "userAgent" : ip of website,
+            "user_agent" : ip of website,
             "username" : username,
             "password" : hashed (client side & salt & peppered) password
             ...
         }
         """
 
-        self.id = data["ip"] + "@" + data["userAgent"]
+        self.id = data["ip"] + "@" + data["user_agent"]
         self.username = data.get("username", None)
         self.password = data.get("password", None)
         
@@ -61,19 +61,11 @@ class User(UserMixin):
         return self.id
 
     @login_manager.user_loader
-    def load_user(id):
-        # u = get_user(id) #id is concat("username" + "@" + ip) TODO
-        u = {
-            "ip": "192.168.1.1",
-            "domain": "example.com",
-            "username": "sample_user",
-            "email": "sample_user@example.com",
-            "last_login": time.time(),
-            "activities": []  # This can be populated with activity data if needed
-        }
+    def load_user(uuid):
 
-        u["id"] = f"{u['ip']}@{u['domain']}"
-        return User(u.data)
+        user_data = get_user(uuid)
+
+        return User(data = user_data)
 
     def is_anonymous(self): #no users will be conisdered guests on site, all must login
         return False
@@ -86,23 +78,21 @@ load_dotenv()
 
 @app.route('/')
 def visualization():
-    return redirect("https://walmart.com") #TODO change to streamlit location
+    return redirect("http://www.quantumlysafe.tech/") #TODO change to streamlit location
 
 @app.route("/api/validate_user")
 def _1():
     form = lambda x: jsonify({"flag" : x})
     body = request.data
 
-    # u = get_user(body["username"])
-
-    # if u is not None:
-        # if(check_password_hash(u["hashed_password"], body['password'])):
-            # return form(1)
-        # return form(0)
-    # else:
-        # return form(-1)
-
-    form(1)
+    u = get_users_by_username(domain = current_user.data.domain, username = current_user.data.username)
+    
+    if u is not None and len(u):
+        if(check_password_hash(u["password"], body['password'])):
+            return form(1)
+        return form(0)
+    else:
+        return form(-1)
 
 @app.route("/api/send_preliminary_data", methods=['POST']) #DATA AQUISITION DONE
 def _2():
@@ -121,7 +111,7 @@ def _3():
         data = json.loads(body.decode("utf-8"))
     except Exception as e:
         print(f"ERR, cannot cast request body to JSON entity: {e}")
-
+    current_user
     # Check if the user exists in the database
     # u = get_user(body["username"])  # Uncomment and implement this line to fetch user from DB
     # u = None  # Placeholder for user fetching logic
