@@ -1,117 +1,169 @@
-import plotly.express as px
-import plotly.graph_objects as go
-import seaborn as sns
-import matplotlib.pyplot as plt
 import streamlit as st
 import pandas as pd
+import plotly.express as px
+import plotly.graph_objects as go
 
-# Correlation Heatmap with attack_detected included
+
+# Filter Data by Domain and IP Address
+def filter_data(df, domain, selected_ips):
+    filtered = df[df["domainName"] == domain]
+    if selected_ips:
+        filtered = filtered[filtered["ip"].isin(selected_ips)]
+    return filtered
+
+
+# Interactive Correlation Heatmap
 def plot_correlation_heatmap(df):
-    # Select numeric columns, including binary
-    numeric_df = df.select_dtypes(include=["number"])
-
-    # Check if 'attack_detected' is present
-    if "attack_detected" not in numeric_df.columns:
-        st.warning("⚠️ 'attack_detected' column not found in numeric data.")
-        return
-
-    # Handle NaNs by filling them with 0
-    corr = numeric_df.fillna(0).corr()
-
+    selected_columns = ["attack_detected", "domainName", "failedAttempts", "totalAttempts"]
+    filtered_df = df[selected_columns].copy()
     
+    # Convert categorical data to numerical if needed
+    if "domainName" in filtered_df.columns:
+        filtered_df["domainName"] = pd.factorize(filtered_df["domainName"])[0]
+    if "attack_detected" in filtered_df.columns:
+        filtered_df["attack_detected"] = filtered_df["attack_detected"].astype(int)
 
-    # Plotting the heatmap
-    fig, ax = plt.subplots(figsize=(10, 8))
-    sns.heatmap(
-        corr, 
-        annot=True, 
-        cmap="coolwarm", 
-        fmt=".2f", 
-        linewidths=0.5, 
-        ax=ax, 
-        cbar_kws={"label": "Correlation Coefficient"}
+    corr = filtered_df.corr()
+
+    fig = px.imshow(
+        corr,
+        text_auto=".2f",
+        color_continuous_scale="RdBu_r",
+        title="📊 Correlation Heatmap"
     )
-    st.subheader("📊 Correlation Heatmap (Including Attack Detection)")
-    st.pyplot(fig)
-
-# 2D Scatter Plot with attack_detected as color
-def plot_scatter(df, x_col, y_col):
-    # Ensure 'attack_detected' is included
-    if "attack_detected" not in df.columns:
-        st.warning("⚠️ 'attack_detected' column not found.")
-        return
-
-    # Select only numeric data for plotting
-    numeric_df = df[[x_col, y_col, "attack_detected"]].select_dtypes(include=["number"])
-
-    if numeric_df.empty:
-        st.warning("⚠️ Scatter plot can't be plotted since numeric data is missing.")
-        return
-
-    # Plotting with color based on attack detection
-    fig = px.scatter(
-        numeric_df,
-        x=x_col,
-        y=y_col,
-        color="attack_detected",
-        title=f"🌐 Scatter Plot: {x_col} vs {y_col} (Attack Detection Highlight)",
-        labels={"attack_detected": "Attack Detected"},
-        height=600
-    )
-    st.subheader("🧩 2D Scatter Plot - Attack Detection Highlight")
+    fig.update_layout(autosize=True, dragmode="zoom")
     st.plotly_chart(fig, use_container_width=True)
 
 
-# Line Chart for Time-based Anomalies
-def plot_time_series(df, time_column, metric_column):
+# Line Graph Plot by IP Address
+def plot_time_series(df):
+    df["timestamp"] = pd.to_datetime(df["timestamp"], errors="coerce")
+
+    time_series_data = df.groupby(
+        ["ip", pd.Grouper(key="timestamp", freq="D")]
+    ).size().reset_index(name="access_attempts")
+
     fig = px.line(
-        df,
-        x=time_column,
-        y=metric_column,
-        color="encryption_used" if "encryption_used" in df.columns else None,
-        title=f"📈 {metric_column} Over Time",
-        markers=True
+        time_series_data,
+        x="timestamp",
+        y="access_attempts",
+        color="ip",
+        markers=True,
+        title="📅 Access Attempts Over Time by IP Address"
     )
-    st.subheader(f"📅 Time Series: {metric_column}")
-    st.plotly_chart(fig, use_container_width=True)
-
-# Radar Chart for Comparative Analysis
-def plot_radar_chart(df, category_col, metric_cols):
-    numeric_df = df[metric_cols].select_dtypes(include=["number"])
-
-    if numeric_df.empty:
-        st.warning("⚠️ Radar chart requires numeric values for comparison.")
-        return
-
-    data = []
-    categories = df[category_col].unique()
-    for category in categories:
-        subset = df[df[category_col] == category]
-        avg_values = subset[metric_cols].mean()
-        data.append(go.Scatterpolar(
-            r=avg_values,
-            theta=metric_cols,
-            fill='toself',
-            name=f"{category}"
-        ))
-
-    fig = go.Figure(data=data)
     fig.update_layout(
-        polar=dict(
-            radialaxis=dict(visible=True, range=[0, df[metric_cols].max().max()])
-        ),
-        showlegend=True,
-        title="📡 Comparative Radar Chart"
+        xaxis=dict(rangeselector=dict(
+            buttons=list([
+                dict(count=7, label="1W", step="day", stepmode="backward"),
+                dict(count=1, label="1M", step="month", stepmode="backward"),
+                dict(step="all")
+            ])
+        ), rangeslider=dict(visible=True), type="date")
     )
-    st.subheader("🛡️ Radar Chart - Feature Comparison")
     st.plotly_chart(fig, use_container_width=True)
 
-# Box Plot for Distribution Insights
-def plot_box_plot(df, x_col, y_col):
-    if y_col not in df.select_dtypes(include=["number"]).columns:
-        st.warning("⚠️ Box plot requires numeric values for y-axis.")
+
+
+
+ # Display Data Using Dropdowns Instead of a Table (Grouped by Domain)
+def display_filtered_table(df):
+    st.subheader("📝 Records Grouped by Domain (Dropdown View)")
+
+    # Check if 'domainName' column exists
+    if "domainName" not in df.columns:
+        st.error("❌ 'domainName' column is missing in the dataset.")
         return
 
-    fig = px.box(df, x=x_col, y=y_col, color=x_col, title=f"📦 Distribution of {y_col} by {x_col}")
-    st.subheader(f"📦 Box Plot: {y_col} by {x_col}")
+    # Group the data by 'domainName'
+    domain_groups = df.groupby("domainName")
+
+    # Create a dropdown (expander) for each domain
+    for domain, group_data in domain_groups:
+        with st.expander(f"🌍 Domain: {domain} ({len(group_data)} records)"):
+            for idx, row in group_data.iterrows():
+                st.markdown(
+                    f"""
+                    **🔐 Record ID:** `{idx}`  
+                    - 📡 **IP Address:** `{row['ip']}`  
+                    - 🔢 **Total Attempts:** `{row['totalAttempts']}`  
+                    - ❌ **Failed Attempts:** `{row['failedAttempts']}`  
+                    - 👤 **Username:** `{row['username']}`  
+                    - 🕵️‍♂️ **User Agent:** `{row['userAgent']}`  
+                    - 🕒 **Timestamp:** `{row['timestamp']}`  
+                    - 🚩 **Attack Detected:** `{row['attack_detected']}`  
+                    ---
+                    """
+                )
+
+    # Download the entire dataset
+    csv = df.to_csv(index=False).encode("utf-8")
+    st.download_button(
+        "⬇️ Download Full Dataset",
+        data=csv,
+        file_name="full_cybersecurity_data.csv",
+        mime="text/csv"
+    )
+
+
+
+# Line Graph Aggregating Total Attempts by Browser Type Over Time
+def plot_line_graph(df):
+    # Check if required columns exist
+    required_columns = ["timestamp", "totalAttempts", "userAgent"]
+    if not all(col in df.columns for col in required_columns):
+        st.error("❌ Required columns ('timestamp', 'totalAttempts', 'userAgent') are missing in the dataset.")
+        return
+
+    # Ensure timestamps are in datetime format
+    df["timestamp"] = pd.to_datetime(df["timestamp"], errors="coerce")
+
+    # Aggregate total attempts by userAgent and timestamp (daily frequency)
+    time_series_data = df.groupby(
+        ["userAgent", pd.Grouper(key="timestamp", freq="D")]
+    )["totalAttempts"].sum().reset_index()
+
+    # Aggregate total attempts per browser
+    browser_totals = df.groupby("userAgent")["totalAttempts"].sum().reset_index().sort_values(by="totalAttempts", ascending=False)
+
+    # Plot the line graph with separate lines for each browser type
+    fig = px.line(
+        time_series_data,
+        x="timestamp",  # X-axis: Time
+        y="totalAttempts",  # Y-axis: Total attempts
+        color="userAgent",  # Different line for each browser type
+        markers=True,
+        title="📈 Total Login Attempts Over Time by Browser Type"
+    )
+
+    # Add total login attempts as annotations for each browser
+    for i, row in browser_totals.iterrows():
+        fig.add_annotation(
+            text=f"Total: {row['totalAttempts']}",
+            xref="paper", yref="paper",
+            x=1.1, y=1 - (i * 0.05),
+            showarrow=False,
+            font=dict(size=12),
+            bgcolor="white",
+            bordercolor="black"
+        )
+
+    # Improve layout and interactivity
+    fig.update_layout(
+        xaxis=dict(
+            rangeselector=dict(
+                buttons=list([
+                    dict(count=7, label="1W", step="day", stepmode="backward"),
+                    dict(count=1, label="1M", step="month", stepmode="backward"),
+                    dict(step="all")
+                ])
+            ),
+            rangeslider=dict(visible=True),
+            type="date"
+        ),
+        yaxis_title="Total Attempts",
+        legend_title="Browser Type",
+        margin=dict(l=40, r=200, t=60, b=40)  # Adjust layout for annotations
+    )
+
+    st.subheader("📈 Total Login Attempts Over Time by Browser Type")
     st.plotly_chart(fig, use_container_width=True)

@@ -33,10 +33,14 @@ export default function RootLayout({
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [isSignUp, setIsSignUp] = useState(false);
+  const [attackDetected, setAttackDetected] = useState(false);
 
   // Add to state management section
   const [showPopup, setShowPopup] = useState(false);
   const [popupMessage, setPopupMessage] = useState("");
+
+  // Add this to your state management section at the top
+  const [showPassword, setShowPassword] = useState(false);
 
   // Login statistics states
   const [loginStats, setLoginStats] = useState({
@@ -84,6 +88,33 @@ export default function RootLayout({
     return SHA256(password).toString();
   };
 
+  const detectAttack = async () => {
+    const response = await fetch(`https://backend-trkg.onrender.com/predict`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        // Add CORS headers if needed
+        "Access-Control-Allow-Origin": "*",
+      },
+      body: JSON.stringify({
+        login_attempts: 150,
+        failed_logins: 50,
+        browser_type: "Chrome",
+      }),
+    });
+    const data = await response.json();
+    console.log("Data sent successfully:", data.prediction);
+    if (data.prediction === "Attack Detected") {
+      setAttackDetected(true);
+      if (attackDetected) {
+        setPopupMessage("Attack Detected!");
+        setShowPopup(true);
+      }
+    } else {
+      setAttackDetected(false);
+    }
+  };
+
   /**
    * API Communication Functions Section
    */
@@ -92,36 +123,36 @@ export default function RootLayout({
    * Send preliminary data to Flask backend
    * @returns {Promise<any>} Response data from the server
    */
-  const send_preliminary_data = async () => {
-    try {
-      const response = await fetch(`${BACKEND_URL}/send_preliminary_data`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          // Add CORS headers if needed
-          "Access-Control-Allow-Origin": "*",
-        },
-        body: JSON.stringify({
-          userInfo: {
-            ip: userInfo.ipAddress,
-            userAgent: userInfo.userAgent,
-            domainName: userInfo.domainName,
-          },
-        }),
-      });
+  // const send_preliminary_data = async () => {
+  //   try {
+  //     const response = await fetch(`${BACKEND_URL}/send_preliminary_data`, {
+  //       method: "POST",
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //         // Add CORS headers if needed
+  //         "Access-Control-Allow-Origin": "*",
+  //       },
+  //       body: JSON.stringify({
+  //         userInfo: {
+  //           ip: userInfo.ipAddress,
+  //           userAgent: userInfo.userAgent,
+  //           domainName: userInfo.domainName,
+  //         },
+  //       }),
+  //     });
 
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
+  //     if (!response.ok) {
+  //       throw new Error(`HTTP error! status: ${response.status}`);
+  //     }
 
-      const data = await response.json();
-      console.log("Data sent successfully:", data);
-      return data;
-    } catch (error) {
-      console.error("Error sending data to Flask:", error);
-      throw error;
-    }
-  };
+  //     const data = await response.json();
+  //     console.log("Data sent successfully:", data);
+  //     return data;
+  //   } catch (error) {
+  //     console.error("Error sending data to Flask:", error);
+  //     throw error;
+  //   }
+  // };
 
   /**
    * Send signin data to Flask backend
@@ -138,10 +169,8 @@ export default function RootLayout({
           "Access-Control-Allow-Origin": "*",
         },
         body: JSON.stringify({
-          failedAttempts: loginStatsSession.failedLoginAttempts,
-          totalAttempts:
-            loginStatsSession.failedLoginAttempts +
-            loginStatsSession.successfulLoginAttempts,
+          failedAttempts: 2,
+          totalAttempts: 2 + 2,
           username: username,
           password: hashedPassword,
           domainName: userInfo.domainName,
@@ -150,7 +179,7 @@ export default function RootLayout({
       });
       const data = await response.json();
       console.log("data attacking", data.is_attacking);
-      if (response.ok && data.is_attacking === undefined) {
+      if (data.status === 200 && !data.is_attacking) {
         // Reset form fields after successful login
 
         setLoginStatsSession((prev) => ({
@@ -205,29 +234,61 @@ export default function RootLayout({
   // const send_signin_data = async () => {
   //   const hashedPassword = hashPassword(password);
   //   try {
-  //     const response = await fetch(`${BACKEND_URL}api/login`, {
+  //   const response = await fetch("/api/login", {
+  //     method: "POST",
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //     },
+  //     body: JSON.stringify({ username, password }),
+  //   });
+
+  //   if (response.ok) {
+  //     // Reset form fields after successful login
+
+  //     setLoginStatsSession((prev) => ({
+  //       ...prev,
+  //       successfulLoginAttempts: prev.successfulLoginAttempts + 1,
+  //     }));
+  //     setIsLoggedIn(true);
+  //     setError("");
+  //     // Record successful login attempt
+  //     await fetch("/api/loginAttempts", {
   //       method: "POST",
   //       headers: {
   //         "Content-Type": "application/json",
-  //         "Access-Control-Allow-Origin": "*",
   //       },
-  //       body: JSON.stringify({
-  //         failedAttempts: loginStatsSession.failedLoginAttempts,
-  //         totalAttempts:
-  //           loginStatsSession.failedLoginAttempts +
-  //           loginStatsSession.successfulLoginAttempts,
-  //         username: username,
-  //         password: hashedPassword,
-  //         domainName: userInfo.domainName,
-  //       }),
+  //       body: JSON.stringify({ success: true }),
   //     });
-
-  //     const data = await response.json();
-  //     return { response, data };
-  //   } catch (error) {
-  //     console.error("Error sending data to Flask:", error);
-  //     throw error;
+  //     // Update login stats
+  //     setLoginStats((prev) => ({
+  //       ...prev,
+  //       successfulLoginAttempts: prev.successfulLoginAttempts + 1,
+  //     }));
+  //   } else {
+  //     setPassword("");
+  //     setError("Invalid username or password");
+  //     setLoginStatsSession((prev) => ({
+  //       ...prev,
+  //       failedLoginAttempts: prev.failedLoginAttempts + 1,
+  //     }));
+  //     // Record failed login attempt
+  //     await fetch("/api/loginAttempts", {
+  //       method: "POST",
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //       },
+  //       body: JSON.stringify({ success: false }),
+  //     });
+  //     // Update login stats
+  //     setLoginStats((prev) => ({
+  //       ...prev,
+  //       failedLoginAttempts: prev.failedLoginAttempts + 1,
+  //     }));
   //   }
+  // } catch (error) {
+  //   console.error("Login error:", error);
+  //   setError("An error occurred during login");
+  // }
   // };
 
   /**
@@ -252,8 +313,12 @@ export default function RootLayout({
           domainName: userInfo.domainName,
         }),
       });
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
+      if (!response == 200) {
+        setPopupMessage("Successfully Signed Up!");
+        setShowPopup(true);
+      } else {
+        setPopupMessage("User Already Exists!");
+        setShowPopup(true);
       }
 
       const data = await response.json();
@@ -281,8 +346,6 @@ export default function RootLayout({
         // Reset form fields after successful signup
         setUsername("");
         setPassword("");
-        setPopupMessage("Successfully Signed Up!");
-        setShowPopup(true);
         setIsSignUp(false); // Switch back to login view
       } catch (error) {
         console.error("Signup error:", error);
@@ -466,13 +529,57 @@ export default function RootLayout({
                   >
                     Password
                   </label>
-                  <input
-                    type="password"
-                    id="password"
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                    className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
-                  />
+                  <div className="relative">
+                    <input
+                      type={showPassword ? "text" : "password"}
+                      id="password"
+                      value={password}
+                      onChange={(e) => setPassword(e.target.value)}
+                      className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline pr-10"
+                    />
+                    <button
+                      type="button"
+                      className="absolute inset-y-0 right-0 pr-3 flex items-center"
+                      onClick={() => setShowPassword(!showPassword)}
+                    >
+                      {showPassword ? (
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          strokeWidth={1.5}
+                          stroke="currentColor"
+                          className="w-5 h-5 text-gray-500"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M3.98 8.223A10.477 10.477 0 001.934 12C3.226 16.338 7.244 19.5 12 19.5c.993 0 1.953-.138 2.863-.395M6.228 6.228A10.45 10.45 0 0112 4.5c4.756 0 8.773 3.162 10.065 7.498a10.523 10.523 0 01-4.293 5.774M6.228 6.228L3 3m3.228 3.228l3.65 3.65m7.894 7.894L21 21m-3.228-3.228l-3.65-3.65m0 0a3 3 0 10-4.243-4.243m4.242 4.242L9.88 9.88"
+                          />
+                        </svg>
+                      ) : (
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          strokeWidth={1.5}
+                          stroke="currentColor"
+                          className="w-5 h-5 text-gray-500"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                          />
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                          />
+                        </svg>
+                      )}
+                    </button>
+                  </div>
                 </div>
                 {error && (
                   <p className="text-red-500 text-xs italic">{error}</p>
@@ -500,7 +607,7 @@ export default function RootLayout({
                 </p>
               </div>
               <div className="mt-8 space-y-4">
-                <button
+                {/* <button
                   className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full"
                   onClick={send_preliminary_data}
                 >
@@ -519,6 +626,13 @@ export default function RootLayout({
                   onClick={send_signin_data}
                 >
                   Send Signin Data
+                </button> */}
+
+                <button
+                  className="bg-red-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full"
+                  onClick={detectAttack}
+                >
+                  Detect Attack
                 </button>
               </div>
               <div className="mt-8">

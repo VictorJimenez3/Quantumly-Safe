@@ -1,7 +1,7 @@
 import { NextApiRequest, NextApiResponse } from "next";
 
-const validUsername = "admin";
-const validPassword = "password";
+const validUsername = "ashan@gatech.edu";
+const validPassword = "fake$$##123";
 
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method === "POST") {
