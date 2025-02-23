@@ -2,8 +2,12 @@
 
 import { useEffect, useState } from "react";
 import { UAParser } from "ua-parser-js";
+import Cookies from "js-cookie";
 
-export default function Home() {
+interface HomeProps {
+  username?: string;
+}
+export default function Home({ username }: HomeProps) {
   interface User {
     id: string;
     emailAddresses: { emailAddress: string }[];
@@ -38,6 +42,13 @@ export default function Home() {
     successful: 0,
   });
 
+  const handleLogout = () => {
+    Cookies.remove("sessionId");
+    setUser(null);
+    setSession(null);
+    window.location.href = "/";
+  };
+
   useEffect(() => {
     // Simulate fetching user and session data
     const fetchUserData = async () => {
@@ -47,7 +58,7 @@ export default function Home() {
         emailAddresses: [{ emailAddress: "user@example.com" }],
         firstName: "John",
         lastName: "Doe",
-        username: "johndoe",
+        username: username,
         createdAt: new Date().toISOString(),
         updatedAt: new Date().toISOString(),
         primaryPhoneNumber: { phoneNumber: "+1234567890" },
@@ -99,125 +110,205 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        {user && (
-          <div className="bg-white rounded-lg shadow-lg p-6 w-full max-w-md">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">
-              User Information
-            </h2>
-            <p className="text-gray-600">
-              <strong>ID:</strong> {user.id}
-            </p>
-            <p className="text-gray-600">
-              <strong>Email:</strong> {user.emailAddresses[0]?.emailAddress}
-            </p>
-            <p className="text-gray-600">
-              <strong>First Name:</strong> {user.firstName}
-            </p>
-            <p className="text-gray-600">
-              <strong>Last Name:</strong> {user.lastName}
-            </p>
-            <p className="text-gray-600">
-              <strong>Username:</strong> {user.username}
-            </p>
-            <p className="text-gray-600">
-              <strong>Created At:</strong>{" "}
-              {user.createdAt
-                ? new Date(user.createdAt).toLocaleDateString()
-                : "N/A"}
-            </p>
-            <p className="text-gray-600">
-              <strong>Updated At:</strong>{" "}
-              {user.updatedAt
-                ? new Date(user.updatedAt).toLocaleDateString()
-                : "N/A"}
-            </p>
-            <p className="text-gray-600">
-              <strong>Primary Phone Number:</strong>{" "}
-              {user.primaryPhoneNumber?.phoneNumber}
-            </p>
-            <p className="text-gray-600">
-              <strong>Primary Address:</strong>{" "}
-              {user.primaryEmailAddress?.emailAddress}
-            </p>
-          </div>
-        )}
+    <div className="min-h-screen bg-gradient-to-r from-slate-900 to-slate-800 items-center justify-items-center p-8 pb-20 gap-16 sm:p-20">
+      <main className="max-w-4xl mx-auto">
+        {/* Logout Button */}
+        <div className="w-full max-w-md mx-auto mb-8">
+          <button
+            onClick={handleLogout}
+            className="w-full bg-red-600 hover:bg-red-700 text-gray-100 font-bold py-3 px-6 rounded-md transition-all duration-200 shadow-lg hover:shadow-red-500/30"
+          >
+            Logout
+          </button>
+        </div>
 
-        {session && (
-          <div className="bg-white rounded-lg shadow-lg p-6 w-full max-w-md mt-8">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">
-              Session Information
-            </h2>
-            <p className="text-gray-600">
-              <strong>ID:</strong> {session.id}
-            </p>
-            <p className="text-gray-600">
-              <strong>Created At:</strong>{" "}
-              {session.createdAt
-                ? new Date(session.createdAt).toLocaleDateString()
-                : "N/A"}
-            </p>
-            <p className="text-gray-600">
-              <strong>Updated At:</strong>{" "}
-              {session.updatedAt
-                ? new Date(session.updatedAt).toLocaleDateString()
-                : "N/A"}
-            </p>
-            <p className="text-gray-600">
-              <strong>Last Active At:</strong>{" "}
-              {session.lastActiveAt
-                ? new Date(session.lastActiveAt).toLocaleDateString()
-                : "N/A"}
-            </p>
-            <p className="text-gray-600">
-              <strong>Expires At:</strong>{" "}
-              {session.expireAt
-                ? new Date(session.expireAt).toLocaleDateString()
-                : "N/A"}
-            </p>
-          </div>
-        )}
+        {/* Information Cards Container */}
+        <div className="grid gap-6 md:grid-cols-2 auto-rows-min">
+          {/* User Information Card */}
+          {user && (
+            <div className="bg-slate-800 rounded-lg shadow-lg shadow-cyan-500/10 p-6 border border-slate-700">
+              <h2 className="text-2xl font-bold text-cyan-400 mb-4 border-b border-slate-700 pb-2">
+                User Information
+              </h2>
+              <div className="space-y-3 text-gray-300">
+                <p className="flex justify-between items-center py-1 border-b border-slate-700">
+                  <span className="font-semibold text-cyan-300">ID:</span>
+                  <span>{user.id}</span>
+                </p>
+                <p className="flex justify-between items-center py-1 border-b border-slate-700">
+                  <span className="font-semibold text-cyan-300">Email:</span>
+                  <span>{user.emailAddresses[0]?.emailAddress}</span>
+                </p>
+                <p className="flex justify-between items-center py-1 border-b border-slate-700">
+                  <span className="font-semibold text-cyan-300">
+                    First Name:
+                  </span>
+                  <span>{user.firstName}</span>
+                </p>
+                <p className="flex justify-between items-center py-1 border-b border-slate-700">
+                  <span className="font-semibold text-cyan-300">
+                    Last Name:
+                  </span>
+                  <span>{user.lastName}</span>
+                </p>
+                <p className="flex justify-between items-center py-1 border-b border-slate-700">
+                  <span className="font-semibold text-cyan-300">Username:</span>
+                  <span>{user.username}</span>
+                </p>
+                <p className="flex justify-between items-center py-1 border-b border-slate-700">
+                  <span className="font-semibold text-cyan-300">
+                    Created At:
+                  </span>
+                  <span>
+                    {user.createdAt
+                      ? new Date(user.createdAt).toLocaleDateString()
+                      : "N/A"}
+                  </span>
+                </p>
+                <p className="flex justify-between items-center py-1 border-b border-slate-700">
+                  <span className="font-semibold text-cyan-300">
+                    Updated At:
+                  </span>
+                  <span>
+                    {user.updatedAt
+                      ? new Date(user.updatedAt).toLocaleDateString()
+                      : "N/A"}
+                  </span>
+                </p>
+                <p className="flex justify-between items-center py-1 border-b border-slate-700">
+                  <span className="font-semibold text-cyan-300">
+                    Primary Phone Number:
+                  </span>
+                  <span>{user.primaryPhoneNumber?.phoneNumber}</span>
+                </p>
+                <p className="flex justify-between items-center py-1 border-b border-slate-700">
+                  <span className="font-semibold text-cyan-300">
+                    Primary Address:
+                  </span>
+                  <span>{user.primaryEmailAddress?.emailAddress}</span>
+                </p>
+              </div>
+            </div>
+          )}
 
-        {browserInfo && (
-          <div className="bg-white rounded-lg shadow-lg p-6 w-full max-w-md mt-8">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">
-              Browser Information
-            </h2>
-            <p className="text-gray-600">
-              <strong>Browser Name:</strong> {browserInfo.browser.name}
-            </p>
-            <p className="text-gray-600">
-              <strong>Browser Version:</strong> {browserInfo.browser.version}
-            </p>
-            <p className="text-gray-600">
-              <strong>OS Name:</strong> {browserInfo.os.name}
-            </p>
-            <p className="text-gray-600">
-              <strong>OS Version:</strong> {browserInfo.os.version}
-            </p>
-            <p className="text-gray-600">
-              <strong>Device Type:</strong> {browserInfo.device.type || "N/A"}
-            </p>
-          </div>
-        )}
+          {/* Session Information Card */}
+          {session && (
+            <div className="bg-slate-800 rounded-lg shadow-lg shadow-emerald-500/10 p-6 border border-slate-700">
+              <h2 className="text-2xl font-bold text-emerald-400 mb-4 border-b border-slate-700 pb-2">
+                Session Information
+              </h2>
+              <div className="space-y-3 text-gray-300">
+                <p className="flex justify-between items-center py-1 border-b border-slate-700">
+                  <span className="font-semibold text-emerald-300">ID:</span>
+                  <span>{session.id}</span>
+                </p>
+                <p className="flex justify-between items-center py-1 border-b border-slate-700">
+                  <span className="font-semibold text-emerald-300">
+                    Created At:
+                  </span>
+                  <span>
+                    {session.createdAt
+                      ? new Date(session.createdAt).toLocaleDateString()
+                      : "N/A"}
+                  </span>
+                </p>
+                <p className="flex justify-between items-center py-1 border-b border-slate-700">
+                  <span className="font-semibold text-emerald-300">
+                    Updated At:
+                  </span>
+                  <span>
+                    {session.updatedAt
+                      ? new Date(session.updatedAt).toLocaleDateString()
+                      : "N/A"}
+                  </span>
+                </p>
+                <p className="flex justify-between items-center py-1 border-b border-slate-700">
+                  <span className="font-semibold text-emerald-300">
+                    Last Active At:
+                  </span>
+                  <span>
+                    {session.lastActiveAt
+                      ? new Date(session.lastActiveAt).toLocaleDateString()
+                      : "N/A"}
+                  </span>
+                </p>
+                <p className="flex justify-between items-center py-1 border-b border-slate-700">
+                  <span className="font-semibold text-emerald-300">
+                    Expires At:
+                  </span>
+                  <span>
+                    {session.expireAt
+                      ? new Date(session.expireAt).toLocaleDateString()
+                      : "N/A"}
+                  </span>
+                </p>
+              </div>
+            </div>
+          )}
 
-        {browserInfo && (
-          <div className="bg-white rounded-lg shadow-lg p-6 w-full max-w-md mt-8">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">
-              Login Attempts
-            </h2>
-            <p className="text-gray-600">
-              <strong>Failed Login Attempts:</strong> {loginAttempts.failed}
-            </p>
-            <p className="text-gray-600">
-              <strong>Successful Login Attempts:</strong>{" "}
-              {loginAttempts.successful}
-            </p>
-          </div>
-        )}
+          {/* Browser Information Card */}
+          {browserInfo && (
+            <div className="bg-slate-800 rounded-lg shadow-lg shadow-purple-500/10 p-6 border border-slate-700">
+              <h2 className="text-2xl font-bold text-purple-400 mb-4 border-b border-slate-700 pb-2">
+                Browser Information
+              </h2>
+              <div className="space-y-3 text-gray-300">
+                <p className="flex justify-between items-center py-1 border-b border-slate-700">
+                  <span className="font-semibold text-purple-300">
+                    Browser:
+                  </span>
+                  <span>{browserInfo.browser.name}</span>
+                </p>
+                <p className="flex justify-between items-center py-1 border-b border-slate-700">
+                  <span className="font-semibold text-purple-300">
+                    Browser Version:
+                  </span>
+                  <span>{browserInfo.browser.version}</span>
+                </p>
+                <p className="flex justify-between items-center py-1 border-b border-slate-700">
+                  <span className="font-semibold text-purple-300">
+                    OS Name:
+                  </span>
+                  <span>{browserInfo.os.name}</span>
+                </p>
+                <p className="flex justify-between items-center py-1 border-b border-slate-700">
+                  <span className="font-semibold text-purple-300">
+                    OS Version:
+                  </span>
+                  <span>{browserInfo.os.version}</span>
+                </p>
+                <p className="flex justify-between items-center py-1 border-b border-slate-700">
+                  <span className="font-semibold text-purple-300">
+                    Device Type:
+                  </span>
+                  <span>{browserInfo.device.type || "N/A"}</span>
+                </p>
+              </div>
+            </div>
+          )}
+
+          {/* Login Attempts Card */}
+          {browserInfo && (
+            <div className="bg-slate-800 rounded-lg shadow-lg shadow-amber-500/10 p-6 border border-slate-700">
+              <h2 className="text-2xl font-bold text-amber-400 mb-4 border-b border-slate-700 pb-2">
+                Login Attempts
+              </h2>
+              <div className="space-y-3 text-gray-300">
+                <p className="flex justify-between items-center py-1 border-b border-slate-700">
+                  <span className="font-semibold text-amber-300">Failed:</span>
+                  <span>{loginAttempts.failed}</span>
+                </p>
+                <p className="flex justify-between items-center py-1 border-b border-slate-700">
+                  <span className="font-semibold text-amber-300">
+                    Successful:
+                  </span>
+                  <span>{loginAttempts.successful}</span>
+                </p>
+              </div>
+            </div>
+          )}
+        </div>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center"></footer>
     </div>
   );
 }

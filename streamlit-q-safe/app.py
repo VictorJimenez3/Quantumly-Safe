@@ -18,7 +18,23 @@ st.set_page_config(
 # App Title
 st.title("🔒 Cybersecurity Threat Detection Dashboard")
 st.markdown("Analyze potential threats based on login behaviors, network activity, and access patterns.")
-
+st.markdown("""
+    <div style='text-align: center; padding: 20px;'>
+        <a href='https://q-safe.vercel.app/' target='_blank' 
+           style='background-color: #FF4B4B; 
+                  color: white; 
+                  padding: 15px 30px; 
+                  text-decoration: none; 
+                  border-radius: 10px; 
+                  font-size: 24px; 
+                  font-weight: bold; 
+                  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                  display: inline-block;
+                  transition: all 0.3s ease;'>
+            🚀 Test it out!!!
+        </a>
+    </div>
+""", unsafe_allow_html=True)
 # File Upload
 uploaded_file = st.sidebar.file_uploader("📥 Upload your CSV file", type=["csv"])
 

@@ -4,6 +4,7 @@
  * Import Section
  * Organize imports by external libraries, internal modules, and styles
  */
+import React from "react";
 import { useState, useEffect } from "react";
 import Cookies from "js-cookie";
 import { UAParser } from "ua-parser-js";
@@ -65,6 +66,11 @@ export default function RootLayout({
 
   const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
 
+  useEffect(() => {
+    if (isLoggedIn) {
+      handleRedirect();
+    }
+  }, [isLoggedIn]);
   /**
    * Utility Functions Section
    */
@@ -124,7 +130,7 @@ export default function RootLayout({
   const send_signin_data = async () => {
     const hashedPassword = hashPassword(password);
     try {
-      const response = await fetch(`${BACKEND_URL}/api/login`, {
+      const response = await fetch(`${BACKEND_URL}api/login`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -139,20 +145,90 @@ export default function RootLayout({
           username: username,
           password: hashedPassword,
           domainName: userInfo.domainName,
+          ip: userInfo.ipAddress,
         }),
       });
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
+      const data = await response.json();
+      console.log("data attacking", data.is_attacking);
+      if (response.ok && data.is_attacking === undefined) {
+        // Reset form fields after successful login
+
+        setLoginStatsSession((prev) => ({
+          ...prev,
+          successfulLoginAttempts: prev.successfulLoginAttempts + 1,
+        }));
+        setIsLoggedIn(true);
+
+        // Record successful login attempt
+        await fetch("/api/loginAttempts", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ success: true }),
+        });
+        // Update login stats
+        setLoginStats((prev) => ({
+          ...prev,
+          successfulLoginAttempts: prev.successfulLoginAttempts + 1,
+        }));
+      } else {
+        setPassword("");
+        setError("Invalid username or password");
+        setLoginStatsSession((prev) => ({
+          ...prev,
+          failedLoginAttempts: prev.failedLoginAttempts + 1,
+        }));
+        // Record failed login attempt
+        await fetch("/api/loginAttempts", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ success: false }),
+        });
+        // Update login stats
+        setLoginStats((prev) => ({
+          ...prev,
+          failedLoginAttempts: prev.failedLoginAttempts + 1,
+        }));
       }
 
-      const data = await response.json();
       console.log("Data sent successfully:", data);
-      return data;
+      return { response, data };
     } catch (error) {
       console.error("Error sending data to Flask:", error);
       throw error;
     }
   };
+
+  // const send_signin_data = async () => {
+  //   const hashedPassword = hashPassword(password);
+  //   try {
+  //     const response = await fetch(`${BACKEND_URL}api/login`, {
+  //       method: "POST",
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //         "Access-Control-Allow-Origin": "*",
+  //       },
+  //       body: JSON.stringify({
+  //         failedAttempts: loginStatsSession.failedLoginAttempts,
+  //         totalAttempts:
+  //           loginStatsSession.failedLoginAttempts +
+  //           loginStatsSession.successfulLoginAttempts,
+  //         username: username,
+  //         password: hashedPassword,
+  //         domainName: userInfo.domainName,
+  //       }),
+  //     });
+
+  //     const data = await response.json();
+  //     return { response, data };
+  //   } catch (error) {
+  //     console.error("Error sending data to Flask:", error);
+  //     throw error;
+  //   }
+  // };
 
   /**
    * Send signup data to Flask backend
@@ -161,7 +237,7 @@ export default function RootLayout({
   const send_signup_data = async () => {
     const hashedPassword = hashPassword(password);
     try {
-      const response = await fetch(`${BACKEND_URL}/api/signup`, {
+      const response = await fetch(`${BACKEND_URL}api/signup`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -224,62 +300,62 @@ export default function RootLayout({
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
     send_signin_data();
-    try {
-      const response = await fetch("/api/login", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ username, password }),
-      });
+    // try {
+    //   const response = await fetch("/api/login", {
+    //     method: "POST",
+    //     headers: {
+    //       "Content-Type": "application/json",
+    //     },
+    //     body: JSON.stringify({ username, password }),
+    //   });
 
-      if (response.ok) {
-        // Reset form fields after successful login
+    //   if (response.ok) {
+    //     // Reset form fields after successful login
 
-        setLoginStatsSession((prev) => ({
-          ...prev,
-          successfulLoginAttempts: prev.successfulLoginAttempts + 1,
-        }));
-        setIsLoggedIn(true);
-        setError("");
-        // Record successful login attempt
-        await fetch("/api/loginAttempts", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ success: true }),
-        });
-        // Update login stats
-        setLoginStats((prev) => ({
-          ...prev,
-          successfulLoginAttempts: prev.successfulLoginAttempts + 1,
-        }));
-      } else {
-        setPassword("");
-        setError("Invalid username or password");
-        setLoginStatsSession((prev) => ({
-          ...prev,
-          failedLoginAttempts: prev.failedLoginAttempts + 1,
-        }));
-        // Record failed login attempt
-        await fetch("/api/loginAttempts", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ success: false }),
-        });
-        // Update login stats
-        setLoginStats((prev) => ({
-          ...prev,
-          failedLoginAttempts: prev.failedLoginAttempts + 1,
-        }));
-      }
-    } catch (error) {
-      console.error("Login error:", error);
-      setError("An error occurred during login");
-    }
+    //     setLoginStatsSession((prev) => ({
+    //       ...prev,
+    //       successfulLoginAttempts: prev.successfulLoginAttempts + 1,
+    //     }));
+    //     setIsLoggedIn(true);
+    //     setError("");
+    //     // Record successful login attempt
+    //     await fetch("/api/loginAttempts", {
+    //       method: "POST",
+    //       headers: {
+    //         "Content-Type": "application/json",
+    //       },
+    //       body: JSON.stringify({ success: true }),
+    //     });
+    //     // Update login stats
+    //     setLoginStats((prev) => ({
+    //       ...prev,
+    //       successfulLoginAttempts: prev.successfulLoginAttempts + 1,
+    //     }));
+    //   } else {
+    //     setPassword("");
+    //     setError("Invalid username or password");
+    //     setLoginStatsSession((prev) => ({
+    //       ...prev,
+    //       failedLoginAttempts: prev.failedLoginAttempts + 1,
+    //     }));
+    //     // Record failed login attempt
+    //     await fetch("/api/loginAttempts", {
+    //       method: "POST",
+    //       headers: {
+    //         "Content-Type": "application/json",
+    //       },
+    //       body: JSON.stringify({ success: false }),
+    //     });
+    //     // Update login stats
+    //     setLoginStats((prev) => ({
+    //       ...prev,
+    //       failedLoginAttempts: prev.failedLoginAttempts + 1,
+    //     }));
+    //   }
+    // } catch (error) {
+    //   console.error("Login error:", error);
+    //   setError("An error occurred during login");
+    // }
   };
 
   /**
@@ -339,6 +415,9 @@ export default function RootLayout({
     fetchLoginStats();
     fetchUserInfo();
   }, []);
+  const handleRedirect = (): void => {
+    window.open("https://quantum-ly-safe.tech/", "_blank");
+  };
 
   return (
     <html lang="en">
@@ -480,9 +559,10 @@ export default function RootLayout({
             </div>
           </div>
         ) : (
-          <div>
-            <h1>Welcome, {username}!</h1>
-            {children}
+          <div className="min-h-screen bg-gradient-to-r from-slate-900 to-slate-800 p-8">
+            {React.cloneElement(children as React.ReactElement, {
+              username,
+            })}
           </div>
         )}
       </body>
