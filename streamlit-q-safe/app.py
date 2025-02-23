@@ -87,11 +87,9 @@ if uploaded_file:
         plot_scatter_matrix(
             filtered_df,
             columns=[
-                "ip_reputation_score",
-                "failed_logins",
-                "session_duration",
-                "login_attempts",
-                "network_packet_size"
+                "attack_detected",
+                "ip_reputation_score",          
+                "login_attempts"
             ]
         )
 
