@@ -560,9 +560,7 @@ export default function RootLayout({
           </div>
         ) : (
           <div className="min-h-screen bg-gradient-to-r from-slate-900 to-slate-800 p-8">
-            {React.cloneElement(children as React.ReactElement, {
-              username,
-            })}
+            {children}
           </div>
         )}
       </body>

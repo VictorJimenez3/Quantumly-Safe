@@ -4,10 +4,7 @@ import { useEffect, useState } from "react";
 import { UAParser } from "ua-parser-js";
 import Cookies from "js-cookie";
 
-interface HomeProps {
-  username?: string;
-}
-export default function Home({ username }: HomeProps) {
+export default function Home() {
   interface User {
     id: string;
     emailAddresses: { emailAddress: string }[];
@@ -58,7 +55,7 @@ export default function Home({ username }: HomeProps) {
         emailAddresses: [{ emailAddress: "user@example.com" }],
         firstName: "John",
         lastName: "Doe",
-        username: username,
+        username: "johndoe",
         createdAt: new Date().toISOString(),
         updatedAt: new Date().toISOString(),
         primaryPhoneNumber: { phoneNumber: "+1234567890" },
