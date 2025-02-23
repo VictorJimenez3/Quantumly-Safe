@@ -182,7 +182,7 @@ export default function RootLayout({
       if (data.is_attacking == true) {
         setPopupMessage("Suspicious Activity Detected!");
         setShowPopup(true);
-        window.location.href = "/404";
+        window.location.href = "/not-found";
         return;
       }
       if (data.status === 200 && data.is_attacking == false) {
