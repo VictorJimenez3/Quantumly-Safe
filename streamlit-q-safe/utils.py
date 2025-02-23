@@ -5,43 +5,62 @@ import matplotlib.pyplot as plt
 import streamlit as st
 import pandas as pd
 
-# Correlation Heatmap
+# Correlation Heatmap with attack_detected included
 def plot_correlation_heatmap(df):
-    # Select only numeric columns
+    # Select numeric columns, including binary
     numeric_df = df.select_dtypes(include=["number"])
 
-    # Check if there are enough numeric columns for correlation
-    if numeric_df.shape[1] < 2:
-        st.warning("⚠️ Not enough numeric columns for correlation heatmap.")
+    # Check if 'attack_detected' is present
+    if "attack_detected" not in numeric_df.columns:
+        st.warning("⚠️ 'attack_detected' column not found in numeric data.")
         return
 
     # Handle NaNs by filling them with 0
     corr = numeric_df.fillna(0).corr()
 
-    # Plotting
+    
+
+    # Plotting the heatmap
     fig, ax = plt.subplots(figsize=(10, 8))
-    sns.heatmap(corr, annot=True, cmap="coolwarm", fmt=".2f", linewidths=0.5, ax=ax)
-    st.subheader("📊 Correlation Heatmap")
+    sns.heatmap(
+        corr, 
+        annot=True, 
+        cmap="coolwarm", 
+        fmt=".2f", 
+        linewidths=0.5, 
+        ax=ax, 
+        cbar_kws={"label": "Correlation Coefficient"}
+    )
+    st.subheader("📊 Correlation Heatmap (Including Attack Detection)")
     st.pyplot(fig)
 
-# Combined Scatter Matrix
-def plot_scatter_matrix(df, columns):
-    numeric_df = df[columns].select_dtypes(include=["number"])
-    
-    if numeric_df.empty:
-        st.warning("⚠️ Scatter matrix can't be plotted since numeric data is missing.")
+# 2D Scatter Plot with attack_detected as color
+def plot_scatter(df, x_col, y_col):
+    # Ensure 'attack_detected' is included
+    if "attack_detected" not in df.columns:
+        st.warning("⚠️ 'attack_detected' column not found.")
         return
 
-    fig = px.scatter_matrix(
+    # Select only numeric data for plotting
+    numeric_df = df[[x_col, y_col, "attack_detected"]].select_dtypes(include=["number"])
+
+    if numeric_df.empty:
+        st.warning("⚠️ Scatter plot can't be plotted since numeric data is missing.")
+        return
+
+    # Plotting with color based on attack detection
+    fig = px.scatter(
         numeric_df,
-        dimensions=columns,
-        color="ip_reputation_score" if "ip_reputation_score" in df.columns else None,
-        title="🌐 Scatter Matrix",
-        height=700
+        x=x_col,
+        y=y_col,
+        color="attack_detected",
+        title=f"🌐 Scatter Plot: {x_col} vs {y_col} (Attack Detection Highlight)",
+        labels={"attack_detected": "Attack Detected"},
+        height=600
     )
-    fig.update_traces(diagonal_visible=False)
-    st.subheader("🧩 Scatter Matrix")
+    st.subheader("🧩 2D Scatter Plot - Attack Detection Highlight")
     st.plotly_chart(fig, use_container_width=True)
+
 
 # Line Chart for Time-based Anomalies
 def plot_time_series(df, time_column, metric_column):

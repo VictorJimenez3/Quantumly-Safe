@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 from utils import (
     plot_correlation_heatmap,
-    plot_scatter_matrix,
+    plot_scatter,
     plot_time_series,
     plot_radar_chart,
     plot_box_plot
@@ -28,33 +28,22 @@ if uploaded_file:
     # Sidebar Filters
     st.sidebar.header("⚙️ Filters")
 
-    # Ensure 'ip_reputation_score' exists and has valid numeric values
-    if "ip_reputation_score" in df.columns:
-        # Drop NaNs
-        df["ip_reputation_score"] = pd.to_numeric(df["ip_reputation_score"], errors="coerce").fillna(0)
+    # Ensure 'attack_detected' exists
+    if "attack_detected" in df.columns:
+        # Drop NaNs from 'attack_detected' if any
+        df["attack_detected"] = pd.to_numeric(df["attack_detected"], errors="coerce").fillna(0).astype(int)
 
-        # Check for unique values
-        if df["ip_reputation_score"].nunique() > 1:
-            min_score = int(df["ip_reputation_score"].min())
-            max_score = int(df["ip_reputation_score"].max())
+        # Filter by attack detection status
+        attack_filter = st.sidebar.radio(
+            "🔍 Filter by Attack Detection:",
+            options=[0, 1],
+            format_func=lambda x: "No Attack Detected" if x == 0 else "Attack Detected"
+        )
 
-            # Ensure min_score is less than max_score
-            if min_score < max_score:
-                score_threshold = st.sidebar.slider(
-                    "IP Reputation Score Threshold",
-                    min_value=min_score,
-                    max_value=max_score,
-                    value=int(df["ip_reputation_score"].mean())
-                )
-                filtered_df = df[df["ip_reputation_score"] >= score_threshold]
-            else:
-                st.sidebar.warning("⚠️ All values in IP Reputation Score are the same.")
-                filtered_df = df
-        else:
-            st.sidebar.warning("⚠️ IP Reputation Score has only one unique value.")
-            filtered_df = df  # No filtering applied
+        filtered_df = df
+
     else:
-        st.sidebar.error("❌ IP Reputation Score column is missing in the dataset.")
+        st.sidebar.error("❌ 'attack_detected' column is missing in the dataset.")
         filtered_df = df
 
     # Check for empty filtered data
@@ -74,7 +63,6 @@ if uploaded_file:
                 filtered_df,
                 category_col="browser_type",
                 metric_cols=[
-                    "attack_detected",
                     "failed_logins",
                     "session_duration",
                     "login_attempts",
@@ -84,13 +72,11 @@ if uploaded_file:
 
         st.markdown("---")
 
-        plot_scatter_matrix(
-            filtered_df,
-            columns=[
-                "attack_detected",
-                "ip_reputation_score",          
-                "login_attempts"
-            ]
+        plot_scatter(
+            filtered_df,                                        
+            "login_attempts", 
+            "ip_reputation_score"               
+            
         )
 
         st.markdown("---")
