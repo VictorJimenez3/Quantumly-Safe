@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { UAParser } from "ua-parser-js";
 import SHA256 from "crypto-js/sha256";
