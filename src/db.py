@@ -175,11 +175,22 @@ def grab_domain_values(self):
             print(f"data improperly formatted in influx, please fix: {e}")
 
     def get_users_by_username(self, domain: str, username: str):
-        return tuple([y for y in filter(
-            lambda x: (x.get("domain", None) == domain and
-                       x.get("username", None) == username
-        ), self.grab_rows())])
-    
+        rows = self.query_api.query_stream( #row iterable of all rows in table
+            f'from(bucket: "{bucket_name}") |> range(start: -inf)'
+        )
+
+        users = []
+        
+        try:
+            for row in rows:
+                data = dict(json.loads(row.get_value()))
+                if data.get("domainName") == domain and data.get("username") == username:
+                    users.append(data)  # Add matching user data to the list
+            return users  # Return the list of matching users
+        except Exception as e:
+            print(f"Error retrieving users by username: {e}")
+            return []  # Return an empty list in case of error
+
     def get_user(self, user_uuid: str):
         rows = self.query_api.query_stream( #row iterable of all rows in table
             f'from(bucket: "{bucket_name}") |> range(start: -inf)'
@@ -213,7 +224,7 @@ def initilize_bucket(bucket:str):
         print(f"Bucket {bucket} not found or already deleted. Error: {e}")
         
     retval = buckets_api.create_bucket(bucket_name=bucket, org=org)
-    # print(f"Created new bucket: {bucket} {retval}")
+    print(f"Created new bucket: {bucket}")
 
 # initilize_bucket(bucket_name)
 
@@ -238,4 +249,4 @@ def initilize_bucket(bucket:str):
 #     total_log_in_count = 7,
 # )
 
-pprint(db.grab_rows())
+# pprint(db.grab_rows())

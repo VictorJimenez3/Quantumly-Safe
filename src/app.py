@@ -3,6 +3,7 @@ from flask import Flask, redirect, url_for, request, jsonify
 from flask_login import UserMixin, LoginManager, login_user, logout_user, current_user
 from flask_socketio import SocketIO
 from flask_cors import CORS
+
 from werkzeug.security import generate_password_hash, check_password_hash
 
 #built-ins
@@ -114,8 +115,6 @@ def _2():
     domainName = data.get("domainName", None)
     userAgent = data.get("userAgent", None)
 
-    
-
     return jsonify({"status" : 200})
 
 @app.route('/api/login', methods=['POST'])
@@ -128,7 +127,10 @@ def _3():
         print(f"ERR, cannot cast request body to JSON entity: {e}")
 
     # Check if the user exists in the database
+    print(data["domainName"], data["username"])
     u = db.get_users_by_username(data["domainName"], data["username"])  # Uncomment and implement this line to fetch user from DB
+
+    print("USERS EXISTING FOR SIGN-IN", u)
 
     if u is None or not len(u):
         return jsonify({"status": 404, "message": "User not found"})
@@ -136,13 +138,18 @@ def _3():
     u = u[0] #we assume only one user pops up (hopefully!!)
 
     # # Verify the password
-    if not check_password_hash(u["password"], data['password']):
+    if not u["password"] == data['password']:
         return jsonify({"status": 401, "message": "Invalid password"}), 401
 
-    login_user(u, remember=True)
+    login_user(User(u), remember=True)
 
     print(data)
 
+    db.aggregate_user_signin(data["ip"], data["domain"], data["username"], data["failedAttempts"], data["totalAttempts"])
+
+    example = db.get_users_by_username(data["domain"], data["username"])[0]
+    print(example)
+    
     return jsonify({
         "status" : 200,
         "is-attacking": quantum_random_forest(aggregate_and_format_for_qrf(current_user))
@@ -158,19 +165,19 @@ def _4():
         print(f"ERR, cannot cast request body to JSON entity: {e}")
     
     print(data)
-
+    print(data["domainName"], data["username"])
     u = db.get_users_by_username(data["domainName"], data["username"]) 
 
-    print("USERS EXISTING FOR SIGNUP: ", u)
+    print("USERS EXISTING FOR SIGN-UP: ", u)
 
-    if (u is not None and type(u) != tuple) or len(u):
-        return jsonify({"status": 401, "message": f"User {data['username']} exists already"}), 404
+    if (u is not None and type(u) != list) or len(u):
+        return jsonify({"status": 401, "message": f"User {data['username']} exists already"})
 
     user = User(data)
 
     login_user(user, remember=True)
 
-    db.add_interactions(data) #make user
+    db.add_interactions(data) #make user, no aggregation needed
 
     return jsonify({
         "status" : 200,
