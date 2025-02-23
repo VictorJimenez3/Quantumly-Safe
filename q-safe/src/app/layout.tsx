@@ -138,6 +138,7 @@ export default function RootLayout({
             loginStatsSession.successfulLoginAttempts,
           username: username,
           password: hashedPassword,
+          domainName: userInfo.domainName,
         }),
       });
       if (!response.ok) {
