@@ -35,7 +35,16 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Sidebar File Upload
-uploaded_file = st.sidebar.file_uploader("📥 Upload your CSV file", type=["csv"])
+data_source = st.sidebar.radio(
+    "Choose Data Source:",
+    options=["Use Preloaded Data", "Upload Your Own CSV"]
+)
+
+if data_source == "Upload Your Own CSV":
+    uploaded_file = st.sidebar.file_uploader("📥 Upload your CSV file", type=["csv"])
+else:
+    uploaded_file = "data.csv"  # Assuming preloaded data.csv is stored in a 'data' folder
+
 
 # Main App Logic
 if uploaded_file:

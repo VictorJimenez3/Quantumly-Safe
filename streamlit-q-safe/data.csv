@@ -1,0 +1,601 @@
+totalAttempts,failedAttempts,ip,domainName,username,password,userAgent,timestamp,attack_detected
+0,0,7c23:ac95:ac1b:1520:d96:aadf:60c9:e2b0,gutierrez-pena.biz,katherine41@roy.com,c3592701a5cbd6fffe4af322add24c35e1c4ff3c2166a0a07741888a65d5f04f,Safari,2025-02-13T09:54:55,False
+1,1,85c6:bb9f:55ed:bee:3c48:d4cb:ed08:e9dd,lloyd.com,tdavis@anderson-griffith.com,165f1dece829487db5f2f9943d6b4c58c25d2419d6889018a603bec8ee8ef79d,Safari,2025-02-22T06:16:42,False
+6,0,c369:72c2:5e29:51ee:749b:63d2:887b:8900,rivers-ward.com,gomezjeremy@yahoo.com,55e2d523db83d09e51ff6840ca29fcb4e57719a3e72912f706579bd35b9efb74,Safari,2025-01-29T01:56:46,False
+2,0,2890:61c:d388:e5ec:3f19:bdba:24da:251f,randolph-jones.com,cummingsamy@hotmail.com,2726c348b438041c0f94f34e9af721f9ec1f881fc25bc2712230e42b9309b36c,Opera,2025-01-01T23:48:51,False
+9,8,b8f2:a8d0:fe4a:3372:f655:fa88:9182:d891,lawson.net,qdavis@hotmail.com,bf838f60993af593ba3dc8ca0eea62dc4741a62ef0a0448aeebf092e2f1d4492,Chrome,2025-02-12T19:29:24,False
+6,4,61ff:9b54:65db:a249:75c5:8c64:1449:e1f3,hunter.com,melanie80@holt-guzman.com,3fbca20a3eb3a76cc76a87876e13ac193fd7dcbf3089eff776ff2cfb1bbc8454,Chrome,2025-02-07T10:37:53,False
+9,0,d19d:54c8:207f:1982:ba20:a109:5c70:f3c0,garrett-smith.org,staceysmith@harrison.biz,e447563eaf2d8a8b994d926fe93f8b22eff03ebadd2f53a9aa9f00d7bd45e403,Other,2025-01-27T16:59:57,False
+0,0,12e3:7769:3fea:ebb3:8a03:328c:b6bf:acef,ramirez.com,harrygomez@sutton-johnson.com,19918f197f3a57031a1b3c357496146c08d000b89973a5132acf91a5910d8332,Other,2025-01-15T07:41:46,False
+3,2,92eb:1b69:e1:a82e:6174:264a:4cae:9cea,brooks.com,amy85@escobar-miller.org,6f1ef0c1204c0543bb4f6f87e10c66ef3eba7f7e01d0290bd61b7c823e87b54d,Safari,2025-02-07T06:03:30,False
+2,2,1fc7:33a6:d79e:3897:53df:bd22:8533:cd43,taylor-salazar.info,ppittman@yahoo.com,d374dd4a3c5325fef7598b6de4de62a845ce62b4727635af2ceb1e89169c11fe,Opera,2025-01-27T03:49:19,False
+1,0,4363:4415:3d8b:d584:57ce:11d1:338:7488,williams.com,yturner@lamb.com,78d5b72238b049b2cb94b4de2258c3ef9d8b9feeba5d0b7da9ccdf75b91c26f5,Other,2025-01-01T11:40:55,False
+2,1,5c9d:3b09:54bd:4f10:48a9:904d:e1a6:4e83,johnson.com,xgilbert@hotmail.com,01ebb1e3a7a1e10fd38375891d99b515d61d8aae723cc790a8abe99aea4f50b1,Opera,2025-02-20T20:10:37,False
+7,6,396b:12a7:a5b1:a38c:d740:534b:e5ec:bdfd,taylor.com,weaveredward@gmail.com,8d0c87dcbc3cb8648f7ff6927be3f02a70584f2fa1ae95b212002fbdcc7d46e7,Chrome,2025-02-18T14:22:22,False
+10,6,b423:3ff8:44c3:f71f:61ce:1709:3548:df59,harper-shaffer.org,fieldsjohn@hotmail.com,2033b33c8f0c88fc5e4c8ce2488aa464eb004655dc7e55c949d58fe77d79279f,Opera,2025-02-01T02:49:37,False
+7,1,7ba5:8766:f65a:7766:79b1:a164:5e92:873e,woods.com,watersdon@hotmail.com,14b20d2d700a1235db714f4c2e8ae7553724f31afd3a0b58604606ec95ad14b7,Other,2025-02-08T11:25:06,False
+9,6,719e:5c8a:3bde:11de:f696:328d:11a4:fd7a,haney.net,spenceracevedo@gmail.com,7b04514fdf0495e47c4ed4239ba4b034a9e0bf819b890a6d7e3af859e3cddc9b,Safari,2025-01-03T04:31:09,False
+10,0,d4eb:1f50:22c8:a78a:6a5:fd6e:b3e8:82ef,butler.com,richardlambert@miller-vasquez.com,da2d5c1249dfcb05d20a52c32885497942d3e3d9b7170a0db9418f57478e2559,Other,2025-01-17T02:33:40,False
+6,2,4ec1:e8ca:ed4d:8561:513b:c22e:6998:65b1,burns.com,thomas27@yahoo.com,3eb04368835bea504e62a6adbbf65face49c70f65a215c65bd4a49c320468829,Opera,2025-01-08T00:05:16,False
+2,0,fa85:3e42:b4da:9cf7:b90d:5cae:d43f:a3d9,middleton.com,angelaruiz@taylor-olson.com,cc1f56df6b727d4710ac73d5142512c96366fe45553d5d6db00e3f49d9c03eaa,Chrome,2025-01-06T08:17:40,False
+1,0,49e8:f36f:c06:467d:892f:d315:cca:3b4b,melendez.info,stephanie07@fry-hopkins.com,533cbd23099c910a4dd6a3f99ca7df8a256b3585abbe98409bc0731ffa018a2b,Other,2025-01-09T17:18:17,False
+1,1,308b:7d83:a148:a22a:113c:ba2:51fe:91b5,pierce.net,jonathan39@rodriguez-cole.com,f2034048e1150f40ca23f041b7d05b238babb1573964897546923802f8ddc6d7,Opera,2025-01-20T14:17:20,False
+5,3,b3c:650e:f3d8:2917:713d:2aff:c6dc:69d5,powell.com,monicahuerta@hotmail.com,a5b7fc26c797b0b1d1957d662669cde308f93e3a817e36a4c4f1ce482a5766ee,Safari,2025-02-15T21:07:37,False
+9,3,8d3b:76c4:f46d:3b2b:856e:7603:daf1:1e0b,hoover.info,leejohnson@reese.net,d6a010a5c624b5f71e51ab1bfdfa3bc88c354b101350cf188b7ee3c0bcbdc9ab,Other,2025-01-30T09:40:24,False
+5,4,7091:68b8:374:ee9e:2580:b59d:214:44f,brooks-hodges.org,jenningsjennifer@collins.com,2b5d978f899b8a87890f2f8bf3210cf8682195660699eaa96c4fdaef594f21b8,Opera,2025-01-02T15:24:09,False
+9,7,c681:7f7:ab74:f313:ae0f:6f44:6394:ed91,hubbard.com,dfrost@smith-robinson.info,d6bf6a6f851e32e843041684bc93aae94775903d3e8a96d50151e989c5762300,Chrome,2025-01-14T12:38:20,False
+10,3,16d4:47f0:358e:2943:2d43:9bdf:8a83:54bc,dorsey-forbes.com,ecampbell@hotmail.com,fe31f2f22f86811cc79102ca85fec83801289c083c1d5d9168d6605a37a570be,Opera,2025-01-27T19:13:28,False
+6,6,d896:ac5b:cb8c:1557:4dec:1398:a736:5d8,clay.com,fhansen@henry.net,14fc1a3154786011d1bc00d9e6a684d2f5ce149eed0171611cb91dc5ee2e3836,Other,2025-01-13T00:01:14,False
+6,3,72db:6c94:b766:a1ff:c12a:376:2e89:ea8e,whitaker.com,bairdjohn@yahoo.com,8b5f202f6e672418d8494fff4646b64f7c58b5f1225f15a52bcaa34b19f4cc3f,Safari,2025-01-12T09:48:56,False
+7,6,3661:39f4:c41c:de5:fca2:27d1:ab10:7642,brock.com,jcordova@gmail.com,a92f23a0defc3466a724522cf0719f77e5655ba58eb87d1665fa1461d8ec3954,Safari,2025-01-15T20:38:22,False
+0,0,3dc9:ba22:e054:7b42:7ba1:d1a:89a3:bcdb,garcia.biz,johnsondavid@hotmail.com,ebc8727d68264c499a0ac52bf600a08e5e3f30fdbb3b89029df428398588528d,Chrome,2025-02-15T22:26:45,False
+8,1,20d9:dcb0:72ce:31d0:caf6:5792:38f3:b074,schmidt.com,miajohnson@hotmail.com,8a7f6fe95508c3d2b2733d115e0588252c9087b6498e07e8b43d571b0bf0fc91,Safari,2025-02-16T15:58:18,False
+2,1,3f0d:a04b:6ab8:7617:19db:397a:9b40:3984,shelton.com,zjordan@yahoo.com,eed231b1b1ff9cd75736fdd35c791a852c4a0336f1e11d7b2864d8ad3280ae21,Firefox,2025-01-16T12:35:01,False
+1,1,6786:5b54:7d72:de88:6d4f:99d6:9cdd:837d,ramos-cole.biz,anthonynoble@schwartz-robles.info,f9f181faf30977dcbd755404b0f48f667d38a3f2ca53f7119cd0a2f22561f1e7,Firefox,2025-02-05T23:55:53,False
+2,2,31b8:9875:8d46:4311:a150:dcf0:ff08:ad40,flores.com,scottjohnson@hotmail.com,6af5bf4d1a8db7eed9cc638deb118516733fd2b3f247b1b49460432e61267338,Safari,2025-02-06T18:27:33,False
+9,5,4ff5:ce1b:7739:805f:4450:a328:7faa:dcaf,wood.com,sheryl52@yahoo.com,ef316afa8cc7b133c87c0ed06eb7d550712e571a89f92e656a11c668060e79ce,Firefox,2025-02-09T20:33:43,False
+6,1,de31:7b81:2ec0:4491:29c9:18b3:c9e7:bd0a,wu-ortiz.com,kerrimurray@weiss.com,a563b229430154297b5179e95b1051ee4a716829f93c3f59ea5f290e229379a0,Chrome,2025-01-26T02:47:04,False
+0,0,3ecf:63ad:b11f:9b97:ed2c:935a:914a:fca5,williams-thomas.com,meghanadams@hotmail.com,d1b6b8195cdd64406112bfb9e6197ec6ed49b4e1a9d4ad1bf479924621ebff95,Safari,2025-01-26T12:56:35,False
+4,1,d81:aa2a:36e9:8328:59b0:7843:a50:7353,bell-kirby.com,jeffreyproctor@gmail.com,53ab48d1d5c19f0df5edb273b4ae3a5f237a03d53fe206b1e107731fee933ddc,Firefox,2025-01-22T22:47:08,False
+0,0,c6a6:52:c73b:2fe5:fa79:9efd:d964:9d43,taylor.com,robert08@yahoo.com,ef78159fdb702c4c1556c0b7e18015afd583ac63f453525d8080374aa3a60c00,Safari,2025-01-22T13:38:24,False
+7,0,9aa4:5502:12f6:ebf6:764d:e2e2:5369:9939,barber-smith.org,donald83@lawrence.com,ad5269a4bd07d7adee8a23a15b30a41b46b020d348230ab4c8d7aab76e4e066c,Other,2025-02-18T06:22:41,False
+7,2,10d0:e8fa:3b0d:29:3f63:a2ce:85d0:e87,brown.com,lsmith@mcclain.org,2d5415fc875f397a15f3983c5b00b703b9a54d87276c978ba505b45a1eba7ffc,Opera,2025-01-10T22:46:40,False
+1,0,fafd:3996:a808:fe35:4ae9:89ca:3f88:f06a,friedman.info,hammondmatthew@hotmail.com,ede72543f3a5e91aaeaecd0cde2de3bff569effae1cfac2db62f51164faa84a5,Safari,2025-02-11T19:19:03,False
+6,6,93e3:d333:2931:1fcf:e533:bafb:691f:27df,norris-guzman.net,rebeccayoung@rodriguez.org,0bd7bb328ac0422801ec300c25c97d2a383ad378322fcb40d3dfd7e8b668723a,Opera,2025-01-08T04:11:54,False
+8,8,72d4:5494:5141:24f2:ef24:f412:e0b3:c6ef,johnson-anderson.com,johntaylor@wallace.com,84ddd7b15c9b8502f2a1a33dff12649f2975d12237a0855fb11373069aeb9a54,Firefox,2025-02-02T03:18:32,False
+8,1,845e:c37e:4e92:166c:4970:1a9:f6e8:3208,johnson.biz,roachcarlos@yahoo.com,750fc0976a4a93da1142b8e1dae0397df06739e72a8a721859edda91dc81f645,Chrome,2025-01-20T15:45:35,False
+3,3,51fc:44a9:c862:4ffe:f9c:e9e0:51a1:de1a,stone.org,josegarcia@henderson.com,cbeff8f0a78eab24f7c56314340ef783f7653879bf2558aeccee0bf0c71101ba,Other,2025-01-12T06:27:24,False
+10,4,278a:5a1:1acc:bcd1:8dc4:129b:ad16:dda1,pace-castro.com,emilyhanna@hotmail.com,0777bfce85a4b36af7e5230d1f172fc0ebac9e133f65f175b43567afaa89ae28,Safari,2025-01-03T09:44:03,False
+3,3,205d:dc4e:b014:6b23:b97:a7d4:6763:5ac6,jackson-adkins.com,osexton@yahoo.com,8273c0588cc64db44dd46f6273d6d43db05191f753db8073e0371b50001e1bda,Safari,2025-01-04T04:47:24,False
+10,1,7d30:b32f:e682:7433:6dd6:2d1a:d42a:f041,hodges.com,jmendoza@yahoo.com,e559a6441ee6b9f20d3f68f7930d15ae77d3f3f42f984ace7ac957b2a9cdd93d,Firefox,2025-01-14T14:22:51,False
+3,2,13d9:7ccf:c439:b417:73d:535e:2649:ae05,davis.com,xbyrd@blanchard-fitzgerald.com,9938507ad4bd5116c3424fc85b913ab87fefc3d4fc901d93afbc02bf8e100002,Opera,2025-02-05T18:36:29,False
+5,5,9bcc:248a:e80c:820:9890:3871:134a:7322,hawkins.com,bethany63@gmail.com,8ff93cce7d546a44e48ebabe3d047353956f172ecb081f72312068847d504eaa,Firefox,2025-01-20T13:22:21,False
+3,3,ddd8:9616:20a9:f677:9fa0:aa07:e9c2:a112,jackson.com,philipwyatt@hotmail.com,49ff0ab27399e796b0dc908f5ce531995a9f0d87f842e59e5a07023a21e6fcb4,Other,2025-01-06T02:30:46,False
+10,4,c548:5f8c:8ab4:fe9e:f165:ed5f:5a45:7c4f,smith-wilson.com,billybryant@moore.com,543e4cb6c737e082ef31ade16a39291816b12945c63648902e69d1395d7b4d40,Other,2025-02-02T09:09:31,False
+1,0,c541:5821:2c17:8530:a55b:1493:f2e4:37e2,payne.com,turneralyssa@morgan.org,e0c58a50716944519cda2e1fa6f813e6664e16aa5e31281adf8c3e6524ea258d,Firefox,2025-02-10T19:46:04,False
+10,4,dc4e:d7a6:b7c1:258f:d301:abad:deb0:dfc1,vincent.com,hvalenzuela@burnett.net,e47ba47f9b127c9cae054a2ba495cef051529afd21da88cdf25bbf0129a8615c,Safari,2025-01-21T22:55:21,False
+6,0,5140:d115:d660:7322:6cb5:54b5:b0d2:42ac,watson.com,andrew71@raymond.org,b6eec966038bf2762cfba90214ab996930a38ac61f66663d2260208e3852a5dd,Other,2025-01-19T22:48:48,False
+3,3,3fc4:ed24:3253:4dad:65f0:ab44:6fe4:bbca,cook.info,alexandrarobinson@hotmail.com,9ca86e5da846f14cd90949469e48712616b86deda564ef8c25c453425fa3fde3,Safari,2025-01-24T15:30:59,False
+5,0,73cc:dca8:a4ec:1e3b:d4f3:5507:bb5e:2987,sanchez.com,qmartin@gibson.com,93c0b4adb10375ecedbce8b6882b173c6161fc758cd1458ce11b3e445245a46c,Firefox,2025-01-19T15:09:35,False
+4,4,823f:6ce5:9d32:b078:f4d8:97af:36d2:70fd,hansen-elliott.com,larry22@white.com,9b9f28e5aedc0056f0f7997aaba62e8c7c48bfea77477069ba9d4a4f99a11242,Safari,2025-01-04T03:37:59,False
+6,6,34e4:b103:b5f3:fbdd:a1a:2acf:8ca4:fad8,hernandez.com,stephanielewis@gmail.com,710a0b4433516b97385f0a898045a31162c693e774100e62a7b9ccf89462d2a1,Opera,2025-01-07T04:06:29,False
+1,0,582b:5320:e6e:5a68:2604:aa3:a1cb:f531,thomas-lee.net,kandrews@evans.org,9738dbc97199a1195bad746e256ca6edd85bc028475ed7836b50d65f6882a33f,Firefox,2025-01-15T00:53:25,False
+5,2,c44a:3729:3718:9ddd:3074:a2ec:ec73:2adb,huang-stevens.info,martinezrichard@gonzalez-hood.com,d1e8795f1b2f1aa08476f9643050dedca175edc7818e9c7f7f2274a80b52b784,Safari,2025-01-11T08:06:32,False
+10,10,6b0:c13f:c81b:4235:423b:ddcb:a98a:c5fb,lopez.org,fjordan@hotmail.com,2c8716426482f80902844fe2eb2cfe3da8752c30eb428da4c04968b50a555484,Safari,2025-02-12T10:23:50,False
+10,7,690c:3fa6:9bc1:4d98:e353:379c:b01a:3e29,lee.info,martinsean@yahoo.com,c41d1369489c5407b2ace1db4705ab9659a928ab4972f3a2fcaf9a75d8e916d9,Safari,2025-01-06T09:59:02,False
+2,0,15eb:9e2f:a300:1a89:e6ea:f722:a314:df2,ingram.info,wutyler@ware.com,ef23aab98c3e7a9d88809616758e57fe49fe6c4af88256f6997f21b42ab06236,Opera,2025-02-09T09:41:21,False
+9,2,6ef8:a10f:2094:e26d:695c:9a43:c03c:9ce8,scott.com,robertsjoseph@salas.com,90c7ec729cf934bbde94d3c0f4c5310c0346b5916f359cef2973ec722e1c5e7c,Safari,2025-01-17T06:48:30,False
+3,3,a013:5a49:43dc:b332:7ef:7298:596f:4e0e,smith.org,gtaylor@gmail.com,12ed6cbc0c10fa88913ee8eae76e1f580cef9792ff9267e3e1c650d5c2a1a708,Opera,2025-02-13T15:29:45,False
+8,5,89a9:c7ee:d074:9c8:53f5:de90:1a:dbb2,allen.com,fmora@jones.net,f82f4270cfb2346e1d2ce7fc3dcf84fe018b43ea350cd638e4a7d7ce8d80f30f,Chrome,2025-02-10T05:26:17,False
+4,2,2d1a:49ea:8951:cb4e:5350:f030:14f2:202,parker.org,starkwilliam@hotmail.com,2fa56e0593cc2e3bfef8aec356ce3e0a3d6a1490349312f0d22cafea9669f7d0,Opera,2025-02-19T14:45:58,False
+4,1,808:3b5d:a937:b6c1:7323:11b:3919:27e,jones-wallace.com,vickiharris@burch.com,8f5969c467929ab85e342cdf1c7fd2043457a1556f4d5d80617e6c531b5b3069,Safari,2025-01-05T16:45:50,False
+1,1,7fed:6d22:1ccd:c292:cf70:726d:2c73:bec6,allen.com,john23@gmail.com,ad95d122eb653da00cb8c23e12d58db8c099c1b15524d629a53ad710f66d00a8,Firefox,2025-01-12T07:03:42,False
+5,0,929b:cd2b:d4e3:750f:5428:8eb7:467:22cb,copeland.com,stevencraig@hotmail.com,017a90373e6ed3f3794860064b414f370c4d8a25cd9a1b51616d5fe68915ebc8,Chrome,2025-02-06T10:16:49,False
+0,0,d1ee:8ccc:d0aa:269a:d812:99e0:ea57:926f,rivera.com,lisachandler@gill.info,f754ae5118820346caca825a98821f762fcea917121f0b96f850f7e3329cf5e2,Safari,2025-01-18T02:49:39,False
+5,4,c0b6:2dfb:8323:e2a:5071:1d8e:5b17:4df1,lewis.com,charlesbell@gmail.com,cdf3c2382ecb608df7cc7ea0673f08698fb1c3355992e8ac370b812046e02cf2,Firefox,2025-02-14T20:15:32,False
+6,2,651a:7664:d98:cf14:bcb3:359:1959:32bd,mills.com,ryanramirez@cole.com,9299b216bc05aada664cd84b791699180592196a76f23693ad5216ae4c4d2034,Firefox,2025-01-23T15:56:04,False
+3,3,62bd:8703:c665:1a49:8a2b:5636:72ff:2a72,martin-gay.org,ahartman@smith.biz,e2016f91743f61e41e3299a6e1b537ac728cffe0f30b234d0b016e7462db21c4,Opera,2025-02-14T22:11:49,False
+8,4,c2bf:d4e3:31c3:ec:d7ed:b3d:2f2c:5b06,barnes-kaufman.info,jalvarez@wise-robles.com,97824d655fdbcc12554739e8266cfae3c0ce61a3a580c376f092e3527c43c540,Other,2025-01-24T18:30:55,False
+9,8,bf22:d507:8c6c:630b:3afc:1fc0:c58e:7137,griffin.info,iward@hotmail.com,d25cd1f8179ce3df3955e418d5bedbe874213c9b200ef6bef787d44957f98c31,Firefox,2025-01-16T04:34:14,False
+9,9,59c6:fe5:effc:caa0:47d8:c9db:4846:2534,bradley.com,torresmatthew@hotmail.com,59758cee3d199f7191ae40a72cbdbae04a4ef301d74fd1f2dccfa890c07c501e,Other,2025-01-18T10:49:49,False
+8,6,17fd:cfd1:e07e:267e:54fd:175:6b7b:df9,miller.com,roydaniel@yahoo.com,13f17e6bc199f2ce7ccce0efde19c0c675cf084fa87fc868912efd912e7eb5b9,Firefox,2025-02-06T07:48:39,False
+1,1,2286:4361:c363:50c9:54f:583f:8693:55b5,campbell-cummings.com,nielsenmegan@hotmail.com,7c595285cd7f47627357ae7b2d5acf42ff8af38c198566c7ac4af68477b6f499,Opera,2025-01-31T04:24:49,False
+6,2,4e93:f363:f612:8b10:fef4:60e9:ea74:a59e,mora.com,thancock@hotmail.com,625d71ebe70e8e62464e7675494ae752dc81745c86582f4510e8458233e4cb8f,Safari,2025-02-09T18:30:16,False
+4,4,2501:e6fc:8bc0:6105:7082:6d74:eb31:64e6,rogers-jones.net,tinaramirez@yahoo.com,d5a193c2938e2b2f42fac5e41e48a5edf63f7467e19241d7a6db93e60a7a160f,Safari,2025-01-10T08:33:03,False
+7,5,4aaf:3175:9bc6:6925:e82f:2ced:947c:ff46,moore-lawrence.org,theresacarter@hotmail.com,429145f63ddd9687f9b4bf00d2577ff1f6ff5742546726f571b65948bb157487,Firefox,2025-01-19T03:47:28,False
+7,1,a459:775d:71f7:8cad:286a:f8e9:28fa:9507,campbell.org,stanleydaniel@hotmail.com,51842df1677d2b6a9beb065edb4391b2ccefe127d7d358ba93981c1d00478e04,Opera,2025-01-08T14:59:52,False
+6,1,fbb5:80fe:320d:b7f1:7aa6:2f7b:4ca9:8349,mitchell.com,karaturner@hotmail.com,8e13b9a3945c8fb56322de551479afe034d8abf2f6f169087cd1d8b8c27d3d00,Opera,2025-02-12T04:50:42,False
+4,1,fb39:2ec6:8248:48b:9436:38e:1f87:7068,weber.com,shari79@barnes.com,bda71fe249fb14fec6360752cca980e5a0a6c8d3499961346ed466cb424e5518,Chrome,2025-02-20T10:42:34,False
+9,3,8722:f155:7169:76d6:775b:def7:3544:126a,gray.com,zgreene@nash-murray.com,5d72cd1cb5d4b0150cda6ef4e6dafac282321cb6576cc49d1438d508903e8fc2,Safari,2025-02-06T16:20:07,False
+5,4,f76:f9:2f35:f671:ce66:7cad:5ef0:1eb6,johnson.info,tuckershelley@atkins-cox.info,b6ccb32cbaa54f63da73ddc6d8096d21ee14615957ad13ad448d0d7bfbd6e7a5,Opera,2025-01-07T07:31:56,False
+7,7,26ea:25d2:3ff:1466:35aa:ba6f:a3b1:bdce,mccormick.com,kaitlyn09@baldwin.com,26438a5e6ef96d1ac69ac14c7d8f3489d6d914d6fb1e23b3115e2ee268c58e81,Opera,2025-01-15T15:21:52,False
+0,0,2b8c:6a:e10d:16c:5fc4:37da:bbd8:a606,allen.com,arnoldjames@hotmail.com,b291a8628488eb132cb795a75ecf7bde20c6b780ac1e2eb7c1d575c3e0a31e87,Firefox,2025-01-24T11:48:50,False
+5,3,7229:382d:6b72:74c1:175c:a306:58f3:9f55,stone-cruz.org,briangarcia@hotmail.com,df66a248bfa54fe7f41c03677e3b58eee8044bec98c045ea523b66c185201374,Firefox,2025-02-17T16:40:53,False
+1,0,e358:90fa:e3e0:8644:cfa6:fc06:7cd3:8999,lee.com,brandonalvarez@hotmail.com,5084e06d09d1c0fd16844dc2665c77b3f78d2c67cdfb59ed744a2f461d92b275,Other,2025-02-10T10:08:20,False
+8,7,30ab:ecd2:2456:cb9f:dbd9:ff3e:4783:7834,case.com,hamiltonjoseph@hotmail.com,5b0efdcb33f0a112f7adfbc7e4927d1dd8ee2e14f81f6aa6574d336dc47451e7,Firefox,2025-01-16T15:24:41,False
+6,5,5d54:ea67:f48d:e792:e9dc:225:26f5:e1d2,kim.com,wjackson@lawson.com,49ade62363a71ac2266f17b68a31931b517beae467196496931e4f0787e278b1,Opera,2025-01-25T12:48:34,False
+8,3,9141:152:4fcc:1aa5:c38c:800e:35c2:a68c,smith.info,albert56@fry.biz,2dd7c162338b04bee18f24f1071c49d7ce3cb94817e0816eaf10bce014f730ec,Safari,2025-02-16T16:28:17,False
+5,3,5cc1:d58c:c95b:cd9f:fbbf:d38f:4d6:8eaf,howell.com,tara02@hotmail.com,caf2091bbc43302d5d4f96d99f765a4738430927fcbf62cc080ac3202f9a9164,Firefox,2025-02-14T06:48:36,False
+5,2,fd85:ceec:72e:f2bd:eff7:d944:d18f:364d,adkins.com,briandaniel@thompson-johnson.info,2ba4332900c8da6be80d75054d7fb51a5c6635e77fd095f5aadd7f2b2275905c,Safari,2025-01-06T19:28:22,False
+1,1,1792:f6e6:686f:ef6d:ba95:7cd4:609f:2605,thompson-taylor.org,jared69@hotmail.com,2a1479f944225c728ae016eb0e68315ced6f4107f5f33149d87ac1a16bd96300,Opera,2025-02-10T09:19:38,False
+1,0,f136:baf4:f83f:a5b0:fc51:13b3:2966:7d55,romero.com,uwells@johnson-howard.net,e1f46047799191634486763e2f6e4d76c099350e5787d159334f58fa53de37fc,Chrome,2025-02-06T03:36:12,False
+0,0,7c23:ac95:ac1b:1520:d96:aadf:60c9:e2b0,gutierrez-pena.biz,katherine41@roy.com,c3592701a5cbd6fffe4af322add24c35e1c4ff3c2166a0a07741888a65d5f04f,Safari,2025-02-13T09:54:55,False
+1,1,85c6:bb9f:55ed:bee:3c48:d4cb:ed08:e9dd,lloyd.com,tdavis@anderson-griffith.com,165f1dece829487db5f2f9943d6b4c58c25d2419d6889018a603bec8ee8ef79d,Safari,2025-02-22T06:16:42,False
+6,0,c369:72c2:5e29:51ee:749b:63d2:887b:8900,rivers-ward.com,gomezjeremy@yahoo.com,55e2d523db83d09e51ff6840ca29fcb4e57719a3e72912f706579bd35b9efb74,Safari,2025-01-29T01:56:46,False
+2,0,2890:61c:d388:e5ec:3f19:bdba:24da:251f,randolph-jones.com,cummingsamy@hotmail.com,2726c348b438041c0f94f34e9af721f9ec1f881fc25bc2712230e42b9309b36c,Opera,2025-01-01T23:48:51,False
+9,8,b8f2:a8d0:fe4a:3372:f655:fa88:9182:d891,lawson.net,qdavis@hotmail.com,bf838f60993af593ba3dc8ca0eea62dc4741a62ef0a0448aeebf092e2f1d4492,Chrome,2025-02-12T19:29:24,False
+6,4,61ff:9b54:65db:a249:75c5:8c64:1449:e1f3,hunter.com,melanie80@holt-guzman.com,3fbca20a3eb3a76cc76a87876e13ac193fd7dcbf3089eff776ff2cfb1bbc8454,Chrome,2025-02-07T10:37:53,False
+9,0,d19d:54c8:207f:1982:ba20:a109:5c70:f3c0,garrett-smith.org,staceysmith@harrison.biz,e447563eaf2d8a8b994d926fe93f8b22eff03ebadd2f53a9aa9f00d7bd45e403,Other,2025-01-27T16:59:57,False
+0,0,12e3:7769:3fea:ebb3:8a03:328c:b6bf:acef,ramirez.com,harrygomez@sutton-johnson.com,19918f197f3a57031a1b3c357496146c08d000b89973a5132acf91a5910d8332,Other,2025-01-15T07:41:46,False
+3,2,92eb:1b69:e1:a82e:6174:264a:4cae:9cea,brooks.com,amy85@escobar-miller.org,6f1ef0c1204c0543bb4f6f87e10c66ef3eba7f7e01d0290bd61b7c823e87b54d,Safari,2025-02-07T06:03:30,False
+2,2,1fc7:33a6:d79e:3897:53df:bd22:8533:cd43,taylor-salazar.info,ppittman@yahoo.com,d374dd4a3c5325fef7598b6de4de62a845ce62b4727635af2ceb1e89169c11fe,Opera,2025-01-27T03:49:19,False
+1,0,4363:4415:3d8b:d584:57ce:11d1:338:7488,williams.com,yturner@lamb.com,78d5b72238b049b2cb94b4de2258c3ef9d8b9feeba5d0b7da9ccdf75b91c26f5,Other,2025-01-01T11:40:55,False
+2,1,5c9d:3b09:54bd:4f10:48a9:904d:e1a6:4e83,johnson.com,xgilbert@hotmail.com,01ebb1e3a7a1e10fd38375891d99b515d61d8aae723cc790a8abe99aea4f50b1,Opera,2025-02-20T20:10:37,False
+7,6,396b:12a7:a5b1:a38c:d740:534b:e5ec:bdfd,taylor.com,weaveredward@gmail.com,8d0c87dcbc3cb8648f7ff6927be3f02a70584f2fa1ae95b212002fbdcc7d46e7,Chrome,2025-02-18T14:22:22,False
+10,6,b423:3ff8:44c3:f71f:61ce:1709:3548:df59,harper-shaffer.org,fieldsjohn@hotmail.com,2033b33c8f0c88fc5e4c8ce2488aa464eb004655dc7e55c949d58fe77d79279f,Opera,2025-02-01T02:49:37,False
+7,1,7ba5:8766:f65a:7766:79b1:a164:5e92:873e,woods.com,watersdon@hotmail.com,14b20d2d700a1235db714f4c2e8ae7553724f31afd3a0b58604606ec95ad14b7,Other,2025-02-08T11:25:06,False
+9,6,719e:5c8a:3bde:11de:f696:328d:11a4:fd7a,haney.net,spenceracevedo@gmail.com,7b04514fdf0495e47c4ed4239ba4b034a9e0bf819b890a6d7e3af859e3cddc9b,Safari,2025-01-03T04:31:09,False
+10,0,d4eb:1f50:22c8:a78a:6a5:fd6e:b3e8:82ef,butler.com,richardlambert@miller-vasquez.com,da2d5c1249dfcb05d20a52c32885497942d3e3d9b7170a0db9418f57478e2559,Other,2025-01-17T02:33:40,False
+6,2,4ec1:e8ca:ed4d:8561:513b:c22e:6998:65b1,burns.com,thomas27@yahoo.com,3eb04368835bea504e62a6adbbf65face49c70f65a215c65bd4a49c320468829,Opera,2025-01-08T00:05:16,False
+2,0,fa85:3e42:b4da:9cf7:b90d:5cae:d43f:a3d9,middleton.com,angelaruiz@taylor-olson.com,cc1f56df6b727d4710ac73d5142512c96366fe45553d5d6db00e3f49d9c03eaa,Chrome,2025-01-06T08:17:40,False
+1,0,49e8:f36f:c06:467d:892f:d315:cca:3b4b,melendez.info,stephanie07@fry-hopkins.com,533cbd23099c910a4dd6a3f99ca7df8a256b3585abbe98409bc0731ffa018a2b,Other,2025-01-09T17:18:17,False
+1,1,308b:7d83:a148:a22a:113c:ba2:51fe:91b5,pierce.net,jonathan39@rodriguez-cole.com,f2034048e1150f40ca23f041b7d05b238babb1573964897546923802f8ddc6d7,Opera,2025-01-20T14:17:20,False
+5,3,b3c:650e:f3d8:2917:713d:2aff:c6dc:69d5,powell.com,monicahuerta@hotmail.com,a5b7fc26c797b0b1d1957d662669cde308f93e3a817e36a4c4f1ce482a5766ee,Safari,2025-02-15T21:07:37,False
+9,3,8d3b:76c4:f46d:3b2b:856e:7603:daf1:1e0b,hoover.info,leejohnson@reese.net,d6a010a5c624b5f71e51ab1bfdfa3bc88c354b101350cf188b7ee3c0bcbdc9ab,Other,2025-01-30T09:40:24,False
+5,4,7091:68b8:374:ee9e:2580:b59d:214:44f,brooks-hodges.org,jenningsjennifer@collins.com,2b5d978f899b8a87890f2f8bf3210cf8682195660699eaa96c4fdaef594f21b8,Opera,2025-01-02T15:24:09,False
+9,7,c681:7f7:ab74:f313:ae0f:6f44:6394:ed91,hubbard.com,dfrost@smith-robinson.info,d6bf6a6f851e32e843041684bc93aae94775903d3e8a96d50151e989c5762300,Chrome,2025-01-14T12:38:20,False
+10,3,16d4:47f0:358e:2943:2d43:9bdf:8a83:54bc,dorsey-forbes.com,ecampbell@hotmail.com,fe31f2f22f86811cc79102ca85fec83801289c083c1d5d9168d6605a37a570be,Opera,2025-01-27T19:13:28,False
+6,6,d896:ac5b:cb8c:1557:4dec:1398:a736:5d8,clay.com,fhansen@henry.net,14fc1a3154786011d1bc00d9e6a684d2f5ce149eed0171611cb91dc5ee2e3836,Other,2025-01-13T00:01:14,False
+6,3,72db:6c94:b766:a1ff:c12a:376:2e89:ea8e,whitaker.com,bairdjohn@yahoo.com,8b5f202f6e672418d8494fff4646b64f7c58b5f1225f15a52bcaa34b19f4cc3f,Safari,2025-01-12T09:48:56,False
+7,6,3661:39f4:c41c:de5:fca2:27d1:ab10:7642,brock.com,jcordova@gmail.com,a92f23a0defc3466a724522cf0719f77e5655ba58eb87d1665fa1461d8ec3954,Safari,2025-01-15T20:38:22,False
+0,0,3dc9:ba22:e054:7b42:7ba1:d1a:89a3:bcdb,garcia.biz,johnsondavid@hotmail.com,ebc8727d68264c499a0ac52bf600a08e5e3f30fdbb3b89029df428398588528d,Chrome,2025-02-15T22:26:45,False
+8,1,20d9:dcb0:72ce:31d0:caf6:5792:38f3:b074,schmidt.com,miajohnson@hotmail.com,8a7f6fe95508c3d2b2733d115e0588252c9087b6498e07e8b43d571b0bf0fc91,Safari,2025-02-16T15:58:18,False
+2,1,3f0d:a04b:6ab8:7617:19db:397a:9b40:3984,shelton.com,zjordan@yahoo.com,eed231b1b1ff9cd75736fdd35c791a852c4a0336f1e11d7b2864d8ad3280ae21,Firefox,2025-01-16T12:35:01,False
+1,1,6786:5b54:7d72:de88:6d4f:99d6:9cdd:837d,ramos-cole.biz,anthonynoble@schwartz-robles.info,f9f181faf30977dcbd755404b0f48f667d38a3f2ca53f7119cd0a2f22561f1e7,Firefox,2025-02-05T23:55:53,False
+2,2,31b8:9875:8d46:4311:a150:dcf0:ff08:ad40,flores.com,scottjohnson@hotmail.com,6af5bf4d1a8db7eed9cc638deb118516733fd2b3f247b1b49460432e61267338,Safari,2025-02-06T18:27:33,False
+9,5,4ff5:ce1b:7739:805f:4450:a328:7faa:dcaf,wood.com,sheryl52@yahoo.com,ef316afa8cc7b133c87c0ed06eb7d550712e571a89f92e656a11c668060e79ce,Firefox,2025-02-09T20:33:43,False
+6,1,de31:7b81:2ec0:4491:29c9:18b3:c9e7:bd0a,wu-ortiz.com,kerrimurray@weiss.com,a563b229430154297b5179e95b1051ee4a716829f93c3f59ea5f290e229379a0,Chrome,2025-01-26T02:47:04,False
+0,0,3ecf:63ad:b11f:9b97:ed2c:935a:914a:fca5,williams-thomas.com,meghanadams@hotmail.com,d1b6b8195cdd64406112bfb9e6197ec6ed49b4e1a9d4ad1bf479924621ebff95,Safari,2025-01-26T12:56:35,False
+4,1,d81:aa2a:36e9:8328:59b0:7843:a50:7353,bell-kirby.com,jeffreyproctor@gmail.com,53ab48d1d5c19f0df5edb273b4ae3a5f237a03d53fe206b1e107731fee933ddc,Firefox,2025-01-22T22:47:08,False
+0,0,c6a6:52:c73b:2fe5:fa79:9efd:d964:9d43,taylor.com,robert08@yahoo.com,ef78159fdb702c4c1556c0b7e18015afd583ac63f453525d8080374aa3a60c00,Safari,2025-01-22T13:38:24,False
+7,0,9aa4:5502:12f6:ebf6:764d:e2e2:5369:9939,barber-smith.org,donald83@lawrence.com,ad5269a4bd07d7adee8a23a15b30a41b46b020d348230ab4c8d7aab76e4e066c,Other,2025-02-18T06:22:41,False
+7,2,10d0:e8fa:3b0d:29:3f63:a2ce:85d0:e87,brown.com,lsmith@mcclain.org,2d5415fc875f397a15f3983c5b00b703b9a54d87276c978ba505b45a1eba7ffc,Opera,2025-01-10T22:46:40,False
+1,0,fafd:3996:a808:fe35:4ae9:89ca:3f88:f06a,friedman.info,hammondmatthew@hotmail.com,ede72543f3a5e91aaeaecd0cde2de3bff569effae1cfac2db62f51164faa84a5,Safari,2025-02-11T19:19:03,False
+6,6,93e3:d333:2931:1fcf:e533:bafb:691f:27df,norris-guzman.net,rebeccayoung@rodriguez.org,0bd7bb328ac0422801ec300c25c97d2a383ad378322fcb40d3dfd7e8b668723a,Opera,2025-01-08T04:11:54,False
+8,8,72d4:5494:5141:24f2:ef24:f412:e0b3:c6ef,johnson-anderson.com,johntaylor@wallace.com,84ddd7b15c9b8502f2a1a33dff12649f2975d12237a0855fb11373069aeb9a54,Firefox,2025-02-02T03:18:32,False
+8,1,845e:c37e:4e92:166c:4970:1a9:f6e8:3208,johnson.biz,roachcarlos@yahoo.com,750fc0976a4a93da1142b8e1dae0397df06739e72a8a721859edda91dc81f645,Chrome,2025-01-20T15:45:35,False
+3,3,51fc:44a9:c862:4ffe:f9c:e9e0:51a1:de1a,stone.org,josegarcia@henderson.com,cbeff8f0a78eab24f7c56314340ef783f7653879bf2558aeccee0bf0c71101ba,Other,2025-01-12T06:27:24,False
+10,4,278a:5a1:1acc:bcd1:8dc4:129b:ad16:dda1,pace-castro.com,emilyhanna@hotmail.com,0777bfce85a4b36af7e5230d1f172fc0ebac9e133f65f175b43567afaa89ae28,Safari,2025-01-03T09:44:03,False
+3,3,205d:dc4e:b014:6b23:b97:a7d4:6763:5ac6,jackson-adkins.com,osexton@yahoo.com,8273c0588cc64db44dd46f6273d6d43db05191f753db8073e0371b50001e1bda,Safari,2025-01-04T04:47:24,False
+10,1,7d30:b32f:e682:7433:6dd6:2d1a:d42a:f041,hodges.com,jmendoza@yahoo.com,e559a6441ee6b9f20d3f68f7930d15ae77d3f3f42f984ace7ac957b2a9cdd93d,Firefox,2025-01-14T14:22:51,False
+3,2,13d9:7ccf:c439:b417:73d:535e:2649:ae05,davis.com,xbyrd@blanchard-fitzgerald.com,9938507ad4bd5116c3424fc85b913ab87fefc3d4fc901d93afbc02bf8e100002,Opera,2025-02-05T18:36:29,False
+5,5,9bcc:248a:e80c:820:9890:3871:134a:7322,hawkins.com,bethany63@gmail.com,8ff93cce7d546a44e48ebabe3d047353956f172ecb081f72312068847d504eaa,Firefox,2025-01-20T13:22:21,False
+3,3,ddd8:9616:20a9:f677:9fa0:aa07:e9c2:a112,jackson.com,philipwyatt@hotmail.com,49ff0ab27399e796b0dc908f5ce531995a9f0d87f842e59e5a07023a21e6fcb4,Other,2025-01-06T02:30:46,False
+10,4,c548:5f8c:8ab4:fe9e:f165:ed5f:5a45:7c4f,smith-wilson.com,billybryant@moore.com,543e4cb6c737e082ef31ade16a39291816b12945c63648902e69d1395d7b4d40,Other,2025-02-02T09:09:31,False
+1,0,c541:5821:2c17:8530:a55b:1493:f2e4:37e2,payne.com,turneralyssa@morgan.org,e0c58a50716944519cda2e1fa6f813e6664e16aa5e31281adf8c3e6524ea258d,Firefox,2025-02-10T19:46:04,False
+10,4,dc4e:d7a6:b7c1:258f:d301:abad:deb0:dfc1,vincent.com,hvalenzuela@burnett.net,e47ba47f9b127c9cae054a2ba495cef051529afd21da88cdf25bbf0129a8615c,Safari,2025-01-21T22:55:21,False
+6,0,5140:d115:d660:7322:6cb5:54b5:b0d2:42ac,watson.com,andrew71@raymond.org,b6eec966038bf2762cfba90214ab996930a38ac61f66663d2260208e3852a5dd,Other,2025-01-19T22:48:48,False
+3,3,3fc4:ed24:3253:4dad:65f0:ab44:6fe4:bbca,cook.info,alexandrarobinson@hotmail.com,9ca86e5da846f14cd90949469e48712616b86deda564ef8c25c453425fa3fde3,Safari,2025-01-24T15:30:59,False
+5,0,73cc:dca8:a4ec:1e3b:d4f3:5507:bb5e:2987,sanchez.com,qmartin@gibson.com,93c0b4adb10375ecedbce8b6882b173c6161fc758cd1458ce11b3e445245a46c,Firefox,2025-01-19T15:09:35,False
+4,4,823f:6ce5:9d32:b078:f4d8:97af:36d2:70fd,hansen-elliott.com,larry22@white.com,9b9f28e5aedc0056f0f7997aaba62e8c7c48bfea77477069ba9d4a4f99a11242,Safari,2025-01-04T03:37:59,False
+6,6,34e4:b103:b5f3:fbdd:a1a:2acf:8ca4:fad8,hernandez.com,stephanielewis@gmail.com,710a0b4433516b97385f0a898045a31162c693e774100e62a7b9ccf89462d2a1,Opera,2025-01-07T04:06:29,False
+1,0,582b:5320:e6e:5a68:2604:aa3:a1cb:f531,thomas-lee.net,kandrews@evans.org,9738dbc97199a1195bad746e256ca6edd85bc028475ed7836b50d65f6882a33f,Firefox,2025-01-15T00:53:25,False
+5,2,c44a:3729:3718:9ddd:3074:a2ec:ec73:2adb,huang-stevens.info,martinezrichard@gonzalez-hood.com,d1e8795f1b2f1aa08476f9643050dedca175edc7818e9c7f7f2274a80b52b784,Safari,2025-01-11T08:06:32,False
+10,10,6b0:c13f:c81b:4235:423b:ddcb:a98a:c5fb,lopez.org,fjordan@hotmail.com,2c8716426482f80902844fe2eb2cfe3da8752c30eb428da4c04968b50a555484,Safari,2025-02-12T10:23:50,False
+10,7,690c:3fa6:9bc1:4d98:e353:379c:b01a:3e29,lee.info,martinsean@yahoo.com,c41d1369489c5407b2ace1db4705ab9659a928ab4972f3a2fcaf9a75d8e916d9,Safari,2025-01-06T09:59:02,False
+2,0,15eb:9e2f:a300:1a89:e6ea:f722:a314:df2,ingram.info,wutyler@ware.com,ef23aab98c3e7a9d88809616758e57fe49fe6c4af88256f6997f21b42ab06236,Opera,2025-02-09T09:41:21,False
+9,2,6ef8:a10f:2094:e26d:695c:9a43:c03c:9ce8,scott.com,robertsjoseph@salas.com,90c7ec729cf934bbde94d3c0f4c5310c0346b5916f359cef2973ec722e1c5e7c,Safari,2025-01-17T06:48:30,False
+3,3,a013:5a49:43dc:b332:7ef:7298:596f:4e0e,smith.org,gtaylor@gmail.com,12ed6cbc0c10fa88913ee8eae76e1f580cef9792ff9267e3e1c650d5c2a1a708,Opera,2025-02-13T15:29:45,False
+8,5,89a9:c7ee:d074:9c8:53f5:de90:1a:dbb2,allen.com,fmora@jones.net,f82f4270cfb2346e1d2ce7fc3dcf84fe018b43ea350cd638e4a7d7ce8d80f30f,Chrome,2025-02-10T05:26:17,False
+4,2,2d1a:49ea:8951:cb4e:5350:f030:14f2:202,parker.org,starkwilliam@hotmail.com,2fa56e0593cc2e3bfef8aec356ce3e0a3d6a1490349312f0d22cafea9669f7d0,Opera,2025-02-19T14:45:58,False
+4,1,808:3b5d:a937:b6c1:7323:11b:3919:27e,jones-wallace.com,vickiharris@burch.com,8f5969c467929ab85e342cdf1c7fd2043457a1556f4d5d80617e6c531b5b3069,Safari,2025-01-05T16:45:50,False
+1,1,7fed:6d22:1ccd:c292:cf70:726d:2c73:bec6,allen.com,john23@gmail.com,ad95d122eb653da00cb8c23e12d58db8c099c1b15524d629a53ad710f66d00a8,Firefox,2025-01-12T07:03:42,False
+5,0,929b:cd2b:d4e3:750f:5428:8eb7:467:22cb,copeland.com,stevencraig@hotmail.com,017a90373e6ed3f3794860064b414f370c4d8a25cd9a1b51616d5fe68915ebc8,Chrome,2025-02-06T10:16:49,False
+0,0,d1ee:8ccc:d0aa:269a:d812:99e0:ea57:926f,rivera.com,lisachandler@gill.info,f754ae5118820346caca825a98821f762fcea917121f0b96f850f7e3329cf5e2,Safari,2025-01-18T02:49:39,False
+5,4,c0b6:2dfb:8323:e2a:5071:1d8e:5b17:4df1,lewis.com,charlesbell@gmail.com,cdf3c2382ecb608df7cc7ea0673f08698fb1c3355992e8ac370b812046e02cf2,Firefox,2025-02-14T20:15:32,False
+6,2,651a:7664:d98:cf14:bcb3:359:1959:32bd,mills.com,ryanramirez@cole.com,9299b216bc05aada664cd84b791699180592196a76f23693ad5216ae4c4d2034,Firefox,2025-01-23T15:56:04,False
+3,3,62bd:8703:c665:1a49:8a2b:5636:72ff:2a72,martin-gay.org,ahartman@smith.biz,e2016f91743f61e41e3299a6e1b537ac728cffe0f30b234d0b016e7462db21c4,Opera,2025-02-14T22:11:49,False
+8,4,c2bf:d4e3:31c3:ec:d7ed:b3d:2f2c:5b06,barnes-kaufman.info,jalvarez@wise-robles.com,97824d655fdbcc12554739e8266cfae3c0ce61a3a580c376f092e3527c43c540,Other,2025-01-24T18:30:55,False
+9,8,bf22:d507:8c6c:630b:3afc:1fc0:c58e:7137,griffin.info,iward@hotmail.com,d25cd1f8179ce3df3955e418d5bedbe874213c9b200ef6bef787d44957f98c31,Firefox,2025-01-16T04:34:14,False
+9,9,59c6:fe5:effc:caa0:47d8:c9db:4846:2534,bradley.com,torresmatthew@hotmail.com,59758cee3d199f7191ae40a72cbdbae04a4ef301d74fd1f2dccfa890c07c501e,Other,2025-01-18T10:49:49,False
+8,6,17fd:cfd1:e07e:267e:54fd:175:6b7b:df9,miller.com,roydaniel@yahoo.com,13f17e6bc199f2ce7ccce0efde19c0c675cf084fa87fc868912efd912e7eb5b9,Firefox,2025-02-06T07:48:39,False
+1,1,2286:4361:c363:50c9:54f:583f:8693:55b5,campbell-cummings.com,nielsenmegan@hotmail.com,7c595285cd7f47627357ae7b2d5acf42ff8af38c198566c7ac4af68477b6f499,Opera,2025-01-31T04:24:49,False
+6,2,4e93:f363:f612:8b10:fef4:60e9:ea74:a59e,mora.com,thancock@hotmail.com,625d71ebe70e8e62464e7675494ae752dc81745c86582f4510e8458233e4cb8f,Safari,2025-02-09T18:30:16,False
+4,4,2501:e6fc:8bc0:6105:7082:6d74:eb31:64e6,rogers-jones.net,tinaramirez@yahoo.com,d5a193c2938e2b2f42fac5e41e48a5edf63f7467e19241d7a6db93e60a7a160f,Safari,2025-01-10T08:33:03,False
+7,5,4aaf:3175:9bc6:6925:e82f:2ced:947c:ff46,moore-lawrence.org,theresacarter@hotmail.com,429145f63ddd9687f9b4bf00d2577ff1f6ff5742546726f571b65948bb157487,Firefox,2025-01-19T03:47:28,False
+7,1,a459:775d:71f7:8cad:286a:f8e9:28fa:9507,campbell.org,stanleydaniel@hotmail.com,51842df1677d2b6a9beb065edb4391b2ccefe127d7d358ba93981c1d00478e04,Opera,2025-01-08T14:59:52,False
+6,1,fbb5:80fe:320d:b7f1:7aa6:2f7b:4ca9:8349,mitchell.com,karaturner@hotmail.com,8e13b9a3945c8fb56322de551479afe034d8abf2f6f169087cd1d8b8c27d3d00,Opera,2025-02-12T04:50:42,False
+4,1,fb39:2ec6:8248:48b:9436:38e:1f87:7068,weber.com,shari79@barnes.com,bda71fe249fb14fec6360752cca980e5a0a6c8d3499961346ed466cb424e5518,Chrome,2025-02-20T10:42:34,False
+9,3,8722:f155:7169:76d6:775b:def7:3544:126a,gray.com,zgreene@nash-murray.com,5d72cd1cb5d4b0150cda6ef4e6dafac282321cb6576cc49d1438d508903e8fc2,Safari,2025-02-06T16:20:07,False
+5,4,f76:f9:2f35:f671:ce66:7cad:5ef0:1eb6,johnson.info,tuckershelley@atkins-cox.info,b6ccb32cbaa54f63da73ddc6d8096d21ee14615957ad13ad448d0d7bfbd6e7a5,Opera,2025-01-07T07:31:56,False
+7,7,26ea:25d2:3ff:1466:35aa:ba6f:a3b1:bdce,mccormick.com,kaitlyn09@baldwin.com,26438a5e6ef96d1ac69ac14c7d8f3489d6d914d6fb1e23b3115e2ee268c58e81,Opera,2025-01-15T15:21:52,False
+0,0,2b8c:6a:e10d:16c:5fc4:37da:bbd8:a606,allen.com,arnoldjames@hotmail.com,b291a8628488eb132cb795a75ecf7bde20c6b780ac1e2eb7c1d575c3e0a31e87,Firefox,2025-01-24T11:48:50,False
+5,3,7229:382d:6b72:74c1:175c:a306:58f3:9f55,stone-cruz.org,briangarcia@hotmail.com,df66a248bfa54fe7f41c03677e3b58eee8044bec98c045ea523b66c185201374,Firefox,2025-02-17T16:40:53,False
+1,0,e358:90fa:e3e0:8644:cfa6:fc06:7cd3:8999,lee.com,brandonalvarez@hotmail.com,5084e06d09d1c0fd16844dc2665c77b3f78d2c67cdfb59ed744a2f461d92b275,Other,2025-02-10T10:08:20,False
+8,7,30ab:ecd2:2456:cb9f:dbd9:ff3e:4783:7834,case.com,hamiltonjoseph@hotmail.com,5b0efdcb33f0a112f7adfbc7e4927d1dd8ee2e14f81f6aa6574d336dc47451e7,Firefox,2025-01-16T15:24:41,False
+6,5,5d54:ea67:f48d:e792:e9dc:225:26f5:e1d2,kim.com,wjackson@lawson.com,49ade62363a71ac2266f17b68a31931b517beae467196496931e4f0787e278b1,Opera,2025-01-25T12:48:34,False
+8,3,9141:152:4fcc:1aa5:c38c:800e:35c2:a68c,smith.info,albert56@fry.biz,2dd7c162338b04bee18f24f1071c49d7ce3cb94817e0816eaf10bce014f730ec,Safari,2025-02-16T16:28:17,False
+5,3,5cc1:d58c:c95b:cd9f:fbbf:d38f:4d6:8eaf,howell.com,tara02@hotmail.com,caf2091bbc43302d5d4f96d99f765a4738430927fcbf62cc080ac3202f9a9164,Firefox,2025-02-14T06:48:36,False
+5,2,fd85:ceec:72e:f2bd:eff7:d944:d18f:364d,adkins.com,briandaniel@thompson-johnson.info,2ba4332900c8da6be80d75054d7fb51a5c6635e77fd095f5aadd7f2b2275905c,Safari,2025-01-06T19:28:22,False
+1,1,1792:f6e6:686f:ef6d:ba95:7cd4:609f:2605,thompson-taylor.org,jared69@hotmail.com,2a1479f944225c728ae016eb0e68315ced6f4107f5f33149d87ac1a16bd96300,Opera,2025-02-10T09:19:38,False
+1,0,f136:baf4:f83f:a5b0:fc51:13b3:2966:7d55,romero.com,uwells@johnson-howard.net,e1f46047799191634486763e2f6e4d76c099350e5787d159334f58fa53de37fc,Chrome,2025-02-06T03:36:12,False
+0,0,7c23:ac95:ac1b:1520:d96:aadf:60c9:e2b0,gutierrez-pena.biz,katherine41@roy.com,c3592701a5cbd6fffe4af322add24c35e1c4ff3c2166a0a07741888a65d5f04f,Safari,2025-02-13T09:54:55,False
+1,1,85c6:bb9f:55ed:bee:3c48:d4cb:ed08:e9dd,lloyd.com,tdavis@anderson-griffith.com,165f1dece829487db5f2f9943d6b4c58c25d2419d6889018a603bec8ee8ef79d,Safari,2025-02-22T06:16:42,False
+6,0,c369:72c2:5e29:51ee:749b:63d2:887b:8900,rivers-ward.com,gomezjeremy@yahoo.com,55e2d523db83d09e51ff6840ca29fcb4e57719a3e72912f706579bd35b9efb74,Safari,2025-01-29T01:56:46,False
+2,0,2890:61c:d388:e5ec:3f19:bdba:24da:251f,randolph-jones.com,cummingsamy@hotmail.com,2726c348b438041c0f94f34e9af721f9ec1f881fc25bc2712230e42b9309b36c,Opera,2025-01-01T23:48:51,False
+9,8,b8f2:a8d0:fe4a:3372:f655:fa88:9182:d891,lawson.net,qdavis@hotmail.com,bf838f60993af593ba3dc8ca0eea62dc4741a62ef0a0448aeebf092e2f1d4492,Chrome,2025-02-12T19:29:24,False
+6,4,61ff:9b54:65db:a249:75c5:8c64:1449:e1f3,hunter.com,melanie80@holt-guzman.com,3fbca20a3eb3a76cc76a87876e13ac193fd7dcbf3089eff776ff2cfb1bbc8454,Chrome,2025-02-07T10:37:53,False
+9,0,d19d:54c8:207f:1982:ba20:a109:5c70:f3c0,garrett-smith.org,staceysmith@harrison.biz,e447563eaf2d8a8b994d926fe93f8b22eff03ebadd2f53a9aa9f00d7bd45e403,Other,2025-01-27T16:59:57,False
+0,0,12e3:7769:3fea:ebb3:8a03:328c:b6bf:acef,ramirez.com,harrygomez@sutton-johnson.com,19918f197f3a57031a1b3c357496146c08d000b89973a5132acf91a5910d8332,Other,2025-01-15T07:41:46,False
+3,2,92eb:1b69:e1:a82e:6174:264a:4cae:9cea,brooks.com,amy85@escobar-miller.org,6f1ef0c1204c0543bb4f6f87e10c66ef3eba7f7e01d0290bd61b7c823e87b54d,Safari,2025-02-07T06:03:30,False
+2,2,1fc7:33a6:d79e:3897:53df:bd22:8533:cd43,taylor-salazar.info,ppittman@yahoo.com,d374dd4a3c5325fef7598b6de4de62a845ce62b4727635af2ceb1e89169c11fe,Opera,2025-01-27T03:49:19,False
+1,0,4363:4415:3d8b:d584:57ce:11d1:338:7488,williams.com,yturner@lamb.com,78d5b72238b049b2cb94b4de2258c3ef9d8b9feeba5d0b7da9ccdf75b91c26f5,Other,2025-01-01T11:40:55,False
+2,1,5c9d:3b09:54bd:4f10:48a9:904d:e1a6:4e83,johnson.com,xgilbert@hotmail.com,01ebb1e3a7a1e10fd38375891d99b515d61d8aae723cc790a8abe99aea4f50b1,Opera,2025-02-20T20:10:37,False
+7,6,396b:12a7:a5b1:a38c:d740:534b:e5ec:bdfd,taylor.com,weaveredward@gmail.com,8d0c87dcbc3cb8648f7ff6927be3f02a70584f2fa1ae95b212002fbdcc7d46e7,Chrome,2025-02-18T14:22:22,False
+10,6,b423:3ff8:44c3:f71f:61ce:1709:3548:df59,harper-shaffer.org,fieldsjohn@hotmail.com,2033b33c8f0c88fc5e4c8ce2488aa464eb004655dc7e55c949d58fe77d79279f,Opera,2025-02-01T02:49:37,False
+7,1,7ba5:8766:f65a:7766:79b1:a164:5e92:873e,woods.com,watersdon@hotmail.com,14b20d2d700a1235db714f4c2e8ae7553724f31afd3a0b58604606ec95ad14b7,Other,2025-02-08T11:25:06,False
+9,6,719e:5c8a:3bde:11de:f696:328d:11a4:fd7a,haney.net,spenceracevedo@gmail.com,7b04514fdf0495e47c4ed4239ba4b034a9e0bf819b890a6d7e3af859e3cddc9b,Safari,2025-01-03T04:31:09,False
+10,0,d4eb:1f50:22c8:a78a:6a5:fd6e:b3e8:82ef,butler.com,richardlambert@miller-vasquez.com,da2d5c1249dfcb05d20a52c32885497942d3e3d9b7170a0db9418f57478e2559,Other,2025-01-17T02:33:40,False
+6,2,4ec1:e8ca:ed4d:8561:513b:c22e:6998:65b1,burns.com,thomas27@yahoo.com,3eb04368835bea504e62a6adbbf65face49c70f65a215c65bd4a49c320468829,Opera,2025-01-08T00:05:16,False
+2,0,fa85:3e42:b4da:9cf7:b90d:5cae:d43f:a3d9,middleton.com,angelaruiz@taylor-olson.com,cc1f56df6b727d4710ac73d5142512c96366fe45553d5d6db00e3f49d9c03eaa,Chrome,2025-01-06T08:17:40,False
+1,0,49e8:f36f:c06:467d:892f:d315:cca:3b4b,melendez.info,stephanie07@fry-hopkins.com,533cbd23099c910a4dd6a3f99ca7df8a256b3585abbe98409bc0731ffa018a2b,Other,2025-01-09T17:18:17,False
+1,1,308b:7d83:a148:a22a:113c:ba2:51fe:91b5,pierce.net,jonathan39@rodriguez-cole.com,f2034048e1150f40ca23f041b7d05b238babb1573964897546923802f8ddc6d7,Opera,2025-01-20T14:17:20,False
+5,3,b3c:650e:f3d8:2917:713d:2aff:c6dc:69d5,powell.com,monicahuerta@hotmail.com,a5b7fc26c797b0b1d1957d662669cde308f93e3a817e36a4c4f1ce482a5766ee,Safari,2025-02-15T21:07:37,False
+9,3,8d3b:76c4:f46d:3b2b:856e:7603:daf1:1e0b,hoover.info,leejohnson@reese.net,d6a010a5c624b5f71e51ab1bfdfa3bc88c354b101350cf188b7ee3c0bcbdc9ab,Other,2025-01-30T09:40:24,False
+5,4,7091:68b8:374:ee9e:2580:b59d:214:44f,brooks-hodges.org,jenningsjennifer@collins.com,2b5d978f899b8a87890f2f8bf3210cf8682195660699eaa96c4fdaef594f21b8,Opera,2025-01-02T15:24:09,False
+9,7,c681:7f7:ab74:f313:ae0f:6f44:6394:ed91,hubbard.com,dfrost@smith-robinson.info,d6bf6a6f851e32e843041684bc93aae94775903d3e8a96d50151e989c5762300,Chrome,2025-01-14T12:38:20,False
+10,3,16d4:47f0:358e:2943:2d43:9bdf:8a83:54bc,dorsey-forbes.com,ecampbell@hotmail.com,fe31f2f22f86811cc79102ca85fec83801289c083c1d5d9168d6605a37a570be,Opera,2025-01-27T19:13:28,False
+6,6,d896:ac5b:cb8c:1557:4dec:1398:a736:5d8,clay.com,fhansen@henry.net,14fc1a3154786011d1bc00d9e6a684d2f5ce149eed0171611cb91dc5ee2e3836,Other,2025-01-13T00:01:14,False
+6,3,72db:6c94:b766:a1ff:c12a:376:2e89:ea8e,whitaker.com,bairdjohn@yahoo.com,8b5f202f6e672418d8494fff4646b64f7c58b5f1225f15a52bcaa34b19f4cc3f,Safari,2025-01-12T09:48:56,False
+7,6,3661:39f4:c41c:de5:fca2:27d1:ab10:7642,brock.com,jcordova@gmail.com,a92f23a0defc3466a724522cf0719f77e5655ba58eb87d1665fa1461d8ec3954,Safari,2025-01-15T20:38:22,False
+0,0,3dc9:ba22:e054:7b42:7ba1:d1a:89a3:bcdb,garcia.biz,johnsondavid@hotmail.com,ebc8727d68264c499a0ac52bf600a08e5e3f30fdbb3b89029df428398588528d,Chrome,2025-02-15T22:26:45,False
+8,1,20d9:dcb0:72ce:31d0:caf6:5792:38f3:b074,schmidt.com,miajohnson@hotmail.com,8a7f6fe95508c3d2b2733d115e0588252c9087b6498e07e8b43d571b0bf0fc91,Safari,2025-02-16T15:58:18,False
+2,1,3f0d:a04b:6ab8:7617:19db:397a:9b40:3984,shelton.com,zjordan@yahoo.com,eed231b1b1ff9cd75736fdd35c791a852c4a0336f1e11d7b2864d8ad3280ae21,Firefox,2025-01-16T12:35:01,False
+1,1,6786:5b54:7d72:de88:6d4f:99d6:9cdd:837d,ramos-cole.biz,anthonynoble@schwartz-robles.info,f9f181faf30977dcbd755404b0f48f667d38a3f2ca53f7119cd0a2f22561f1e7,Firefox,2025-02-05T23:55:53,False
+2,2,31b8:9875:8d46:4311:a150:dcf0:ff08:ad40,flores.com,scottjohnson@hotmail.com,6af5bf4d1a8db7eed9cc638deb118516733fd2b3f247b1b49460432e61267338,Safari,2025-02-06T18:27:33,False
+9,5,4ff5:ce1b:7739:805f:4450:a328:7faa:dcaf,wood.com,sheryl52@yahoo.com,ef316afa8cc7b133c87c0ed06eb7d550712e571a89f92e656a11c668060e79ce,Firefox,2025-02-09T20:33:43,False
+6,1,de31:7b81:2ec0:4491:29c9:18b3:c9e7:bd0a,wu-ortiz.com,kerrimurray@weiss.com,a563b229430154297b5179e95b1051ee4a716829f93c3f59ea5f290e229379a0,Chrome,2025-01-26T02:47:04,False
+0,0,3ecf:63ad:b11f:9b97:ed2c:935a:914a:fca5,williams-thomas.com,meghanadams@hotmail.com,d1b6b8195cdd64406112bfb9e6197ec6ed49b4e1a9d4ad1bf479924621ebff95,Safari,2025-01-26T12:56:35,False
+4,1,d81:aa2a:36e9:8328:59b0:7843:a50:7353,bell-kirby.com,jeffreyproctor@gmail.com,53ab48d1d5c19f0df5edb273b4ae3a5f237a03d53fe206b1e107731fee933ddc,Firefox,2025-01-22T22:47:08,False
+0,0,c6a6:52:c73b:2fe5:fa79:9efd:d964:9d43,taylor.com,robert08@yahoo.com,ef78159fdb702c4c1556c0b7e18015afd583ac63f453525d8080374aa3a60c00,Safari,2025-01-22T13:38:24,False
+7,0,9aa4:5502:12f6:ebf6:764d:e2e2:5369:9939,barber-smith.org,donald83@lawrence.com,ad5269a4bd07d7adee8a23a15b30a41b46b020d348230ab4c8d7aab76e4e066c,Other,2025-02-18T06:22:41,False
+7,2,10d0:e8fa:3b0d:29:3f63:a2ce:85d0:e87,brown.com,lsmith@mcclain.org,2d5415fc875f397a15f3983c5b00b703b9a54d87276c978ba505b45a1eba7ffc,Opera,2025-01-10T22:46:40,False
+1,0,fafd:3996:a808:fe35:4ae9:89ca:3f88:f06a,friedman.info,hammondmatthew@hotmail.com,ede72543f3a5e91aaeaecd0cde2de3bff569effae1cfac2db62f51164faa84a5,Safari,2025-02-11T19:19:03,False
+6,6,93e3:d333:2931:1fcf:e533:bafb:691f:27df,norris-guzman.net,rebeccayoung@rodriguez.org,0bd7bb328ac0422801ec300c25c97d2a383ad378322fcb40d3dfd7e8b668723a,Opera,2025-01-08T04:11:54,False
+8,8,72d4:5494:5141:24f2:ef24:f412:e0b3:c6ef,johnson-anderson.com,johntaylor@wallace.com,84ddd7b15c9b8502f2a1a33dff12649f2975d12237a0855fb11373069aeb9a54,Firefox,2025-02-02T03:18:32,False
+8,1,845e:c37e:4e92:166c:4970:1a9:f6e8:3208,johnson.biz,roachcarlos@yahoo.com,750fc0976a4a93da1142b8e1dae0397df06739e72a8a721859edda91dc81f645,Chrome,2025-01-20T15:45:35,False
+3,3,51fc:44a9:c862:4ffe:f9c:e9e0:51a1:de1a,stone.org,josegarcia@henderson.com,cbeff8f0a78eab24f7c56314340ef783f7653879bf2558aeccee0bf0c71101ba,Other,2025-01-12T06:27:24,False
+10,4,278a:5a1:1acc:bcd1:8dc4:129b:ad16:dda1,pace-castro.com,emilyhanna@hotmail.com,0777bfce85a4b36af7e5230d1f172fc0ebac9e133f65f175b43567afaa89ae28,Safari,2025-01-03T09:44:03,False
+3,3,205d:dc4e:b014:6b23:b97:a7d4:6763:5ac6,jackson-adkins.com,osexton@yahoo.com,8273c0588cc64db44dd46f6273d6d43db05191f753db8073e0371b50001e1bda,Safari,2025-01-04T04:47:24,False
+10,1,7d30:b32f:e682:7433:6dd6:2d1a:d42a:f041,hodges.com,jmendoza@yahoo.com,e559a6441ee6b9f20d3f68f7930d15ae77d3f3f42f984ace7ac957b2a9cdd93d,Firefox,2025-01-14T14:22:51,False
+3,2,13d9:7ccf:c439:b417:73d:535e:2649:ae05,davis.com,xbyrd@blanchard-fitzgerald.com,9938507ad4bd5116c3424fc85b913ab87fefc3d4fc901d93afbc02bf8e100002,Opera,2025-02-05T18:36:29,False
+5,5,9bcc:248a:e80c:820:9890:3871:134a:7322,hawkins.com,bethany63@gmail.com,8ff93cce7d546a44e48ebabe3d047353956f172ecb081f72312068847d504eaa,Firefox,2025-01-20T13:22:21,False
+3,3,ddd8:9616:20a9:f677:9fa0:aa07:e9c2:a112,jackson.com,philipwyatt@hotmail.com,49ff0ab27399e796b0dc908f5ce531995a9f0d87f842e59e5a07023a21e6fcb4,Other,2025-01-06T02:30:46,False
+10,4,c548:5f8c:8ab4:fe9e:f165:ed5f:5a45:7c4f,smith-wilson.com,billybryant@moore.com,543e4cb6c737e082ef31ade16a39291816b12945c63648902e69d1395d7b4d40,Other,2025-02-02T09:09:31,False
+1,0,c541:5821:2c17:8530:a55b:1493:f2e4:37e2,payne.com,turneralyssa@morgan.org,e0c58a50716944519cda2e1fa6f813e6664e16aa5e31281adf8c3e6524ea258d,Firefox,2025-02-10T19:46:04,False
+10,4,dc4e:d7a6:b7c1:258f:d301:abad:deb0:dfc1,vincent.com,hvalenzuela@burnett.net,e47ba47f9b127c9cae054a2ba495cef051529afd21da88cdf25bbf0129a8615c,Safari,2025-01-21T22:55:21,False
+6,0,5140:d115:d660:7322:6cb5:54b5:b0d2:42ac,watson.com,andrew71@raymond.org,b6eec966038bf2762cfba90214ab996930a38ac61f66663d2260208e3852a5dd,Other,2025-01-19T22:48:48,False
+3,3,3fc4:ed24:3253:4dad:65f0:ab44:6fe4:bbca,cook.info,alexandrarobinson@hotmail.com,9ca86e5da846f14cd90949469e48712616b86deda564ef8c25c453425fa3fde3,Safari,2025-01-24T15:30:59,False
+5,0,73cc:dca8:a4ec:1e3b:d4f3:5507:bb5e:2987,sanchez.com,qmartin@gibson.com,93c0b4adb10375ecedbce8b6882b173c6161fc758cd1458ce11b3e445245a46c,Firefox,2025-01-19T15:09:35,False
+4,4,823f:6ce5:9d32:b078:f4d8:97af:36d2:70fd,hansen-elliott.com,larry22@white.com,9b9f28e5aedc0056f0f7997aaba62e8c7c48bfea77477069ba9d4a4f99a11242,Safari,2025-01-04T03:37:59,False
+6,6,34e4:b103:b5f3:fbdd:a1a:2acf:8ca4:fad8,hernandez.com,stephanielewis@gmail.com,710a0b4433516b97385f0a898045a31162c693e774100e62a7b9ccf89462d2a1,Opera,2025-01-07T04:06:29,False
+1,0,582b:5320:e6e:5a68:2604:aa3:a1cb:f531,thomas-lee.net,kandrews@evans.org,9738dbc97199a1195bad746e256ca6edd85bc028475ed7836b50d65f6882a33f,Firefox,2025-01-15T00:53:25,False
+5,2,c44a:3729:3718:9ddd:3074:a2ec:ec73:2adb,huang-stevens.info,martinezrichard@gonzalez-hood.com,d1e8795f1b2f1aa08476f9643050dedca175edc7818e9c7f7f2274a80b52b784,Safari,2025-01-11T08:06:32,False
+10,10,6b0:c13f:c81b:4235:423b:ddcb:a98a:c5fb,lopez.org,fjordan@hotmail.com,2c8716426482f80902844fe2eb2cfe3da8752c30eb428da4c04968b50a555484,Safari,2025-02-12T10:23:50,False
+10,7,690c:3fa6:9bc1:4d98:e353:379c:b01a:3e29,lee.info,martinsean@yahoo.com,c41d1369489c5407b2ace1db4705ab9659a928ab4972f3a2fcaf9a75d8e916d9,Safari,2025-01-06T09:59:02,False
+2,0,15eb:9e2f:a300:1a89:e6ea:f722:a314:df2,ingram.info,wutyler@ware.com,ef23aab98c3e7a9d88809616758e57fe49fe6c4af88256f6997f21b42ab06236,Opera,2025-02-09T09:41:21,False
+9,2,6ef8:a10f:2094:e26d:695c:9a43:c03c:9ce8,scott.com,robertsjoseph@salas.com,90c7ec729cf934bbde94d3c0f4c5310c0346b5916f359cef2973ec722e1c5e7c,Safari,2025-01-17T06:48:30,False
+3,3,a013:5a49:43dc:b332:7ef:7298:596f:4e0e,smith.org,gtaylor@gmail.com,12ed6cbc0c10fa88913ee8eae76e1f580cef9792ff9267e3e1c650d5c2a1a708,Opera,2025-02-13T15:29:45,False
+8,5,89a9:c7ee:d074:9c8:53f5:de90:1a:dbb2,allen.com,fmora@jones.net,f82f4270cfb2346e1d2ce7fc3dcf84fe018b43ea350cd638e4a7d7ce8d80f30f,Chrome,2025-02-10T05:26:17,False
+4,2,2d1a:49ea:8951:cb4e:5350:f030:14f2:202,parker.org,starkwilliam@hotmail.com,2fa56e0593cc2e3bfef8aec356ce3e0a3d6a1490349312f0d22cafea9669f7d0,Opera,2025-02-19T14:45:58,False
+4,1,808:3b5d:a937:b6c1:7323:11b:3919:27e,jones-wallace.com,vickiharris@burch.com,8f5969c467929ab85e342cdf1c7fd2043457a1556f4d5d80617e6c531b5b3069,Safari,2025-01-05T16:45:50,False
+1,1,7fed:6d22:1ccd:c292:cf70:726d:2c73:bec6,allen.com,john23@gmail.com,ad95d122eb653da00cb8c23e12d58db8c099c1b15524d629a53ad710f66d00a8,Firefox,2025-01-12T07:03:42,False
+5,0,929b:cd2b:d4e3:750f:5428:8eb7:467:22cb,copeland.com,stevencraig@hotmail.com,017a90373e6ed3f3794860064b414f370c4d8a25cd9a1b51616d5fe68915ebc8,Chrome,2025-02-06T10:16:49,False
+0,0,d1ee:8ccc:d0aa:269a:d812:99e0:ea57:926f,rivera.com,lisachandler@gill.info,f754ae5118820346caca825a98821f762fcea917121f0b96f850f7e3329cf5e2,Safari,2025-01-18T02:49:39,False
+5,4,c0b6:2dfb:8323:e2a:5071:1d8e:5b17:4df1,lewis.com,charlesbell@gmail.com,cdf3c2382ecb608df7cc7ea0673f08698fb1c3355992e8ac370b812046e02cf2,Firefox,2025-02-14T20:15:32,False
+6,2,651a:7664:d98:cf14:bcb3:359:1959:32bd,mills.com,ryanramirez@cole.com,9299b216bc05aada664cd84b791699180592196a76f23693ad5216ae4c4d2034,Firefox,2025-01-23T15:56:04,False
+3,3,62bd:8703:c665:1a49:8a2b:5636:72ff:2a72,martin-gay.org,ahartman@smith.biz,e2016f91743f61e41e3299a6e1b537ac728cffe0f30b234d0b016e7462db21c4,Opera,2025-02-14T22:11:49,False
+8,4,c2bf:d4e3:31c3:ec:d7ed:b3d:2f2c:5b06,barnes-kaufman.info,jalvarez@wise-robles.com,97824d655fdbcc12554739e8266cfae3c0ce61a3a580c376f092e3527c43c540,Other,2025-01-24T18:30:55,False
+9,8,bf22:d507:8c6c:630b:3afc:1fc0:c58e:7137,griffin.info,iward@hotmail.com,d25cd1f8179ce3df3955e418d5bedbe874213c9b200ef6bef787d44957f98c31,Firefox,2025-01-16T04:34:14,False
+9,9,59c6:fe5:effc:caa0:47d8:c9db:4846:2534,bradley.com,torresmatthew@hotmail.com,59758cee3d199f7191ae40a72cbdbae04a4ef301d74fd1f2dccfa890c07c501e,Other,2025-01-18T10:49:49,False
+8,6,17fd:cfd1:e07e:267e:54fd:175:6b7b:df9,miller.com,roydaniel@yahoo.com,13f17e6bc199f2ce7ccce0efde19c0c675cf084fa87fc868912efd912e7eb5b9,Firefox,2025-02-06T07:48:39,False
+1,1,2286:4361:c363:50c9:54f:583f:8693:55b5,campbell-cummings.com,nielsenmegan@hotmail.com,7c595285cd7f47627357ae7b2d5acf42ff8af38c198566c7ac4af68477b6f499,Opera,2025-01-31T04:24:49,False
+6,2,4e93:f363:f612:8b10:fef4:60e9:ea74:a59e,mora.com,thancock@hotmail.com,625d71ebe70e8e62464e7675494ae752dc81745c86582f4510e8458233e4cb8f,Safari,2025-02-09T18:30:16,False
+4,4,2501:e6fc:8bc0:6105:7082:6d74:eb31:64e6,rogers-jones.net,tinaramirez@yahoo.com,d5a193c2938e2b2f42fac5e41e48a5edf63f7467e19241d7a6db93e60a7a160f,Safari,2025-01-10T08:33:03,False
+7,5,4aaf:3175:9bc6:6925:e82f:2ced:947c:ff46,moore-lawrence.org,theresacarter@hotmail.com,429145f63ddd9687f9b4bf00d2577ff1f6ff5742546726f571b65948bb157487,Firefox,2025-01-19T03:47:28,False
+7,1,a459:775d:71f7:8cad:286a:f8e9:28fa:9507,campbell.org,stanleydaniel@hotmail.com,51842df1677d2b6a9beb065edb4391b2ccefe127d7d358ba93981c1d00478e04,Opera,2025-01-08T14:59:52,False
+6,1,fbb5:80fe:320d:b7f1:7aa6:2f7b:4ca9:8349,mitchell.com,karaturner@hotmail.com,8e13b9a3945c8fb56322de551479afe034d8abf2f6f169087cd1d8b8c27d3d00,Opera,2025-02-12T04:50:42,False
+4,1,fb39:2ec6:8248:48b:9436:38e:1f87:7068,weber.com,shari79@barnes.com,bda71fe249fb14fec6360752cca980e5a0a6c8d3499961346ed466cb424e5518,Chrome,2025-02-20T10:42:34,False
+9,3,8722:f155:7169:76d6:775b:def7:3544:126a,gray.com,zgreene@nash-murray.com,5d72cd1cb5d4b0150cda6ef4e6dafac282321cb6576cc49d1438d508903e8fc2,Safari,2025-02-06T16:20:07,False
+5,4,f76:f9:2f35:f671:ce66:7cad:5ef0:1eb6,johnson.info,tuckershelley@atkins-cox.info,b6ccb32cbaa54f63da73ddc6d8096d21ee14615957ad13ad448d0d7bfbd6e7a5,Opera,2025-01-07T07:31:56,False
+7,7,26ea:25d2:3ff:1466:35aa:ba6f:a3b1:bdce,mccormick.com,kaitlyn09@baldwin.com,26438a5e6ef96d1ac69ac14c7d8f3489d6d914d6fb1e23b3115e2ee268c58e81,Opera,2025-01-15T15:21:52,False
+0,0,2b8c:6a:e10d:16c:5fc4:37da:bbd8:a606,allen.com,arnoldjames@hotmail.com,b291a8628488eb132cb795a75ecf7bde20c6b780ac1e2eb7c1d575c3e0a31e87,Firefox,2025-01-24T11:48:50,False
+5,3,7229:382d:6b72:74c1:175c:a306:58f3:9f55,stone-cruz.org,briangarcia@hotmail.com,df66a248bfa54fe7f41c03677e3b58eee8044bec98c045ea523b66c185201374,Firefox,2025-02-17T16:40:53,False
+1,0,e358:90fa:e3e0:8644:cfa6:fc06:7cd3:8999,lee.com,brandonalvarez@hotmail.com,5084e06d09d1c0fd16844dc2665c77b3f78d2c67cdfb59ed744a2f461d92b275,Other,2025-02-10T10:08:20,False
+8,7,30ab:ecd2:2456:cb9f:dbd9:ff3e:4783:7834,case.com,hamiltonjoseph@hotmail.com,5b0efdcb33f0a112f7adfbc7e4927d1dd8ee2e14f81f6aa6574d336dc47451e7,Firefox,2025-01-16T15:24:41,False
+6,5,5d54:ea67:f48d:e792:e9dc:225:26f5:e1d2,kim.com,wjackson@lawson.com,49ade62363a71ac2266f17b68a31931b517beae467196496931e4f0787e278b1,Opera,2025-01-25T12:48:34,False
+8,3,9141:152:4fcc:1aa5:c38c:800e:35c2:a68c,smith.info,albert56@fry.biz,2dd7c162338b04bee18f24f1071c49d7ce3cb94817e0816eaf10bce014f730ec,Safari,2025-02-16T16:28:17,False
+5,3,5cc1:d58c:c95b:cd9f:fbbf:d38f:4d6:8eaf,howell.com,tara02@hotmail.com,caf2091bbc43302d5d4f96d99f765a4738430927fcbf62cc080ac3202f9a9164,Firefox,2025-02-14T06:48:36,False
+5,2,fd85:ceec:72e:f2bd:eff7:d944:d18f:364d,adkins.com,briandaniel@thompson-johnson.info,2ba4332900c8da6be80d75054d7fb51a5c6635e77fd095f5aadd7f2b2275905c,Safari,2025-01-06T19:28:22,False
+1,1,1792:f6e6:686f:ef6d:ba95:7cd4:609f:2605,thompson-taylor.org,jared69@hotmail.com,2a1479f944225c728ae016eb0e68315ced6f4107f5f33149d87ac1a16bd96300,Opera,2025-02-10T09:19:38,False
+1,0,f136:baf4:f83f:a5b0:fc51:13b3:2966:7d55,romero.com,uwells@johnson-howard.net,e1f46047799191634486763e2f6e4d76c099350e5787d159334f58fa53de37fc,Chrome,2025-02-06T03:36:12,False
+0,0,7c23:ac95:ac1b:1520:d96:aadf:60c9:e2b0,gutierrez-pena.biz,katherine41@roy.com,c3592701a5cbd6fffe4af322add24c35e1c4ff3c2166a0a07741888a65d5f04f,Safari,2025-02-14 09:54:55,False
+0,0,7c23:ac95:ac1b:1520:d96:aadf:60c9:e2b0,gutierrez-pena.biz,katherine41@roy.com,c3592701a5cbd6fffe4af322add24c35e1c4ff3c2166a0a07741888a65d5f04f,Safari,2025-02-14 09:54:55,False
+0,0,7c23:ac95:ac1b:1520:d96:aadf:60c9:e2b0,gutierrez-pena.biz,katherine41@roy.com,c3592701a5cbd6fffe4af322add24c35e1c4ff3c2166a0a07741888a65d5f04f,Safari,2025-02-14 09:54:55,False
+1,1,85c6:bb9f:55ed:bee:3c48:d4cb:ed08:e9dd,lloyd.com,tdavis@anderson-griffith.com,165f1dece829487db5f2f9943d6b4c58c25d2419d6889018a603bec8ee8ef79d,Safari,2025-02-23 06:16:42,False
+1,1,85c6:bb9f:55ed:bee:3c48:d4cb:ed08:e9dd,lloyd.com,tdavis@anderson-griffith.com,165f1dece829487db5f2f9943d6b4c58c25d2419d6889018a603bec8ee8ef79d,Safari,2025-02-23 06:16:42,False
+1,1,85c6:bb9f:55ed:bee:3c48:d4cb:ed08:e9dd,lloyd.com,tdavis@anderson-griffith.com,165f1dece829487db5f2f9943d6b4c58c25d2419d6889018a603bec8ee8ef79d,Safari,2025-02-23 06:16:42,False
+6,0,c369:72c2:5e29:51ee:749b:63d2:887b:8900,rivers-ward.com,gomezjeremy@yahoo.com,55e2d523db83d09e51ff6840ca29fcb4e57719a3e72912f706579bd35b9efb74,Safari,2025-01-30 01:56:46,False
+6,0,c369:72c2:5e29:51ee:749b:63d2:887b:8900,rivers-ward.com,gomezjeremy@yahoo.com,55e2d523db83d09e51ff6840ca29fcb4e57719a3e72912f706579bd35b9efb74,Safari,2025-01-30 01:56:46,False
+6,0,c369:72c2:5e29:51ee:749b:63d2:887b:8900,rivers-ward.com,gomezjeremy@yahoo.com,55e2d523db83d09e51ff6840ca29fcb4e57719a3e72912f706579bd35b9efb74,Safari,2025-01-30 01:56:46,False
+2,0,2890:61c:d388:e5ec:3f19:bdba:24da:251f,randolph-jones.com,cummingsamy@hotmail.com,2726c348b438041c0f94f34e9af721f9ec1f881fc25bc2712230e42b9309b36c,Opera,2025-01-02 23:48:51,False
+2,0,2890:61c:d388:e5ec:3f19:bdba:24da:251f,randolph-jones.com,cummingsamy@hotmail.com,2726c348b438041c0f94f34e9af721f9ec1f881fc25bc2712230e42b9309b36c,Opera,2025-01-02 23:48:51,False
+2,0,2890:61c:d388:e5ec:3f19:bdba:24da:251f,randolph-jones.com,cummingsamy@hotmail.com,2726c348b438041c0f94f34e9af721f9ec1f881fc25bc2712230e42b9309b36c,Opera,2025-01-02 23:48:51,False
+9,8,b8f2:a8d0:fe4a:3372:f655:fa88:9182:d891,lawson.net,qdavis@hotmail.com,bf838f60993af593ba3dc8ca0eea62dc4741a62ef0a0448aeebf092e2f1d4492,Chrome,2025-02-13 19:29:24,False
+9,8,b8f2:a8d0:fe4a:3372:f655:fa88:9182:d891,lawson.net,qdavis@hotmail.com,bf838f60993af593ba3dc8ca0eea62dc4741a62ef0a0448aeebf092e2f1d4492,Chrome,2025-02-13 19:29:24,False
+9,8,b8f2:a8d0:fe4a:3372:f655:fa88:9182:d891,lawson.net,qdavis@hotmail.com,bf838f60993af593ba3dc8ca0eea62dc4741a62ef0a0448aeebf092e2f1d4492,Chrome,2025-02-13 19:29:24,False
+6,4,61ff:9b54:65db:a249:75c5:8c64:1449:e1f3,hunter.com,melanie80@holt-guzman.com,3fbca20a3eb3a76cc76a87876e13ac193fd7dcbf3089eff776ff2cfb1bbc8454,Chrome,2025-02-08 10:37:53,False
+6,4,61ff:9b54:65db:a249:75c5:8c64:1449:e1f3,hunter.com,melanie80@holt-guzman.com,3fbca20a3eb3a76cc76a87876e13ac193fd7dcbf3089eff776ff2cfb1bbc8454,Chrome,2025-02-08 10:37:53,False
+6,4,61ff:9b54:65db:a249:75c5:8c64:1449:e1f3,hunter.com,melanie80@holt-guzman.com,3fbca20a3eb3a76cc76a87876e13ac193fd7dcbf3089eff776ff2cfb1bbc8454,Chrome,2025-02-08 10:37:53,False
+9,0,d19d:54c8:207f:1982:ba20:a109:5c70:f3c0,garrett-smith.org,staceysmith@harrison.biz,e447563eaf2d8a8b994d926fe93f8b22eff03ebadd2f53a9aa9f00d7bd45e403,Other,2025-01-28 16:59:57,False
+9,0,d19d:54c8:207f:1982:ba20:a109:5c70:f3c0,garrett-smith.org,staceysmith@harrison.biz,e447563eaf2d8a8b994d926fe93f8b22eff03ebadd2f53a9aa9f00d7bd45e403,Other,2025-01-28 16:59:57,False
+9,0,d19d:54c8:207f:1982:ba20:a109:5c70:f3c0,garrett-smith.org,staceysmith@harrison.biz,e447563eaf2d8a8b994d926fe93f8b22eff03ebadd2f53a9aa9f00d7bd45e403,Other,2025-01-28 16:59:57,False
+0,0,12e3:7769:3fea:ebb3:8a03:328c:b6bf:acef,ramirez.com,harrygomez@sutton-johnson.com,19918f197f3a57031a1b3c357496146c08d000b89973a5132acf91a5910d8332,Other,2025-01-16 07:41:46,False
+0,0,12e3:7769:3fea:ebb3:8a03:328c:b6bf:acef,ramirez.com,harrygomez@sutton-johnson.com,19918f197f3a57031a1b3c357496146c08d000b89973a5132acf91a5910d8332,Other,2025-01-16 07:41:46,False
+0,0,12e3:7769:3fea:ebb3:8a03:328c:b6bf:acef,ramirez.com,harrygomez@sutton-johnson.com,19918f197f3a57031a1b3c357496146c08d000b89973a5132acf91a5910d8332,Other,2025-01-16 07:41:46,False
+3,2,92eb:1b69:e1:a82e:6174:264a:4cae:9cea,brooks.com,amy85@escobar-miller.org,6f1ef0c1204c0543bb4f6f87e10c66ef3eba7f7e01d0290bd61b7c823e87b54d,Safari,2025-02-08 06:03:30,False
+3,2,92eb:1b69:e1:a82e:6174:264a:4cae:9cea,brooks.com,amy85@escobar-miller.org,6f1ef0c1204c0543bb4f6f87e10c66ef3eba7f7e01d0290bd61b7c823e87b54d,Safari,2025-02-08 06:03:30,False
+3,2,92eb:1b69:e1:a82e:6174:264a:4cae:9cea,brooks.com,amy85@escobar-miller.org,6f1ef0c1204c0543bb4f6f87e10c66ef3eba7f7e01d0290bd61b7c823e87b54d,Safari,2025-02-08 06:03:30,False
+2,2,1fc7:33a6:d79e:3897:53df:bd22:8533:cd43,taylor-salazar.info,ppittman@yahoo.com,d374dd4a3c5325fef7598b6de4de62a845ce62b4727635af2ceb1e89169c11fe,Opera,2025-01-28 03:49:19,False
+2,2,1fc7:33a6:d79e:3897:53df:bd22:8533:cd43,taylor-salazar.info,ppittman@yahoo.com,d374dd4a3c5325fef7598b6de4de62a845ce62b4727635af2ceb1e89169c11fe,Opera,2025-01-28 03:49:19,False
+2,2,1fc7:33a6:d79e:3897:53df:bd22:8533:cd43,taylor-salazar.info,ppittman@yahoo.com,d374dd4a3c5325fef7598b6de4de62a845ce62b4727635af2ceb1e89169c11fe,Opera,2025-01-28 03:49:19,False
+1,0,4363:4415:3d8b:d584:57ce:11d1:338:7488,williams.com,yturner@lamb.com,78d5b72238b049b2cb94b4de2258c3ef9d8b9feeba5d0b7da9ccdf75b91c26f5,Other,2025-01-02 11:40:55,False
+1,0,4363:4415:3d8b:d584:57ce:11d1:338:7488,williams.com,yturner@lamb.com,78d5b72238b049b2cb94b4de2258c3ef9d8b9feeba5d0b7da9ccdf75b91c26f5,Other,2025-01-02 11:40:55,False
+1,0,4363:4415:3d8b:d584:57ce:11d1:338:7488,williams.com,yturner@lamb.com,78d5b72238b049b2cb94b4de2258c3ef9d8b9feeba5d0b7da9ccdf75b91c26f5,Other,2025-01-02 11:40:55,False
+2,1,5c9d:3b09:54bd:4f10:48a9:904d:e1a6:4e83,johnson.com,xgilbert@hotmail.com,01ebb1e3a7a1e10fd38375891d99b515d61d8aae723cc790a8abe99aea4f50b1,Opera,2025-02-21 20:10:37,False
+2,1,5c9d:3b09:54bd:4f10:48a9:904d:e1a6:4e83,johnson.com,xgilbert@hotmail.com,01ebb1e3a7a1e10fd38375891d99b515d61d8aae723cc790a8abe99aea4f50b1,Opera,2025-02-21 20:10:37,False
+2,1,5c9d:3b09:54bd:4f10:48a9:904d:e1a6:4e83,johnson.com,xgilbert@hotmail.com,01ebb1e3a7a1e10fd38375891d99b515d61d8aae723cc790a8abe99aea4f50b1,Opera,2025-02-21 20:10:37,False
+7,6,396b:12a7:a5b1:a38c:d740:534b:e5ec:bdfd,taylor.com,weaveredward@gmail.com,8d0c87dcbc3cb8648f7ff6927be3f02a70584f2fa1ae95b212002fbdcc7d46e7,Chrome,2025-02-19 14:22:22,False
+7,6,396b:12a7:a5b1:a38c:d740:534b:e5ec:bdfd,taylor.com,weaveredward@gmail.com,8d0c87dcbc3cb8648f7ff6927be3f02a70584f2fa1ae95b212002fbdcc7d46e7,Chrome,2025-02-19 14:22:22,False
+7,6,396b:12a7:a5b1:a38c:d740:534b:e5ec:bdfd,taylor.com,weaveredward@gmail.com,8d0c87dcbc3cb8648f7ff6927be3f02a70584f2fa1ae95b212002fbdcc7d46e7,Chrome,2025-02-19 14:22:22,False
+10,6,b423:3ff8:44c3:f71f:61ce:1709:3548:df59,harper-shaffer.org,fieldsjohn@hotmail.com,2033b33c8f0c88fc5e4c8ce2488aa464eb004655dc7e55c949d58fe77d79279f,Opera,2025-02-02 02:49:37,False
+10,6,b423:3ff8:44c3:f71f:61ce:1709:3548:df59,harper-shaffer.org,fieldsjohn@hotmail.com,2033b33c8f0c88fc5e4c8ce2488aa464eb004655dc7e55c949d58fe77d79279f,Opera,2025-02-02 02:49:37,False
+10,6,b423:3ff8:44c3:f71f:61ce:1709:3548:df59,harper-shaffer.org,fieldsjohn@hotmail.com,2033b33c8f0c88fc5e4c8ce2488aa464eb004655dc7e55c949d58fe77d79279f,Opera,2025-02-02 02:49:37,False
+7,1,7ba5:8766:f65a:7766:79b1:a164:5e92:873e,woods.com,watersdon@hotmail.com,14b20d2d700a1235db714f4c2e8ae7553724f31afd3a0b58604606ec95ad14b7,Other,2025-02-09 11:25:06,False
+7,1,7ba5:8766:f65a:7766:79b1:a164:5e92:873e,woods.com,watersdon@hotmail.com,14b20d2d700a1235db714f4c2e8ae7553724f31afd3a0b58604606ec95ad14b7,Other,2025-02-09 11:25:06,False
+7,1,7ba5:8766:f65a:7766:79b1:a164:5e92:873e,woods.com,watersdon@hotmail.com,14b20d2d700a1235db714f4c2e8ae7553724f31afd3a0b58604606ec95ad14b7,Other,2025-02-09 11:25:06,False
+9,6,719e:5c8a:3bde:11de:f696:328d:11a4:fd7a,haney.net,spenceracevedo@gmail.com,7b04514fdf0495e47c4ed4239ba4b034a9e0bf819b890a6d7e3af859e3cddc9b,Safari,2025-01-04 04:31:09,False
+9,6,719e:5c8a:3bde:11de:f696:328d:11a4:fd7a,haney.net,spenceracevedo@gmail.com,7b04514fdf0495e47c4ed4239ba4b034a9e0bf819b890a6d7e3af859e3cddc9b,Safari,2025-01-04 04:31:09,False
+9,6,719e:5c8a:3bde:11de:f696:328d:11a4:fd7a,haney.net,spenceracevedo@gmail.com,7b04514fdf0495e47c4ed4239ba4b034a9e0bf819b890a6d7e3af859e3cddc9b,Safari,2025-01-04 04:31:09,False
+10,0,d4eb:1f50:22c8:a78a:6a5:fd6e:b3e8:82ef,butler.com,richardlambert@miller-vasquez.com,da2d5c1249dfcb05d20a52c32885497942d3e3d9b7170a0db9418f57478e2559,Other,2025-01-18 02:33:40,False
+10,0,d4eb:1f50:22c8:a78a:6a5:fd6e:b3e8:82ef,butler.com,richardlambert@miller-vasquez.com,da2d5c1249dfcb05d20a52c32885497942d3e3d9b7170a0db9418f57478e2559,Other,2025-01-18 02:33:40,False
+10,0,d4eb:1f50:22c8:a78a:6a5:fd6e:b3e8:82ef,butler.com,richardlambert@miller-vasquez.com,da2d5c1249dfcb05d20a52c32885497942d3e3d9b7170a0db9418f57478e2559,Other,2025-01-18 02:33:40,False
+6,2,4ec1:e8ca:ed4d:8561:513b:c22e:6998:65b1,burns.com,thomas27@yahoo.com,3eb04368835bea504e62a6adbbf65face49c70f65a215c65bd4a49c320468829,Opera,2025-01-09 00:05:16,False
+6,2,4ec1:e8ca:ed4d:8561:513b:c22e:6998:65b1,burns.com,thomas27@yahoo.com,3eb04368835bea504e62a6adbbf65face49c70f65a215c65bd4a49c320468829,Opera,2025-01-09 00:05:16,False
+6,2,4ec1:e8ca:ed4d:8561:513b:c22e:6998:65b1,burns.com,thomas27@yahoo.com,3eb04368835bea504e62a6adbbf65face49c70f65a215c65bd4a49c320468829,Opera,2025-01-09 00:05:16,False
+2,0,fa85:3e42:b4da:9cf7:b90d:5cae:d43f:a3d9,middleton.com,angelaruiz@taylor-olson.com,cc1f56df6b727d4710ac73d5142512c96366fe45553d5d6db00e3f49d9c03eaa,Chrome,2025-01-07 08:17:40,False
+2,0,fa85:3e42:b4da:9cf7:b90d:5cae:d43f:a3d9,middleton.com,angelaruiz@taylor-olson.com,cc1f56df6b727d4710ac73d5142512c96366fe45553d5d6db00e3f49d9c03eaa,Chrome,2025-01-07 08:17:40,False
+2,0,fa85:3e42:b4da:9cf7:b90d:5cae:d43f:a3d9,middleton.com,angelaruiz@taylor-olson.com,cc1f56df6b727d4710ac73d5142512c96366fe45553d5d6db00e3f49d9c03eaa,Chrome,2025-01-07 08:17:40,False
+1,0,49e8:f36f:c06:467d:892f:d315:cca:3b4b,melendez.info,stephanie07@fry-hopkins.com,533cbd23099c910a4dd6a3f99ca7df8a256b3585abbe98409bc0731ffa018a2b,Other,2025-01-10 17:18:17,False
+1,0,49e8:f36f:c06:467d:892f:d315:cca:3b4b,melendez.info,stephanie07@fry-hopkins.com,533cbd23099c910a4dd6a3f99ca7df8a256b3585abbe98409bc0731ffa018a2b,Other,2025-01-10 17:18:17,False
+1,0,49e8:f36f:c06:467d:892f:d315:cca:3b4b,melendez.info,stephanie07@fry-hopkins.com,533cbd23099c910a4dd6a3f99ca7df8a256b3585abbe98409bc0731ffa018a2b,Other,2025-01-10 17:18:17,False
+1,1,308b:7d83:a148:a22a:113c:ba2:51fe:91b5,pierce.net,jonathan39@rodriguez-cole.com,f2034048e1150f40ca23f041b7d05b238babb1573964897546923802f8ddc6d7,Opera,2025-01-21 14:17:20,False
+1,1,308b:7d83:a148:a22a:113c:ba2:51fe:91b5,pierce.net,jonathan39@rodriguez-cole.com,f2034048e1150f40ca23f041b7d05b238babb1573964897546923802f8ddc6d7,Opera,2025-01-21 14:17:20,False
+1,1,308b:7d83:a148:a22a:113c:ba2:51fe:91b5,pierce.net,jonathan39@rodriguez-cole.com,f2034048e1150f40ca23f041b7d05b238babb1573964897546923802f8ddc6d7,Opera,2025-01-21 14:17:20,False
+5,3,b3c:650e:f3d8:2917:713d:2aff:c6dc:69d5,powell.com,monicahuerta@hotmail.com,a5b7fc26c797b0b1d1957d662669cde308f93e3a817e36a4c4f1ce482a5766ee,Safari,2025-02-16 21:07:37,False
+5,3,b3c:650e:f3d8:2917:713d:2aff:c6dc:69d5,powell.com,monicahuerta@hotmail.com,a5b7fc26c797b0b1d1957d662669cde308f93e3a817e36a4c4f1ce482a5766ee,Safari,2025-02-16 21:07:37,False
+5,3,b3c:650e:f3d8:2917:713d:2aff:c6dc:69d5,powell.com,monicahuerta@hotmail.com,a5b7fc26c797b0b1d1957d662669cde308f93e3a817e36a4c4f1ce482a5766ee,Safari,2025-02-16 21:07:37,False
+9,3,8d3b:76c4:f46d:3b2b:856e:7603:daf1:1e0b,hoover.info,leejohnson@reese.net,d6a010a5c624b5f71e51ab1bfdfa3bc88c354b101350cf188b7ee3c0bcbdc9ab,Other,2025-01-31 09:40:24,False
+9,3,8d3b:76c4:f46d:3b2b:856e:7603:daf1:1e0b,hoover.info,leejohnson@reese.net,d6a010a5c624b5f71e51ab1bfdfa3bc88c354b101350cf188b7ee3c0bcbdc9ab,Other,2025-01-31 09:40:24,False
+9,3,8d3b:76c4:f46d:3b2b:856e:7603:daf1:1e0b,hoover.info,leejohnson@reese.net,d6a010a5c624b5f71e51ab1bfdfa3bc88c354b101350cf188b7ee3c0bcbdc9ab,Other,2025-01-31 09:40:24,False
+5,4,7091:68b8:374:ee9e:2580:b59d:214:44f,brooks-hodges.org,jenningsjennifer@collins.com,2b5d978f899b8a87890f2f8bf3210cf8682195660699eaa96c4fdaef594f21b8,Opera,2025-01-03 15:24:09,False
+5,4,7091:68b8:374:ee9e:2580:b59d:214:44f,brooks-hodges.org,jenningsjennifer@collins.com,2b5d978f899b8a87890f2f8bf3210cf8682195660699eaa96c4fdaef594f21b8,Opera,2025-01-03 15:24:09,False
+5,4,7091:68b8:374:ee9e:2580:b59d:214:44f,brooks-hodges.org,jenningsjennifer@collins.com,2b5d978f899b8a87890f2f8bf3210cf8682195660699eaa96c4fdaef594f21b8,Opera,2025-01-03 15:24:09,False
+9,7,c681:7f7:ab74:f313:ae0f:6f44:6394:ed91,hubbard.com,dfrost@smith-robinson.info,d6bf6a6f851e32e843041684bc93aae94775903d3e8a96d50151e989c5762300,Chrome,2025-01-15 12:38:20,False
+9,7,c681:7f7:ab74:f313:ae0f:6f44:6394:ed91,hubbard.com,dfrost@smith-robinson.info,d6bf6a6f851e32e843041684bc93aae94775903d3e8a96d50151e989c5762300,Chrome,2025-01-15 12:38:20,False
+9,7,c681:7f7:ab74:f313:ae0f:6f44:6394:ed91,hubbard.com,dfrost@smith-robinson.info,d6bf6a6f851e32e843041684bc93aae94775903d3e8a96d50151e989c5762300,Chrome,2025-01-15 12:38:20,False
+10,3,16d4:47f0:358e:2943:2d43:9bdf:8a83:54bc,dorsey-forbes.com,ecampbell@hotmail.com,fe31f2f22f86811cc79102ca85fec83801289c083c1d5d9168d6605a37a570be,Opera,2025-01-28 19:13:28,False
+10,3,16d4:47f0:358e:2943:2d43:9bdf:8a83:54bc,dorsey-forbes.com,ecampbell@hotmail.com,fe31f2f22f86811cc79102ca85fec83801289c083c1d5d9168d6605a37a570be,Opera,2025-01-28 19:13:28,False
+10,3,16d4:47f0:358e:2943:2d43:9bdf:8a83:54bc,dorsey-forbes.com,ecampbell@hotmail.com,fe31f2f22f86811cc79102ca85fec83801289c083c1d5d9168d6605a37a570be,Opera,2025-01-28 19:13:28,False
+6,6,d896:ac5b:cb8c:1557:4dec:1398:a736:5d8,clay.com,fhansen@henry.net,14fc1a3154786011d1bc00d9e6a684d2f5ce149eed0171611cb91dc5ee2e3836,Other,2025-01-14 00:01:14,False
+6,6,d896:ac5b:cb8c:1557:4dec:1398:a736:5d8,clay.com,fhansen@henry.net,14fc1a3154786011d1bc00d9e6a684d2f5ce149eed0171611cb91dc5ee2e3836,Other,2025-01-14 00:01:14,False
+6,6,d896:ac5b:cb8c:1557:4dec:1398:a736:5d8,clay.com,fhansen@henry.net,14fc1a3154786011d1bc00d9e6a684d2f5ce149eed0171611cb91dc5ee2e3836,Other,2025-01-14 00:01:14,False
+6,3,72db:6c94:b766:a1ff:c12a:376:2e89:ea8e,whitaker.com,bairdjohn@yahoo.com,8b5f202f6e672418d8494fff4646b64f7c58b5f1225f15a52bcaa34b19f4cc3f,Safari,2025-01-13 09:48:56,False
+6,3,72db:6c94:b766:a1ff:c12a:376:2e89:ea8e,whitaker.com,bairdjohn@yahoo.com,8b5f202f6e672418d8494fff4646b64f7c58b5f1225f15a52bcaa34b19f4cc3f,Safari,2025-01-13 09:48:56,False
+6,3,72db:6c94:b766:a1ff:c12a:376:2e89:ea8e,whitaker.com,bairdjohn@yahoo.com,8b5f202f6e672418d8494fff4646b64f7c58b5f1225f15a52bcaa34b19f4cc3f,Safari,2025-01-13 09:48:56,False
+7,6,3661:39f4:c41c:de5:fca2:27d1:ab10:7642,brock.com,jcordova@gmail.com,a92f23a0defc3466a724522cf0719f77e5655ba58eb87d1665fa1461d8ec3954,Safari,2025-01-16 20:38:22,False
+7,6,3661:39f4:c41c:de5:fca2:27d1:ab10:7642,brock.com,jcordova@gmail.com,a92f23a0defc3466a724522cf0719f77e5655ba58eb87d1665fa1461d8ec3954,Safari,2025-01-16 20:38:22,False
+7,6,3661:39f4:c41c:de5:fca2:27d1:ab10:7642,brock.com,jcordova@gmail.com,a92f23a0defc3466a724522cf0719f77e5655ba58eb87d1665fa1461d8ec3954,Safari,2025-01-16 20:38:22,False
+0,0,3dc9:ba22:e054:7b42:7ba1:d1a:89a3:bcdb,garcia.biz,johnsondavid@hotmail.com,ebc8727d68264c499a0ac52bf600a08e5e3f30fdbb3b89029df428398588528d,Chrome,2025-02-16 22:26:45,False
+0,0,3dc9:ba22:e054:7b42:7ba1:d1a:89a3:bcdb,garcia.biz,johnsondavid@hotmail.com,ebc8727d68264c499a0ac52bf600a08e5e3f30fdbb3b89029df428398588528d,Chrome,2025-02-16 22:26:45,False
+0,0,3dc9:ba22:e054:7b42:7ba1:d1a:89a3:bcdb,garcia.biz,johnsondavid@hotmail.com,ebc8727d68264c499a0ac52bf600a08e5e3f30fdbb3b89029df428398588528d,Chrome,2025-02-16 22:26:45,False
+8,1,20d9:dcb0:72ce:31d0:caf6:5792:38f3:b074,schmidt.com,miajohnson@hotmail.com,8a7f6fe95508c3d2b2733d115e0588252c9087b6498e07e8b43d571b0bf0fc91,Safari,2025-02-17 15:58:18,False
+8,1,20d9:dcb0:72ce:31d0:caf6:5792:38f3:b074,schmidt.com,miajohnson@hotmail.com,8a7f6fe95508c3d2b2733d115e0588252c9087b6498e07e8b43d571b0bf0fc91,Safari,2025-02-17 15:58:18,False
+8,1,20d9:dcb0:72ce:31d0:caf6:5792:38f3:b074,schmidt.com,miajohnson@hotmail.com,8a7f6fe95508c3d2b2733d115e0588252c9087b6498e07e8b43d571b0bf0fc91,Safari,2025-02-17 15:58:18,False
+2,1,3f0d:a04b:6ab8:7617:19db:397a:9b40:3984,shelton.com,zjordan@yahoo.com,eed231b1b1ff9cd75736fdd35c791a852c4a0336f1e11d7b2864d8ad3280ae21,Firefox,2025-01-17 12:35:01,False
+2,1,3f0d:a04b:6ab8:7617:19db:397a:9b40:3984,shelton.com,zjordan@yahoo.com,eed231b1b1ff9cd75736fdd35c791a852c4a0336f1e11d7b2864d8ad3280ae21,Firefox,2025-01-17 12:35:01,False
+2,1,3f0d:a04b:6ab8:7617:19db:397a:9b40:3984,shelton.com,zjordan@yahoo.com,eed231b1b1ff9cd75736fdd35c791a852c4a0336f1e11d7b2864d8ad3280ae21,Firefox,2025-01-17 12:35:01,False
+1,1,6786:5b54:7d72:de88:6d4f:99d6:9cdd:837d,ramos-cole.biz,anthonynoble@schwartz-robles.info,f9f181faf30977dcbd755404b0f48f667d38a3f2ca53f7119cd0a2f22561f1e7,Firefox,2025-02-06 23:55:53,False
+1,1,6786:5b54:7d72:de88:6d4f:99d6:9cdd:837d,ramos-cole.biz,anthonynoble@schwartz-robles.info,f9f181faf30977dcbd755404b0f48f667d38a3f2ca53f7119cd0a2f22561f1e7,Firefox,2025-02-06 23:55:53,False
+1,1,6786:5b54:7d72:de88:6d4f:99d6:9cdd:837d,ramos-cole.biz,anthonynoble@schwartz-robles.info,f9f181faf30977dcbd755404b0f48f667d38a3f2ca53f7119cd0a2f22561f1e7,Firefox,2025-02-06 23:55:53,False
+2,2,31b8:9875:8d46:4311:a150:dcf0:ff08:ad40,flores.com,scottjohnson@hotmail.com,6af5bf4d1a8db7eed9cc638deb118516733fd2b3f247b1b49460432e61267338,Safari,2025-02-07 18:27:33,False
+2,2,31b8:9875:8d46:4311:a150:dcf0:ff08:ad40,flores.com,scottjohnson@hotmail.com,6af5bf4d1a8db7eed9cc638deb118516733fd2b3f247b1b49460432e61267338,Safari,2025-02-07 18:27:33,False
+2,2,31b8:9875:8d46:4311:a150:dcf0:ff08:ad40,flores.com,scottjohnson@hotmail.com,6af5bf4d1a8db7eed9cc638deb118516733fd2b3f247b1b49460432e61267338,Safari,2025-02-07 18:27:33,False
+9,5,4ff5:ce1b:7739:805f:4450:a328:7faa:dcaf,wood.com,sheryl52@yahoo.com,ef316afa8cc7b133c87c0ed06eb7d550712e571a89f92e656a11c668060e79ce,Firefox,2025-02-10 20:33:43,False
+9,5,4ff5:ce1b:7739:805f:4450:a328:7faa:dcaf,wood.com,sheryl52@yahoo.com,ef316afa8cc7b133c87c0ed06eb7d550712e571a89f92e656a11c668060e79ce,Firefox,2025-02-10 20:33:43,False
+9,5,4ff5:ce1b:7739:805f:4450:a328:7faa:dcaf,wood.com,sheryl52@yahoo.com,ef316afa8cc7b133c87c0ed06eb7d550712e571a89f92e656a11c668060e79ce,Firefox,2025-02-10 20:33:43,False
+6,1,de31:7b81:2ec0:4491:29c9:18b3:c9e7:bd0a,wu-ortiz.com,kerrimurray@weiss.com,a563b229430154297b5179e95b1051ee4a716829f93c3f59ea5f290e229379a0,Chrome,2025-01-27 02:47:04,False
+6,1,de31:7b81:2ec0:4491:29c9:18b3:c9e7:bd0a,wu-ortiz.com,kerrimurray@weiss.com,a563b229430154297b5179e95b1051ee4a716829f93c3f59ea5f290e229379a0,Chrome,2025-01-27 02:47:04,False
+6,1,de31:7b81:2ec0:4491:29c9:18b3:c9e7:bd0a,wu-ortiz.com,kerrimurray@weiss.com,a563b229430154297b5179e95b1051ee4a716829f93c3f59ea5f290e229379a0,Chrome,2025-01-27 02:47:04,False
+0,0,3ecf:63ad:b11f:9b97:ed2c:935a:914a:fca5,williams-thomas.com,meghanadams@hotmail.com,d1b6b8195cdd64406112bfb9e6197ec6ed49b4e1a9d4ad1bf479924621ebff95,Safari,2025-01-27 12:56:35,False
+0,0,3ecf:63ad:b11f:9b97:ed2c:935a:914a:fca5,williams-thomas.com,meghanadams@hotmail.com,d1b6b8195cdd64406112bfb9e6197ec6ed49b4e1a9d4ad1bf479924621ebff95,Safari,2025-01-27 12:56:35,False
+0,0,3ecf:63ad:b11f:9b97:ed2c:935a:914a:fca5,williams-thomas.com,meghanadams@hotmail.com,d1b6b8195cdd64406112bfb9e6197ec6ed49b4e1a9d4ad1bf479924621ebff95,Safari,2025-01-27 12:56:35,False
+4,1,d81:aa2a:36e9:8328:59b0:7843:a50:7353,bell-kirby.com,jeffreyproctor@gmail.com,53ab48d1d5c19f0df5edb273b4ae3a5f237a03d53fe206b1e107731fee933ddc,Firefox,2025-01-23 22:47:08,False
+4,1,d81:aa2a:36e9:8328:59b0:7843:a50:7353,bell-kirby.com,jeffreyproctor@gmail.com,53ab48d1d5c19f0df5edb273b4ae3a5f237a03d53fe206b1e107731fee933ddc,Firefox,2025-01-23 22:47:08,False
+4,1,d81:aa2a:36e9:8328:59b0:7843:a50:7353,bell-kirby.com,jeffreyproctor@gmail.com,53ab48d1d5c19f0df5edb273b4ae3a5f237a03d53fe206b1e107731fee933ddc,Firefox,2025-01-23 22:47:08,False
+0,0,c6a6:52:c73b:2fe5:fa79:9efd:d964:9d43,taylor.com,robert08@yahoo.com,ef78159fdb702c4c1556c0b7e18015afd583ac63f453525d8080374aa3a60c00,Safari,2025-01-23 13:38:24,False
+0,0,c6a6:52:c73b:2fe5:fa79:9efd:d964:9d43,taylor.com,robert08@yahoo.com,ef78159fdb702c4c1556c0b7e18015afd583ac63f453525d8080374aa3a60c00,Safari,2025-01-23 13:38:24,False
+0,0,c6a6:52:c73b:2fe5:fa79:9efd:d964:9d43,taylor.com,robert08@yahoo.com,ef78159fdb702c4c1556c0b7e18015afd583ac63f453525d8080374aa3a60c00,Safari,2025-01-23 13:38:24,False
+7,0,9aa4:5502:12f6:ebf6:764d:e2e2:5369:9939,barber-smith.org,donald83@lawrence.com,ad5269a4bd07d7adee8a23a15b30a41b46b020d348230ab4c8d7aab76e4e066c,Other,2025-02-19 06:22:41,False
+7,0,9aa4:5502:12f6:ebf6:764d:e2e2:5369:9939,barber-smith.org,donald83@lawrence.com,ad5269a4bd07d7adee8a23a15b30a41b46b020d348230ab4c8d7aab76e4e066c,Other,2025-02-19 06:22:41,False
+7,0,9aa4:5502:12f6:ebf6:764d:e2e2:5369:9939,barber-smith.org,donald83@lawrence.com,ad5269a4bd07d7adee8a23a15b30a41b46b020d348230ab4c8d7aab76e4e066c,Other,2025-02-19 06:22:41,False
+7,2,10d0:e8fa:3b0d:29:3f63:a2ce:85d0:e87,brown.com,lsmith@mcclain.org,2d5415fc875f397a15f3983c5b00b703b9a54d87276c978ba505b45a1eba7ffc,Opera,2025-01-11 22:46:40,False
+7,2,10d0:e8fa:3b0d:29:3f63:a2ce:85d0:e87,brown.com,lsmith@mcclain.org,2d5415fc875f397a15f3983c5b00b703b9a54d87276c978ba505b45a1eba7ffc,Opera,2025-01-11 22:46:40,False
+7,2,10d0:e8fa:3b0d:29:3f63:a2ce:85d0:e87,brown.com,lsmith@mcclain.org,2d5415fc875f397a15f3983c5b00b703b9a54d87276c978ba505b45a1eba7ffc,Opera,2025-01-11 22:46:40,False
+1,0,fafd:3996:a808:fe35:4ae9:89ca:3f88:f06a,friedman.info,hammondmatthew@hotmail.com,ede72543f3a5e91aaeaecd0cde2de3bff569effae1cfac2db62f51164faa84a5,Safari,2025-02-12 19:19:03,False
+1,0,fafd:3996:a808:fe35:4ae9:89ca:3f88:f06a,friedman.info,hammondmatthew@hotmail.com,ede72543f3a5e91aaeaecd0cde2de3bff569effae1cfac2db62f51164faa84a5,Safari,2025-02-12 19:19:03,False
+1,0,fafd:3996:a808:fe35:4ae9:89ca:3f88:f06a,friedman.info,hammondmatthew@hotmail.com,ede72543f3a5e91aaeaecd0cde2de3bff569effae1cfac2db62f51164faa84a5,Safari,2025-02-12 19:19:03,False
+6,6,93e3:d333:2931:1fcf:e533:bafb:691f:27df,norris-guzman.net,rebeccayoung@rodriguez.org,0bd7bb328ac0422801ec300c25c97d2a383ad378322fcb40d3dfd7e8b668723a,Opera,2025-01-09 04:11:54,False
+6,6,93e3:d333:2931:1fcf:e533:bafb:691f:27df,norris-guzman.net,rebeccayoung@rodriguez.org,0bd7bb328ac0422801ec300c25c97d2a383ad378322fcb40d3dfd7e8b668723a,Opera,2025-01-09 04:11:54,False
+6,6,93e3:d333:2931:1fcf:e533:bafb:691f:27df,norris-guzman.net,rebeccayoung@rodriguez.org,0bd7bb328ac0422801ec300c25c97d2a383ad378322fcb40d3dfd7e8b668723a,Opera,2025-01-09 04:11:54,False
+8,8,72d4:5494:5141:24f2:ef24:f412:e0b3:c6ef,johnson-anderson.com,johntaylor@wallace.com,84ddd7b15c9b8502f2a1a33dff12649f2975d12237a0855fb11373069aeb9a54,Firefox,2025-02-03 03:18:32,False
+8,8,72d4:5494:5141:24f2:ef24:f412:e0b3:c6ef,johnson-anderson.com,johntaylor@wallace.com,84ddd7b15c9b8502f2a1a33dff12649f2975d12237a0855fb11373069aeb9a54,Firefox,2025-02-03 03:18:32,False
+8,8,72d4:5494:5141:24f2:ef24:f412:e0b3:c6ef,johnson-anderson.com,johntaylor@wallace.com,84ddd7b15c9b8502f2a1a33dff12649f2975d12237a0855fb11373069aeb9a54,Firefox,2025-02-03 03:18:32,False
+8,1,845e:c37e:4e92:166c:4970:1a9:f6e8:3208,johnson.biz,roachcarlos@yahoo.com,750fc0976a4a93da1142b8e1dae0397df06739e72a8a721859edda91dc81f645,Chrome,2025-01-21 15:45:35,False
+8,1,845e:c37e:4e92:166c:4970:1a9:f6e8:3208,johnson.biz,roachcarlos@yahoo.com,750fc0976a4a93da1142b8e1dae0397df06739e72a8a721859edda91dc81f645,Chrome,2025-01-21 15:45:35,False
+8,1,845e:c37e:4e92:166c:4970:1a9:f6e8:3208,johnson.biz,roachcarlos@yahoo.com,750fc0976a4a93da1142b8e1dae0397df06739e72a8a721859edda91dc81f645,Chrome,2025-01-21 15:45:35,False
+3,3,51fc:44a9:c862:4ffe:f9c:e9e0:51a1:de1a,stone.org,josegarcia@henderson.com,cbeff8f0a78eab24f7c56314340ef783f7653879bf2558aeccee0bf0c71101ba,Other,2025-01-13 06:27:24,False
+3,3,51fc:44a9:c862:4ffe:f9c:e9e0:51a1:de1a,stone.org,josegarcia@henderson.com,cbeff8f0a78eab24f7c56314340ef783f7653879bf2558aeccee0bf0c71101ba,Other,2025-01-13 06:27:24,False
+3,3,51fc:44a9:c862:4ffe:f9c:e9e0:51a1:de1a,stone.org,josegarcia@henderson.com,cbeff8f0a78eab24f7c56314340ef783f7653879bf2558aeccee0bf0c71101ba,Other,2025-01-13 06:27:24,False
+10,4,278a:5a1:1acc:bcd1:8dc4:129b:ad16:dda1,pace-castro.com,emilyhanna@hotmail.com,0777bfce85a4b36af7e5230d1f172fc0ebac9e133f65f175b43567afaa89ae28,Safari,2025-01-04 09:44:03,False
+10,4,278a:5a1:1acc:bcd1:8dc4:129b:ad16:dda1,pace-castro.com,emilyhanna@hotmail.com,0777bfce85a4b36af7e5230d1f172fc0ebac9e133f65f175b43567afaa89ae28,Safari,2025-01-04 09:44:03,False
+10,4,278a:5a1:1acc:bcd1:8dc4:129b:ad16:dda1,pace-castro.com,emilyhanna@hotmail.com,0777bfce85a4b36af7e5230d1f172fc0ebac9e133f65f175b43567afaa89ae28,Safari,2025-01-04 09:44:03,False
+3,3,205d:dc4e:b014:6b23:b97:a7d4:6763:5ac6,jackson-adkins.com,osexton@yahoo.com,8273c0588cc64db44dd46f6273d6d43db05191f753db8073e0371b50001e1bda,Safari,2025-01-05 04:47:24,False
+3,3,205d:dc4e:b014:6b23:b97:a7d4:6763:5ac6,jackson-adkins.com,osexton@yahoo.com,8273c0588cc64db44dd46f6273d6d43db05191f753db8073e0371b50001e1bda,Safari,2025-01-05 04:47:24,False
+3,3,205d:dc4e:b014:6b23:b97:a7d4:6763:5ac6,jackson-adkins.com,osexton@yahoo.com,8273c0588cc64db44dd46f6273d6d43db05191f753db8073e0371b50001e1bda,Safari,2025-01-05 04:47:24,False
+10,1,7d30:b32f:e682:7433:6dd6:2d1a:d42a:f041,hodges.com,jmendoza@yahoo.com,e559a6441ee6b9f20d3f68f7930d15ae77d3f3f42f984ace7ac957b2a9cdd93d,Firefox,2025-01-15 14:22:51,False
+10,1,7d30:b32f:e682:7433:6dd6:2d1a:d42a:f041,hodges.com,jmendoza@yahoo.com,e559a6441ee6b9f20d3f68f7930d15ae77d3f3f42f984ace7ac957b2a9cdd93d,Firefox,2025-01-15 14:22:51,False
+10,1,7d30:b32f:e682:7433:6dd6:2d1a:d42a:f041,hodges.com,jmendoza@yahoo.com,e559a6441ee6b9f20d3f68f7930d15ae77d3f3f42f984ace7ac957b2a9cdd93d,Firefox,2025-01-15 14:22:51,False
+3,2,13d9:7ccf:c439:b417:73d:535e:2649:ae05,davis.com,xbyrd@blanchard-fitzgerald.com,9938507ad4bd5116c3424fc85b913ab87fefc3d4fc901d93afbc02bf8e100002,Opera,2025-02-06 18:36:29,False
+3,2,13d9:7ccf:c439:b417:73d:535e:2649:ae05,davis.com,xbyrd@blanchard-fitzgerald.com,9938507ad4bd5116c3424fc85b913ab87fefc3d4fc901d93afbc02bf8e100002,Opera,2025-02-06 18:36:29,False
+3,2,13d9:7ccf:c439:b417:73d:535e:2649:ae05,davis.com,xbyrd@blanchard-fitzgerald.com,9938507ad4bd5116c3424fc85b913ab87fefc3d4fc901d93afbc02bf8e100002,Opera,2025-02-06 18:36:29,False
+5,5,9bcc:248a:e80c:820:9890:3871:134a:7322,hawkins.com,bethany63@gmail.com,8ff93cce7d546a44e48ebabe3d047353956f172ecb081f72312068847d504eaa,Firefox,2025-01-21 13:22:21,False
+5,5,9bcc:248a:e80c:820:9890:3871:134a:7322,hawkins.com,bethany63@gmail.com,8ff93cce7d546a44e48ebabe3d047353956f172ecb081f72312068847d504eaa,Firefox,2025-01-21 13:22:21,False
+5,5,9bcc:248a:e80c:820:9890:3871:134a:7322,hawkins.com,bethany63@gmail.com,8ff93cce7d546a44e48ebabe3d047353956f172ecb081f72312068847d504eaa,Firefox,2025-01-21 13:22:21,False
+3,3,ddd8:9616:20a9:f677:9fa0:aa07:e9c2:a112,jackson.com,philipwyatt@hotmail.com,49ff0ab27399e796b0dc908f5ce531995a9f0d87f842e59e5a07023a21e6fcb4,Other,2025-01-07 02:30:46,False
+3,3,ddd8:9616:20a9:f677:9fa0:aa07:e9c2:a112,jackson.com,philipwyatt@hotmail.com,49ff0ab27399e796b0dc908f5ce531995a9f0d87f842e59e5a07023a21e6fcb4,Other,2025-01-07 02:30:46,False
+3,3,ddd8:9616:20a9:f677:9fa0:aa07:e9c2:a112,jackson.com,philipwyatt@hotmail.com,49ff0ab27399e796b0dc908f5ce531995a9f0d87f842e59e5a07023a21e6fcb4,Other,2025-01-07 02:30:46,False
+10,4,c548:5f8c:8ab4:fe9e:f165:ed5f:5a45:7c4f,smith-wilson.com,billybryant@moore.com,543e4cb6c737e082ef31ade16a39291816b12945c63648902e69d1395d7b4d40,Other,2025-02-03 09:09:31,False
+10,4,c548:5f8c:8ab4:fe9e:f165:ed5f:5a45:7c4f,smith-wilson.com,billybryant@moore.com,543e4cb6c737e082ef31ade16a39291816b12945c63648902e69d1395d7b4d40,Other,2025-02-03 09:09:31,False
+10,4,c548:5f8c:8ab4:fe9e:f165:ed5f:5a45:7c4f,smith-wilson.com,billybryant@moore.com,543e4cb6c737e082ef31ade16a39291816b12945c63648902e69d1395d7b4d40,Other,2025-02-03 09:09:31,False
+1,0,c541:5821:2c17:8530:a55b:1493:f2e4:37e2,payne.com,turneralyssa@morgan.org,e0c58a50716944519cda2e1fa6f813e6664e16aa5e31281adf8c3e6524ea258d,Firefox,2025-02-11 19:46:04,False
+1,0,c541:5821:2c17:8530:a55b:1493:f2e4:37e2,payne.com,turneralyssa@morgan.org,e0c58a50716944519cda2e1fa6f813e6664e16aa5e31281adf8c3e6524ea258d,Firefox,2025-02-11 19:46:04,False
+1,0,c541:5821:2c17:8530:a55b:1493:f2e4:37e2,payne.com,turneralyssa@morgan.org,e0c58a50716944519cda2e1fa6f813e6664e16aa5e31281adf8c3e6524ea258d,Firefox,2025-02-11 19:46:04,False
+10,4,dc4e:d7a6:b7c1:258f:d301:abad:deb0:dfc1,vincent.com,hvalenzuela@burnett.net,e47ba47f9b127c9cae054a2ba495cef051529afd21da88cdf25bbf0129a8615c,Safari,2025-01-22 22:55:21,False
+10,4,dc4e:d7a6:b7c1:258f:d301:abad:deb0:dfc1,vincent.com,hvalenzuela@burnett.net,e47ba47f9b127c9cae054a2ba495cef051529afd21da88cdf25bbf0129a8615c,Safari,2025-01-22 22:55:21,False
+10,4,dc4e:d7a6:b7c1:258f:d301:abad:deb0:dfc1,vincent.com,hvalenzuela@burnett.net,e47ba47f9b127c9cae054a2ba495cef051529afd21da88cdf25bbf0129a8615c,Safari,2025-01-22 22:55:21,False
+6,0,5140:d115:d660:7322:6cb5:54b5:b0d2:42ac,watson.com,andrew71@raymond.org,b6eec966038bf2762cfba90214ab996930a38ac61f66663d2260208e3852a5dd,Other,2025-01-20 22:48:48,False
+6,0,5140:d115:d660:7322:6cb5:54b5:b0d2:42ac,watson.com,andrew71@raymond.org,b6eec966038bf2762cfba90214ab996930a38ac61f66663d2260208e3852a5dd,Other,2025-01-20 22:48:48,False
+6,0,5140:d115:d660:7322:6cb5:54b5:b0d2:42ac,watson.com,andrew71@raymond.org,b6eec966038bf2762cfba90214ab996930a38ac61f66663d2260208e3852a5dd,Other,2025-01-20 22:48:48,False
+3,3,3fc4:ed24:3253:4dad:65f0:ab44:6fe4:bbca,cook.info,alexandrarobinson@hotmail.com,9ca86e5da846f14cd90949469e48712616b86deda564ef8c25c453425fa3fde3,Safari,2025-01-25 15:30:59,False
+3,3,3fc4:ed24:3253:4dad:65f0:ab44:6fe4:bbca,cook.info,alexandrarobinson@hotmail.com,9ca86e5da846f14cd90949469e48712616b86deda564ef8c25c453425fa3fde3,Safari,2025-01-25 15:30:59,False
+3,3,3fc4:ed24:3253:4dad:65f0:ab44:6fe4:bbca,cook.info,alexandrarobinson@hotmail.com,9ca86e5da846f14cd90949469e48712616b86deda564ef8c25c453425fa3fde3,Safari,2025-01-25 15:30:59,False
+5,0,73cc:dca8:a4ec:1e3b:d4f3:5507:bb5e:2987,sanchez.com,qmartin@gibson.com,93c0b4adb10375ecedbce8b6882b173c6161fc758cd1458ce11b3e445245a46c,Firefox,2025-01-20 15:09:35,False
+5,0,73cc:dca8:a4ec:1e3b:d4f3:5507:bb5e:2987,sanchez.com,qmartin@gibson.com,93c0b4adb10375ecedbce8b6882b173c6161fc758cd1458ce11b3e445245a46c,Firefox,2025-01-20 15:09:35,False
+5,0,73cc:dca8:a4ec:1e3b:d4f3:5507:bb5e:2987,sanchez.com,qmartin@gibson.com,93c0b4adb10375ecedbce8b6882b173c6161fc758cd1458ce11b3e445245a46c,Firefox,2025-01-20 15:09:35,False
+4,4,823f:6ce5:9d32:b078:f4d8:97af:36d2:70fd,hansen-elliott.com,larry22@white.com,9b9f28e5aedc0056f0f7997aaba62e8c7c48bfea77477069ba9d4a4f99a11242,Safari,2025-01-05 03:37:59,False
+4,4,823f:6ce5:9d32:b078:f4d8:97af:36d2:70fd,hansen-elliott.com,larry22@white.com,9b9f28e5aedc0056f0f7997aaba62e8c7c48bfea77477069ba9d4a4f99a11242,Safari,2025-01-05 03:37:59,False
+4,4,823f:6ce5:9d32:b078:f4d8:97af:36d2:70fd,hansen-elliott.com,larry22@white.com,9b9f28e5aedc0056f0f7997aaba62e8c7c48bfea77477069ba9d4a4f99a11242,Safari,2025-01-05 03:37:59,False
+6,6,34e4:b103:b5f3:fbdd:a1a:2acf:8ca4:fad8,hernandez.com,stephanielewis@gmail.com,710a0b4433516b97385f0a898045a31162c693e774100e62a7b9ccf89462d2a1,Opera,2025-01-08 04:06:29,False
+6,6,34e4:b103:b5f3:fbdd:a1a:2acf:8ca4:fad8,hernandez.com,stephanielewis@gmail.com,710a0b4433516b97385f0a898045a31162c693e774100e62a7b9ccf89462d2a1,Opera,2025-01-08 04:06:29,False
+6,6,34e4:b103:b5f3:fbdd:a1a:2acf:8ca4:fad8,hernandez.com,stephanielewis@gmail.com,710a0b4433516b97385f0a898045a31162c693e774100e62a7b9ccf89462d2a1,Opera,2025-01-08 04:06:29,False
+1,0,582b:5320:e6e:5a68:2604:aa3:a1cb:f531,thomas-lee.net,kandrews@evans.org,9738dbc97199a1195bad746e256ca6edd85bc028475ed7836b50d65f6882a33f,Firefox,2025-01-16 00:53:25,False
+1,0,582b:5320:e6e:5a68:2604:aa3:a1cb:f531,thomas-lee.net,kandrews@evans.org,9738dbc97199a1195bad746e256ca6edd85bc028475ed7836b50d65f6882a33f,Firefox,2025-01-16 00:53:25,False
+1,0,582b:5320:e6e:5a68:2604:aa3:a1cb:f531,thomas-lee.net,kandrews@evans.org,9738dbc97199a1195bad746e256ca6edd85bc028475ed7836b50d65f6882a33f,Firefox,2025-01-16 00:53:25,False
+5,2,c44a:3729:3718:9ddd:3074:a2ec:ec73:2adb,huang-stevens.info,martinezrichard@gonzalez-hood.com,d1e8795f1b2f1aa08476f9643050dedca175edc7818e9c7f7f2274a80b52b784,Safari,2025-01-12 08:06:32,False
+5,2,c44a:3729:3718:9ddd:3074:a2ec:ec73:2adb,huang-stevens.info,martinezrichard@gonzalez-hood.com,d1e8795f1b2f1aa08476f9643050dedca175edc7818e9c7f7f2274a80b52b784,Safari,2025-01-12 08:06:32,False
+5,2,c44a:3729:3718:9ddd:3074:a2ec:ec73:2adb,huang-stevens.info,martinezrichard@gonzalez-hood.com,d1e8795f1b2f1aa08476f9643050dedca175edc7818e9c7f7f2274a80b52b784,Safari,2025-01-12 08:06:32,False
+10,10,6b0:c13f:c81b:4235:423b:ddcb:a98a:c5fb,lopez.org,fjordan@hotmail.com,2c8716426482f80902844fe2eb2cfe3da8752c30eb428da4c04968b50a555484,Safari,2025-02-13 10:23:50,False
+10,10,6b0:c13f:c81b:4235:423b:ddcb:a98a:c5fb,lopez.org,fjordan@hotmail.com,2c8716426482f80902844fe2eb2cfe3da8752c30eb428da4c04968b50a555484,Safari,2025-02-13 10:23:50,False
+10,10,6b0:c13f:c81b:4235:423b:ddcb:a98a:c5fb,lopez.org,fjordan@hotmail.com,2c8716426482f80902844fe2eb2cfe3da8752c30eb428da4c04968b50a555484,Safari,2025-02-13 10:23:50,False
+10,7,690c:3fa6:9bc1:4d98:e353:379c:b01a:3e29,lee.info,martinsean@yahoo.com,c41d1369489c5407b2ace1db4705ab9659a928ab4972f3a2fcaf9a75d8e916d9,Safari,2025-01-07 09:59:02,False
+10,7,690c:3fa6:9bc1:4d98:e353:379c:b01a:3e29,lee.info,martinsean@yahoo.com,c41d1369489c5407b2ace1db4705ab9659a928ab4972f3a2fcaf9a75d8e916d9,Safari,2025-01-07 09:59:02,False
+10,7,690c:3fa6:9bc1:4d98:e353:379c:b01a:3e29,lee.info,martinsean@yahoo.com,c41d1369489c5407b2ace1db4705ab9659a928ab4972f3a2fcaf9a75d8e916d9,Safari,2025-01-07 09:59:02,False
+2,0,15eb:9e2f:a300:1a89:e6ea:f722:a314:df2,ingram.info,wutyler@ware.com,ef23aab98c3e7a9d88809616758e57fe49fe6c4af88256f6997f21b42ab06236,Opera,2025-02-10 09:41:21,False
+2,0,15eb:9e2f:a300:1a89:e6ea:f722:a314:df2,ingram.info,wutyler@ware.com,ef23aab98c3e7a9d88809616758e57fe49fe6c4af88256f6997f21b42ab06236,Opera,2025-02-10 09:41:21,False
+2,0,15eb:9e2f:a300:1a89:e6ea:f722:a314:df2,ingram.info,wutyler@ware.com,ef23aab98c3e7a9d88809616758e57fe49fe6c4af88256f6997f21b42ab06236,Opera,2025-02-10 09:41:21,False
+9,2,6ef8:a10f:2094:e26d:695c:9a43:c03c:9ce8,scott.com,robertsjoseph@salas.com,90c7ec729cf934bbde94d3c0f4c5310c0346b5916f359cef2973ec722e1c5e7c,Safari,2025-01-18 06:48:30,False
+9,2,6ef8:a10f:2094:e26d:695c:9a43:c03c:9ce8,scott.com,robertsjoseph@salas.com,90c7ec729cf934bbde94d3c0f4c5310c0346b5916f359cef2973ec722e1c5e7c,Safari,2025-01-18 06:48:30,False
+9,2,6ef8:a10f:2094:e26d:695c:9a43:c03c:9ce8,scott.com,robertsjoseph@salas.com,90c7ec729cf934bbde94d3c0f4c5310c0346b5916f359cef2973ec722e1c5e7c,Safari,2025-01-18 06:48:30,False
+3,3,a013:5a49:43dc:b332:7ef:7298:596f:4e0e,smith.org,gtaylor@gmail.com,12ed6cbc0c10fa88913ee8eae76e1f580cef9792ff9267e3e1c650d5c2a1a708,Opera,2025-02-14 15:29:45,False
+3,3,a013:5a49:43dc:b332:7ef:7298:596f:4e0e,smith.org,gtaylor@gmail.com,12ed6cbc0c10fa88913ee8eae76e1f580cef9792ff9267e3e1c650d5c2a1a708,Opera,2025-02-14 15:29:45,False
+3,3,a013:5a49:43dc:b332:7ef:7298:596f:4e0e,smith.org,gtaylor@gmail.com,12ed6cbc0c10fa88913ee8eae76e1f580cef9792ff9267e3e1c650d5c2a1a708,Opera,2025-02-14 15:29:45,False
+8,5,89a9:c7ee:d074:9c8:53f5:de90:1a:dbb2,allen.com,fmora@jones.net,f82f4270cfb2346e1d2ce7fc3dcf84fe018b43ea350cd638e4a7d7ce8d80f30f,Chrome,2025-02-11 05:26:17,False
+8,5,89a9:c7ee:d074:9c8:53f5:de90:1a:dbb2,allen.com,fmora@jones.net,f82f4270cfb2346e1d2ce7fc3dcf84fe018b43ea350cd638e4a7d7ce8d80f30f,Chrome,2025-02-11 05:26:17,False
+8,5,89a9:c7ee:d074:9c8:53f5:de90:1a:dbb2,allen.com,fmora@jones.net,f82f4270cfb2346e1d2ce7fc3dcf84fe018b43ea350cd638e4a7d7ce8d80f30f,Chrome,2025-02-11 05:26:17,False
+4,2,2d1a:49ea:8951:cb4e:5350:f030:14f2:202,parker.org,starkwilliam@hotmail.com,2fa56e0593cc2e3bfef8aec356ce3e0a3d6a1490349312f0d22cafea9669f7d0,Opera,2025-02-20 14:45:58,False
+4,2,2d1a:49ea:8951:cb4e:5350:f030:14f2:202,parker.org,starkwilliam@hotmail.com,2fa56e0593cc2e3bfef8aec356ce3e0a3d6a1490349312f0d22cafea9669f7d0,Opera,2025-02-20 14:45:58,False
+4,2,2d1a:49ea:8951:cb4e:5350:f030:14f2:202,parker.org,starkwilliam@hotmail.com,2fa56e0593cc2e3bfef8aec356ce3e0a3d6a1490349312f0d22cafea9669f7d0,Opera,2025-02-20 14:45:58,False
+4,1,808:3b5d:a937:b6c1:7323:11b:3919:27e,jones-wallace.com,vickiharris@burch.com,8f5969c467929ab85e342cdf1c7fd2043457a1556f4d5d80617e6c531b5b3069,Safari,2025-01-06 16:45:50,False
+4,1,808:3b5d:a937:b6c1:7323:11b:3919:27e,jones-wallace.com,vickiharris@burch.com,8f5969c467929ab85e342cdf1c7fd2043457a1556f4d5d80617e6c531b5b3069,Safari,2025-01-06 16:45:50,False
+4,1,808:3b5d:a937:b6c1:7323:11b:3919:27e,jones-wallace.com,vickiharris@burch.com,8f5969c467929ab85e342cdf1c7fd2043457a1556f4d5d80617e6c531b5b3069,Safari,2025-01-06 16:45:50,False
+1,1,7fed:6d22:1ccd:c292:cf70:726d:2c73:bec6,allen.com,john23@gmail.com,ad95d122eb653da00cb8c23e12d58db8c099c1b15524d629a53ad710f66d00a8,Firefox,2025-01-13 07:03:42,False
+1,1,7fed:6d22:1ccd:c292:cf70:726d:2c73:bec6,allen.com,john23@gmail.com,ad95d122eb653da00cb8c23e12d58db8c099c1b15524d629a53ad710f66d00a8,Firefox,2025-01-13 07:03:42,False
+1,1,7fed:6d22:1ccd:c292:cf70:726d:2c73:bec6,allen.com,john23@gmail.com,ad95d122eb653da00cb8c23e12d58db8c099c1b15524d629a53ad710f66d00a8,Firefox,2025-01-13 07:03:42,False
+5,0,929b:cd2b:d4e3:750f:5428:8eb7:467:22cb,copeland.com,stevencraig@hotmail.com,017a90373e6ed3f3794860064b414f370c4d8a25cd9a1b51616d5fe68915ebc8,Chrome,2025-02-07 10:16:49,False
+5,0,929b:cd2b:d4e3:750f:5428:8eb7:467:22cb,copeland.com,stevencraig@hotmail.com,017a90373e6ed3f3794860064b414f370c4d8a25cd9a1b51616d5fe68915ebc8,Chrome,2025-02-07 10:16:49,False
+5,0,929b:cd2b:d4e3:750f:5428:8eb7:467:22cb,copeland.com,stevencraig@hotmail.com,017a90373e6ed3f3794860064b414f370c4d8a25cd9a1b51616d5fe68915ebc8,Chrome,2025-02-07 10:16:49,False
+0,0,d1ee:8ccc:d0aa:269a:d812:99e0:ea57:926f,rivera.com,lisachandler@gill.info,f754ae5118820346caca825a98821f762fcea917121f0b96f850f7e3329cf5e2,Safari,2025-01-19 02:49:39,False
+0,0,d1ee:8ccc:d0aa:269a:d812:99e0:ea57:926f,rivera.com,lisachandler@gill.info,f754ae5118820346caca825a98821f762fcea917121f0b96f850f7e3329cf5e2,Safari,2025-01-19 02:49:39,False
+0,0,d1ee:8ccc:d0aa:269a:d812:99e0:ea57:926f,rivera.com,lisachandler@gill.info,f754ae5118820346caca825a98821f762fcea917121f0b96f850f7e3329cf5e2,Safari,2025-01-19 02:49:39,False
+5,4,c0b6:2dfb:8323:e2a:5071:1d8e:5b17:4df1,lewis.com,charlesbell@gmail.com,cdf3c2382ecb608df7cc7ea0673f08698fb1c3355992e8ac370b812046e02cf2,Firefox,2025-02-15 20:15:32,False
+5,4,c0b6:2dfb:8323:e2a:5071:1d8e:5b17:4df1,lewis.com,charlesbell@gmail.com,cdf3c2382ecb608df7cc7ea0673f08698fb1c3355992e8ac370b812046e02cf2,Firefox,2025-02-15 20:15:32,False
+5,4,c0b6:2dfb:8323:e2a:5071:1d8e:5b17:4df1,lewis.com,charlesbell@gmail.com,cdf3c2382ecb608df7cc7ea0673f08698fb1c3355992e8ac370b812046e02cf2,Firefox,2025-02-15 20:15:32,False
+6,2,651a:7664:d98:cf14:bcb3:359:1959:32bd,mills.com,ryanramirez@cole.com,9299b216bc05aada664cd84b791699180592196a76f23693ad5216ae4c4d2034,Firefox,2025-01-24 15:56:04,False
+6,2,651a:7664:d98:cf14:bcb3:359:1959:32bd,mills.com,ryanramirez@cole.com,9299b216bc05aada664cd84b791699180592196a76f23693ad5216ae4c4d2034,Firefox,2025-01-24 15:56:04,False
+6,2,651a:7664:d98:cf14:bcb3:359:1959:32bd,mills.com,ryanramirez@cole.com,9299b216bc05aada664cd84b791699180592196a76f23693ad5216ae4c4d2034,Firefox,2025-01-24 15:56:04,False
+3,3,62bd:8703:c665:1a49:8a2b:5636:72ff:2a72,martin-gay.org,ahartman@smith.biz,e2016f91743f61e41e3299a6e1b537ac728cffe0f30b234d0b016e7462db21c4,Opera,2025-02-15 22:11:49,False
+3,3,62bd:8703:c665:1a49:8a2b:5636:72ff:2a72,martin-gay.org,ahartman@smith.biz,e2016f91743f61e41e3299a6e1b537ac728cffe0f30b234d0b016e7462db21c4,Opera,2025-02-15 22:11:49,False
+3,3,62bd:8703:c665:1a49:8a2b:5636:72ff:2a72,martin-gay.org,ahartman@smith.biz,e2016f91743f61e41e3299a6e1b537ac728cffe0f30b234d0b016e7462db21c4,Opera,2025-02-15 22:11:49,False
+8,4,c2bf:d4e3:31c3:ec:d7ed:b3d:2f2c:5b06,barnes-kaufman.info,jalvarez@wise-robles.com,97824d655fdbcc12554739e8266cfae3c0ce61a3a580c376f092e3527c43c540,Other,2025-01-25 18:30:55,False
+8,4,c2bf:d4e3:31c3:ec:d7ed:b3d:2f2c:5b06,barnes-kaufman.info,jalvarez@wise-robles.com,97824d655fdbcc12554739e8266cfae3c0ce61a3a580c376f092e3527c43c540,Other,2025-01-25 18:30:55,False
+8,4,c2bf:d4e3:31c3:ec:d7ed:b3d:2f2c:5b06,barnes-kaufman.info,jalvarez@wise-robles.com,97824d655fdbcc12554739e8266cfae3c0ce61a3a580c376f092e3527c43c540,Other,2025-01-25 18:30:55,False
+9,8,bf22:d507:8c6c:630b:3afc:1fc0:c58e:7137,griffin.info,iward@hotmail.com,d25cd1f8179ce3df3955e418d5bedbe874213c9b200ef6bef787d44957f98c31,Firefox,2025-01-17 04:34:14,False
+9,8,bf22:d507:8c6c:630b:3afc:1fc0:c58e:7137,griffin.info,iward@hotmail.com,d25cd1f8179ce3df3955e418d5bedbe874213c9b200ef6bef787d44957f98c31,Firefox,2025-01-17 04:34:14,False
+9,8,bf22:d507:8c6c:630b:3afc:1fc0:c58e:7137,griffin.info,iward@hotmail.com,d25cd1f8179ce3df3955e418d5bedbe874213c9b200ef6bef787d44957f98c31,Firefox,2025-01-17 04:34:14,False
+9,9,59c6:fe5:effc:caa0:47d8:c9db:4846:2534,bradley.com,torresmatthew@hotmail.com,59758cee3d199f7191ae40a72cbdbae04a4ef301d74fd1f2dccfa890c07c501e,Other,2025-01-19 10:49:49,False
+9,9,59c6:fe5:effc:caa0:47d8:c9db:4846:2534,bradley.com,torresmatthew@hotmail.com,59758cee3d199f7191ae40a72cbdbae04a4ef301d74fd1f2dccfa890c07c501e,Other,2025-01-19 10:49:49,False
+9,9,59c6:fe5:effc:caa0:47d8:c9db:4846:2534,bradley.com,torresmatthew@hotmail.com,59758cee3d199f7191ae40a72cbdbae04a4ef301d74fd1f2dccfa890c07c501e,Other,2025-01-19 10:49:49,False
+8,6,17fd:cfd1:e07e:267e:54fd:175:6b7b:df9,miller.com,roydaniel@yahoo.com,13f17e6bc199f2ce7ccce0efde19c0c675cf084fa87fc868912efd912e7eb5b9,Firefox,2025-02-07 07:48:39,False
+8,6,17fd:cfd1:e07e:267e:54fd:175:6b7b:df9,miller.com,roydaniel@yahoo.com,13f17e6bc199f2ce7ccce0efde19c0c675cf084fa87fc868912efd912e7eb5b9,Firefox,2025-02-07 07:48:39,False
+8,6,17fd:cfd1:e07e:267e:54fd:175:6b7b:df9,miller.com,roydaniel@yahoo.com,13f17e6bc199f2ce7ccce0efde19c0c675cf084fa87fc868912efd912e7eb5b9,Firefox,2025-02-07 07:48:39,False
+1,1,2286:4361:c363:50c9:54f:583f:8693:55b5,campbell-cummings.com,nielsenmegan@hotmail.com,7c595285cd7f47627357ae7b2d5acf42ff8af38c198566c7ac4af68477b6f499,Opera,2025-02-01 04:24:49,False
+1,1,2286:4361:c363:50c9:54f:583f:8693:55b5,campbell-cummings.com,nielsenmegan@hotmail.com,7c595285cd7f47627357ae7b2d5acf42ff8af38c198566c7ac4af68477b6f499,Opera,2025-02-01 04:24:49,False
+1,1,2286:4361:c363:50c9:54f:583f:8693:55b5,campbell-cummings.com,nielsenmegan@hotmail.com,7c595285cd7f47627357ae7b2d5acf42ff8af38c198566c7ac4af68477b6f499,Opera,2025-02-01 04:24:49,False
+6,2,4e93:f363:f612:8b10:fef4:60e9:ea74:a59e,mora.com,thancock@hotmail.com,625d71ebe70e8e62464e7675494ae752dc81745c86582f4510e8458233e4cb8f,Safari,2025-02-10 18:30:16,False
+6,2,4e93:f363:f612:8b10:fef4:60e9:ea74:a59e,mora.com,thancock@hotmail.com,625d71ebe70e8e62464e7675494ae752dc81745c86582f4510e8458233e4cb8f,Safari,2025-02-10 18:30:16,False
+6,2,4e93:f363:f612:8b10:fef4:60e9:ea74:a59e,mora.com,thancock@hotmail.com,625d71ebe70e8e62464e7675494ae752dc81745c86582f4510e8458233e4cb8f,Safari,2025-02-10 18:30:16,False
+4,4,2501:e6fc:8bc0:6105:7082:6d74:eb31:64e6,rogers-jones.net,tinaramirez@yahoo.com,d5a193c2938e2b2f42fac5e41e48a5edf63f7467e19241d7a6db93e60a7a160f,Safari,2025-01-11 08:33:03,False
+4,4,2501:e6fc:8bc0:6105:7082:6d74:eb31:64e6,rogers-jones.net,tinaramirez@yahoo.com,d5a193c2938e2b2f42fac5e41e48a5edf63f7467e19241d7a6db93e60a7a160f,Safari,2025-01-11 08:33:03,False
+4,4,2501:e6fc:8bc0:6105:7082:6d74:eb31:64e6,rogers-jones.net,tinaramirez@yahoo.com,d5a193c2938e2b2f42fac5e41e48a5edf63f7467e19241d7a6db93e60a7a160f,Safari,2025-01-11 08:33:03,False
+7,5,4aaf:3175:9bc6:6925:e82f:2ced:947c:ff46,moore-lawrence.org,theresacarter@hotmail.com,429145f63ddd9687f9b4bf00d2577ff1f6ff5742546726f571b65948bb157487,Firefox,2025-01-20 03:47:28,False
+7,5,4aaf:3175:9bc6:6925:e82f:2ced:947c:ff46,moore-lawrence.org,theresacarter@hotmail.com,429145f63ddd9687f9b4bf00d2577ff1f6ff5742546726f571b65948bb157487,Firefox,2025-01-20 03:47:28,False
+7,5,4aaf:3175:9bc6:6925:e82f:2ced:947c:ff46,moore-lawrence.org,theresacarter@hotmail.com,429145f63ddd9687f9b4bf00d2577ff1f6ff5742546726f571b65948bb157487,Firefox,2025-01-20 03:47:28,False
+7,1,a459:775d:71f7:8cad:286a:f8e9:28fa:9507,campbell.org,stanleydaniel@hotmail.com,51842df1677d2b6a9beb065edb4391b2ccefe127d7d358ba93981c1d00478e04,Opera,2025-01-09 14:59:52,False
+7,1,a459:775d:71f7:8cad:286a:f8e9:28fa:9507,campbell.org,stanleydaniel@hotmail.com,51842df1677d2b6a9beb065edb4391b2ccefe127d7d358ba93981c1d00478e04,Opera,2025-01-09 14:59:52,False
+7,1,a459:775d:71f7:8cad:286a:f8e9:28fa:9507,campbell.org,stanleydaniel@hotmail.com,51842df1677d2b6a9beb065edb4391b2ccefe127d7d358ba93981c1d00478e04,Opera,2025-01-09 14:59:52,False
+6,1,fbb5:80fe:320d:b7f1:7aa6:2f7b:4ca9:8349,mitchell.com,karaturner@hotmail.com,8e13b9a3945c8fb56322de551479afe034d8abf2f6f169087cd1d8b8c27d3d00,Opera,2025-02-13 04:50:42,False
+6,1,fbb5:80fe:320d:b7f1:7aa6:2f7b:4ca9:8349,mitchell.com,karaturner@hotmail.com,8e13b9a3945c8fb56322de551479afe034d8abf2f6f169087cd1d8b8c27d3d00,Opera,2025-02-13 04:50:42,False
+6,1,fbb5:80fe:320d:b7f1:7aa6:2f7b:4ca9:8349,mitchell.com,karaturner@hotmail.com,8e13b9a3945c8fb56322de551479afe034d8abf2f6f169087cd1d8b8c27d3d00,Opera,2025-02-13 04:50:42,False
+4,1,fb39:2ec6:8248:48b:9436:38e:1f87:7068,weber.com,shari79@barnes.com,bda71fe249fb14fec6360752cca980e5a0a6c8d3499961346ed466cb424e5518,Chrome,2025-02-21 10:42:34,False
+4,1,fb39:2ec6:8248:48b:9436:38e:1f87:7068,weber.com,shari79@barnes.com,bda71fe249fb14fec6360752cca980e5a0a6c8d3499961346ed466cb424e5518,Chrome,2025-02-21 10:42:34,False
+4,1,fb39:2ec6:8248:48b:9436:38e:1f87:7068,weber.com,shari79@barnes.com,bda71fe249fb14fec6360752cca980e5a0a6c8d3499961346ed466cb424e5518,Chrome,2025-02-21 10:42:34,False
+9,3,8722:f155:7169:76d6:775b:def7:3544:126a,gray.com,zgreene@nash-murray.com,5d72cd1cb5d4b0150cda6ef4e6dafac282321cb6576cc49d1438d508903e8fc2,Safari,2025-02-07 16:20:07,False
+9,3,8722:f155:7169:76d6:775b:def7:3544:126a,gray.com,zgreene@nash-murray.com,5d72cd1cb5d4b0150cda6ef4e6dafac282321cb6576cc49d1438d508903e8fc2,Safari,2025-02-07 16:20:07,False
+9,3,8722:f155:7169:76d6:775b:def7:3544:126a,gray.com,zgreene@nash-murray.com,5d72cd1cb5d4b0150cda6ef4e6dafac282321cb6576cc49d1438d508903e8fc2,Safari,2025-02-07 16:20:07,False
+5,4,f76:f9:2f35:f671:ce66:7cad:5ef0:1eb6,johnson.info,tuckershelley@atkins-cox.info,b6ccb32cbaa54f63da73ddc6d8096d21ee14615957ad13ad448d0d7bfbd6e7a5,Opera,2025-01-08 07:31:56,False
+5,4,f76:f9:2f35:f671:ce66:7cad:5ef0:1eb6,johnson.info,tuckershelley@atkins-cox.info,b6ccb32cbaa54f63da73ddc6d8096d21ee14615957ad13ad448d0d7bfbd6e7a5,Opera,2025-01-08 07:31:56,False
+5,4,f76:f9:2f35:f671:ce66:7cad:5ef0:1eb6,johnson.info,tuckershelley@atkins-cox.info,b6ccb32cbaa54f63da73ddc6d8096d21ee14615957ad13ad448d0d7bfbd6e7a5,Opera,2025-01-08 07:31:56,False
+7,7,26ea:25d2:3ff:1466:35aa:ba6f:a3b1:bdce,mccormick.com,kaitlyn09@baldwin.com,26438a5e6ef96d1ac69ac14c7d8f3489d6d914d6fb1e23b3115e2ee268c58e81,Opera,2025-01-16 15:21:52,False
+7,7,26ea:25d2:3ff:1466:35aa:ba6f:a3b1:bdce,mccormick.com,kaitlyn09@baldwin.com,26438a5e6ef96d1ac69ac14c7d8f3489d6d914d6fb1e23b3115e2ee268c58e81,Opera,2025-01-16 15:21:52,False
+7,7,26ea:25d2:3ff:1466:35aa:ba6f:a3b1:bdce,mccormick.com,kaitlyn09@baldwin.com,26438a5e6ef96d1ac69ac14c7d8f3489d6d914d6fb1e23b3115e2ee268c58e81,Opera,2025-01-16 15:21:52,False
+0,0,2b8c:6a:e10d:16c:5fc4:37da:bbd8:a606,allen.com,arnoldjames@hotmail.com,b291a8628488eb132cb795a75ecf7bde20c6b780ac1e2eb7c1d575c3e0a31e87,Firefox,2025-01-25 11:48:50,False
+0,0,2b8c:6a:e10d:16c:5fc4:37da:bbd8:a606,allen.com,arnoldjames@hotmail.com,b291a8628488eb132cb795a75ecf7bde20c6b780ac1e2eb7c1d575c3e0a31e87,Firefox,2025-01-25 11:48:50,False
+0,0,2b8c:6a:e10d:16c:5fc4:37da:bbd8:a606,allen.com,arnoldjames@hotmail.com,b291a8628488eb132cb795a75ecf7bde20c6b780ac1e2eb7c1d575c3e0a31e87,Firefox,2025-01-25 11:48:50,False
+5,3,7229:382d:6b72:74c1:175c:a306:58f3:9f55,stone-cruz.org,briangarcia@hotmail.com,df66a248bfa54fe7f41c03677e3b58eee8044bec98c045ea523b66c185201374,Firefox,2025-02-18 16:40:53,False
+5,3,7229:382d:6b72:74c1:175c:a306:58f3:9f55,stone-cruz.org,briangarcia@hotmail.com,df66a248bfa54fe7f41c03677e3b58eee8044bec98c045ea523b66c185201374,Firefox,2025-02-18 16:40:53,False
+5,3,7229:382d:6b72:74c1:175c:a306:58f3:9f55,stone-cruz.org,briangarcia@hotmail.com,df66a248bfa54fe7f41c03677e3b58eee8044bec98c045ea523b66c185201374,Firefox,2025-02-18 16:40:53,False
+1,0,e358:90fa:e3e0:8644:cfa6:fc06:7cd3:8999,lee.com,brandonalvarez@hotmail.com,5084e06d09d1c0fd16844dc2665c77b3f78d2c67cdfb59ed744a2f461d92b275,Other,2025-02-11 10:08:20,False
+1,0,e358:90fa:e3e0:8644:cfa6:fc06:7cd3:8999,lee.com,brandonalvarez@hotmail.com,5084e06d09d1c0fd16844dc2665c77b3f78d2c67cdfb59ed744a2f461d92b275,Other,2025-02-11 10:08:20,False
+1,0,e358:90fa:e3e0:8644:cfa6:fc06:7cd3:8999,lee.com,brandonalvarez@hotmail.com,5084e06d09d1c0fd16844dc2665c77b3f78d2c67cdfb59ed744a2f461d92b275,Other,2025-02-11 10:08:20,False
+8,7,30ab:ecd2:2456:cb9f:dbd9:ff3e:4783:7834,case.com,hamiltonjoseph@hotmail.com,5b0efdcb33f0a112f7adfbc7e4927d1dd8ee2e14f81f6aa6574d336dc47451e7,Firefox,2025-01-17 15:24:41,False
+8,7,30ab:ecd2:2456:cb9f:dbd9:ff3e:4783:7834,case.com,hamiltonjoseph@hotmail.com,5b0efdcb33f0a112f7adfbc7e4927d1dd8ee2e14f81f6aa6574d336dc47451e7,Firefox,2025-01-17 15:24:41,False
+8,7,30ab:ecd2:2456:cb9f:dbd9:ff3e:4783:7834,case.com,hamiltonjoseph@hotmail.com,5b0efdcb33f0a112f7adfbc7e4927d1dd8ee2e14f81f6aa6574d336dc47451e7,Firefox,2025-01-17 15:24:41,False
+6,5,5d54:ea67:f48d:e792:e9dc:225:26f5:e1d2,kim.com,wjackson@lawson.com,49ade62363a71ac2266f17b68a31931b517beae467196496931e4f0787e278b1,Opera,2025-01-26 12:48:34,False
+6,5,5d54:ea67:f48d:e792:e9dc:225:26f5:e1d2,kim.com,wjackson@lawson.com,49ade62363a71ac2266f17b68a31931b517beae467196496931e4f0787e278b1,Opera,2025-01-26 12:48:34,False
+6,5,5d54:ea67:f48d:e792:e9dc:225:26f5:e1d2,kim.com,wjackson@lawson.com,49ade62363a71ac2266f17b68a31931b517beae467196496931e4f0787e278b1,Opera,2025-01-26 12:48:34,False
+8,3,9141:152:4fcc:1aa5:c38c:800e:35c2:a68c,smith.info,albert56@fry.biz,2dd7c162338b04bee18f24f1071c49d7ce3cb94817e0816eaf10bce014f730ec,Safari,2025-02-17 16:28:17,False
+8,3,9141:152:4fcc:1aa5:c38c:800e:35c2:a68c,smith.info,albert56@fry.biz,2dd7c162338b04bee18f24f1071c49d7ce3cb94817e0816eaf10bce014f730ec,Safari,2025-02-17 16:28:17,False
+8,3,9141:152:4fcc:1aa5:c38c:800e:35c2:a68c,smith.info,albert56@fry.biz,2dd7c162338b04bee18f24f1071c49d7ce3cb94817e0816eaf10bce014f730ec,Safari,2025-02-17 16:28:17,False
+5,3,5cc1:d58c:c95b:cd9f:fbbf:d38f:4d6:8eaf,howell.com,tara02@hotmail.com,caf2091bbc43302d5d4f96d99f765a4738430927fcbf62cc080ac3202f9a9164,Firefox,2025-02-15 06:48:36,False
+5,3,5cc1:d58c:c95b:cd9f:fbbf:d38f:4d6:8eaf,howell.com,tara02@hotmail.com,caf2091bbc43302d5d4f96d99f765a4738430927fcbf62cc080ac3202f9a9164,Firefox,2025-02-15 06:48:36,False
+5,3,5cc1:d58c:c95b:cd9f:fbbf:d38f:4d6:8eaf,howell.com,tara02@hotmail.com,caf2091bbc43302d5d4f96d99f765a4738430927fcbf62cc080ac3202f9a9164,Firefox,2025-02-15 06:48:36,False
+5,2,fd85:ceec:72e:f2bd:eff7:d944:d18f:364d,adkins.com,briandaniel@thompson-johnson.info,2ba4332900c8da6be80d75054d7fb51a5c6635e77fd095f5aadd7f2b2275905c,Safari,2025-01-07 19:28:22,False
+5,2,fd85:ceec:72e:f2bd:eff7:d944:d18f:364d,adkins.com,briandaniel@thompson-johnson.info,2ba4332900c8da6be80d75054d7fb51a5c6635e77fd095f5aadd7f2b2275905c,Safari,2025-01-07 19:28:22,False
+5,2,fd85:ceec:72e:f2bd:eff7:d944:d18f:364d,adkins.com,briandaniel@thompson-johnson.info,2ba4332900c8da6be80d75054d7fb51a5c6635e77fd095f5aadd7f2b2275905c,Safari,2025-01-07 19:28:22,False
+1,1,1792:f6e6:686f:ef6d:ba95:7cd4:609f:2605,thompson-taylor.org,jared69@hotmail.com,2a1479f944225c728ae016eb0e68315ced6f4107f5f33149d87ac1a16bd96300,Opera,2025-02-11 09:19:38,False
+1,1,1792:f6e6:686f:ef6d:ba95:7cd4:609f:2605,thompson-taylor.org,jared69@hotmail.com,2a1479f944225c728ae016eb0e68315ced6f4107f5f33149d87ac1a16bd96300,Opera,2025-02-11 09:19:38,False
+1,1,1792:f6e6:686f:ef6d:ba95:7cd4:609f:2605,thompson-taylor.org,jared69@hotmail.com,2a1479f944225c728ae016eb0e68315ced6f4107f5f33149d87ac1a16bd96300,Opera,2025-02-11 09:19:38,False
+1,0,f136:baf4:f83f:a5b0:fc51:13b3:2966:7d55,romero.com,uwells@johnson-howard.net,e1f46047799191634486763e2f6e4d76c099350e5787d159334f58fa53de37fc,Chrome,2025-02-07 03:36:12,False
+1,0,f136:baf4:f83f:a5b0:fc51:13b3:2966:7d55,romero.com,uwells@johnson-howard.net,e1f46047799191634486763e2f6e4d76c099350e5787d159334f58fa53de37fc,Chrome,2025-02-07 03:36:12,False
+1,0,f136:baf4:f83f:a5b0:fc51:13b3:2966:7d55,romero.com,uwells@johnson-howard.net,e1f46047799191634486763e2f6e4d76c099350e5787d159334f58fa53de37fc,Chrome,2025-02-07 03:36:12,False

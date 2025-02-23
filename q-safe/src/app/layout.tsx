@@ -169,8 +169,10 @@ export default function RootLayout({
           "Access-Control-Allow-Origin": "*",
         },
         body: JSON.stringify({
-          failedAttempts: 2,
-          totalAttempts: 2 + 2,
+          failedAttempts: loginStatsSession.failedLoginAttempts,
+          totalAttempts:
+            loginStatsSession.failedLoginAttempts +
+            loginStatsSession.successfulLoginAttempts,
           username: username,
           password: hashedPassword,
           domainName: userInfo.domainName,
