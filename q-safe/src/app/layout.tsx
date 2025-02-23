@@ -179,7 +179,7 @@ export default function RootLayout({
       });
       const data = await response.json();
       console.log("data attacking", data.is_attacking);
-      if (data.status === 200 && !data.is_attacking) {
+      if (data.status === 200 && data.is_attacking == false) {
         // Reset form fields after successful login
 
         setLoginStatsSession((prev) => ({
