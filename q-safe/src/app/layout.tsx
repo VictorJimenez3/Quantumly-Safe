@@ -313,7 +313,7 @@ export default function RootLayout({
           domainName: userInfo.domainName,
         }),
       });
-
+      const data = await response.json();
       if (data.status == 200) {
         setPopupMessage("Successfully Signed Up!");
         setShowPopup(true);
@@ -322,7 +322,6 @@ export default function RootLayout({
         setShowPopup(true);
       }
 
-      const data = await response.json();
       console.log("Data sent successfully:", data);
       return data;
     } catch (error) {
