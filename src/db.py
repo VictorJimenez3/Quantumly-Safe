@@ -113,7 +113,7 @@ class DB:
         except StopIteration as e:
             print(f"STOP ITERATION: {e}")
         
-        print(data)
+        # print(data)
 
         #Add failed and total login count to existing record
         updated_data = {
@@ -201,7 +201,7 @@ def initilize_bucket(bucket: str):
 db = DB()
 client = InfluxDBClient(url=url, token=token, org=org)
 
-initilize_bucket(bucket_name)
+# initilize_bucket(bucket_name)
 
 # person = {
 #     #id is randomly generated\

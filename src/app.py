@@ -24,16 +24,6 @@ login_manager = LoginManager(app)
 
 db = DB()
 
-def aggregate_and_format_for_qrf(data: dict):
-    """
-    TODO define integration that aggregates previous user variables (if exists) in db
-    to those defined in data, grab activities data from activities bucket.
-
-    Compile into format for quantum random forest
-    """
-
-    return None
-
 #classes and helpers
 class User(UserMixin):
 
@@ -129,7 +119,7 @@ def _3():
     # Check if the user exists in the database
     u = db.get_users_by_username(data["domainName"], data["username"])  # Uncomment and implement this line to fetch user from DB
 
-    print("USERS EXISTING FOR SIGN-IN", u)
+    # print("USERS EXISTING FOR SIGN-IN", u)
 
     if u is None or not len(u):
         return jsonify({"status": 404, "message": "User not found"})
@@ -145,11 +135,12 @@ def _3():
     db.aggregate_user_signin(data["ip"], data["domainName"], data["username"], data["failedAttempts"], data["totalAttempts"])
 
     example = db.get_users_by_username(data["domainName"], data["username"])[0]
-    print(f"current user: {example}")
     
+    print(current_user.data)
+
     return jsonify({
         "status" : 200,
-        "is-attacking": quantum_random_forest(aggregate_and_format_for_qrf(current_user))
+        "is-attacking": quantum_random_forest(current_user)
     
     })
 
@@ -165,7 +156,7 @@ def _4():
     
     u = db.get_users_by_username(data["domainName"], data["username"]) 
 
-    print("USERS EXISTING FOR SIGN-UP: ", u)
+    # print("USERS EXISTING FOR SIGN-UP: ", u)
 
     if (u is not None and type(u) != list) or len(u):
         return jsonify({"status": 401, "message": f"User {data['username']} exists already"})
@@ -178,7 +169,7 @@ def _4():
 
     return jsonify({
         "status" : 200,
-        "is-attacking": quantum_random_forest(aggregate_and_format_for_qrf(current_user))
+        "is-attacking": quantum_random_forest(current_user)
     })
 
 if __name__ == '__main__':
