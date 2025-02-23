@@ -10,6 +10,11 @@ export default function SignUp() {
   const [confirmPassword, setConfirmPassword] = useState("");
   const [error, setError] = useState("");
   const router = useRouter();
+  const [userInfo, setUserInfo] = useState({
+    ipAddress: "",
+    userAgent: "",
+    domainName: "",
+  });
 
   const parser = new UAParser();
   const browserResult = parser.getResult();
@@ -18,6 +23,37 @@ export default function SignUp() {
   const hashPassword = (password: string): string => {
     return SHA256(password).toString();
   };
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        // Fetch IP address
+        const ipResponse = await fetch("https://api.ipify.org?format=json");
+        const ipData = await ipResponse.json();
+
+        // Update userInfo with the IP address
+        setUserInfo((prev) => ({
+          ...prev,
+          ipAddress: ipData.ip,
+          userAgent: userAgent,
+          domainName: window.location.hostname,
+        }));
+
+        // Fetch login stats
+        const statsResponse = await fetch("/api/loginAttempts");
+        const statsData = await statsResponse.json();
+        setLoginStats(statsData);
+
+        // Get session ID from cookies
+        const sessionId = Cookies.get("sessionId");
+        setSessionId(sessionId || crypto.randomUUID());
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
 
   const handleSignup = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -41,6 +77,7 @@ export default function SignUp() {
           password: hashedPassword,
           userAgent: userAgent,
           domainName: window.location.hostname,
+          ip: userInfo.ipAddress,
         }),
       });
 
