@@ -1,6 +1,6 @@
-import { NextRequest, NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 
-const customMiddleware = async (req: NextRequest) => {
+const customMiddleware = async (req) => {
   const url = req.nextUrl.clone();
 
   // Check if the request is a login attempt
@@ -8,8 +8,8 @@ const customMiddleware = async (req: NextRequest) => {
     // Simulate a login attempt for demonstration purposes
     const isLoginFailed = true; // Replace with actual login failure check
 
-    // Get IP address - removed req.ip as it's not available in NextRequest
-    const ipAddress = req.headers.get("x-forwarded-for") || "Unknown";
+    // Get IP address
+    const ipAddress = req.headers.get("x-forwarded-for") || req.ip;
 
     // Get user agent (browser type)
     const userAgent = req.headers.get("user-agent");
@@ -17,7 +17,16 @@ const customMiddleware = async (req: NextRequest) => {
     // Get domain name
     const domainName = req.headers.get("host");
 
+    const response = await fetch("/api/loginAttempts", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ success: !isLoginFailed }),
+    });
+
     if (isLoginFailed) {
+      console.log("loginAttempts", response);
       console.log("Failed login attempt detected");
       console.log(`IP Address: ${ipAddress}`);
       console.log(`User Agent: ${userAgent}`);
