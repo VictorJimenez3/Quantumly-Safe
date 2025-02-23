@@ -49,97 +49,72 @@ class DB:
     
 
 
-def get_data_by_domain(self, domain: str):
-    #lord knows, i dont
-    #it returns a list of the rows with the same domain name, gives the entire row data per each element in the list
-    rows = self.query_api.query_stream(
-        f'from(bucket: "{bucket_name}") |> range(start: -inf)'  # Stream all rows
-    )
-
-    results = []
-
-    try:
-        for row in rows:
-            row_data = dict(json.loads(row.get_value()))
-            row_data.update({"timestamp" : row.get_time().timestamp()})  # parse jason
-            if row_data.get("domain", None) == domain:  # domain matches?
-                results.append(row_data)# do str(row_data) if he doesnt want the list to have json in it
-
-    except Exception as e:
-        print(f"Error retrieving data for domain '{domain}': {e}")
-
-    return results  # Return list of json, idk if he wants strings tho
-
-
-def grab_domain_values(self):
-    domains = set()
-    try:
+    def get_data_by_domain(self, domain: str):
+        #lord knows, i dont
+        #it returns a list of the rows with the same domain name, gives the entire row data per each element in the list
         rows = self.query_api.query_stream(
             f'from(bucket: "{bucket_name}") |> range(start: -inf)'  # Stream all rows
         )
-        fullrows = [dict(json.loads(x)) for x in rows]
 
-    except Exception as e:
-        print(f"uh oh: {e}")
-        return list()
+        results = []
 
-    [domains.add(x.get("domain")) for x in rows]
-    
-    return domains
-    # domain_counts = {}
+        try:
+            for row in rows:
+                row_data = dict(json.loads(row.get_value()))
+                row_data.update({"timestamp" : row.get_time().timestamp()})  # parse jason
+                if row_data.get("domain", None) == domain:  # domain matches?
+                    results.append(row_data)# do str(row_data) if he doesnt want the list to have json in it
 
-    # try:
-    #     for row in rows:
-    #         try:
-    #             row_data = json.loads(row.get_value()) if isinstance(row.get_value(), str) else row.get_value()
-                
-    #             domain_name = row_data.get("domain")
-    #             if domain_name:  # Ensure domain_name is valid
-    #                 if domain_name in domain_counts:
-    #                     domain_counts[domain_name] += 1
-    #                 else:
-    #                     domain_counts[domain_name] = 1
-    #         except (json.JSONDecodeError, TypeError) as parse_error:
-    #             print(f"Skipping row due to parsing error: {parse_error}")
+        except Exception as e:
+            print(f"Error retrieving data for domain '{domain}': {e}")
 
-    # except Exception as e:
-    #     print(f"Error retrieving data for domain: {e}")
-
-    # domain_list = []
-    # count = 0
-    # for key,tree in domain_counts:
-    #     domain_list[count] = key
-    #     count += 1
-    # print(domain_list) # for me to check
-
-    # return domain_list
+        return results  # Return list of json, idk if he wants strings tho
 
 
+    def grab_domain_values(self):
+        domains = set()
+        try:
+            rows = self.query_api.query_stream(
+                f'from(bucket: "{bucket_name}") |> range(start: -inf)'  # Stream all rows
+            )
+            fullrows = [dict(json.loads(x)) for x in rows]
 
+        except Exception as e:
+            print(f"uh oh: {e}")
+            return list()
+
+        [domains.add(x.get("domain")) for x in rows]
+        
+        return domains
 
     def aggregate_user_signin(self, ip: str, domain: str, username: str, failed_log_in_count: int, total_log_in_count: int):
 
         rows = self.query_api.query_stream( #row iterable of all rows in table
             f'from(bucket: "{bucket_name}") |> range(start: -inf)'
         )
-
-        while (row := rows.__next__()) != None:  
-            #Find the row with ip, domain, & username equal to parameters
-            try:
-                measurement = row.get_measurement()
-                data = dict(json.loads(row.get_value()))
-            except Exception as e:
-                print(f"Failed to cast stringed row into dictionary: {e}")
-                continue
-            
-            if data.get("ip", None) == ip and data.get("domain", None) and data.get("username", None) == username:
-                #row found
-                # Delete the existing record before updating
-                self.delete_api.delete(start='1970-01-01T00:00:00Z', stop='2030-01-01T00:00:00Z', predicate=f'_measurement="{measurement}"', bucket=bucket_name, org=org)
-                break
-        else:
-            return False
         
+        try:
+            for row in rows:  
+                #Find the row with ip, domain, & username equal to parameters
+                try:
+                    measurement = row.get_measurement()
+                    data = dict(json.loads(row.get_value()))
+                except Exception as e:
+                    print(f"Failed to cast stringed row into dictionary: {e}")
+                    continue
+                
+                #row found
+                if data.get("ip", None) == ip and data.get("domainName", None) and data.get("username", None) == username:
+                    # Delete the existing record before updating
+                    self.delete_api.delete(start='1970-01-01T00:00:00Z', stop='2030-01-01T00:00:00Z', predicate=f'_measurement="{measurement}"', bucket=bucket_name, org=org)
+                    break
+            else:
+                return False
+        except StopIteration as e:
+            print(f"STOP ITERATION: {e}")
+        
+        print(data)
+
         #Add failed and total login count to existing record
         updated_data = {
             "totalAttempts": int(data.get("totalAttempts", 0)) + total_log_in_count,
@@ -207,11 +182,8 @@ def grab_domain_values(self):
 
         return None  # Return None if no user is found
 
-db = DB()
 
-client = InfluxDBClient(url=url, token=token, org=org)
-
-def initilize_bucket(bucket:str):
+def initilize_bucket(bucket: str):
     #this is for testing, it makes the current data disapear for the new data, remove in final version
 
     buckets_api = client.buckets_api()
@@ -226,20 +198,27 @@ def initilize_bucket(bucket:str):
     retval = buckets_api.create_bucket(bucket_name=bucket, org=org)
     print(f"Created new bucket: {bucket}")
 
-# initilize_bucket(bucket_name)
+db = DB()
+client = InfluxDBClient(url=url, token=token, org=org)
+
+initilize_bucket(bucket_name)
 
 # person = {
-#     #id is randomly generated
-#     "total_log_in_count":"6",
-#     "failed_log_in_count": "23",
+#     #id is randomly generated\
 #     "ip":"1.255.453",
-#     "domain":"apple.com",
+#     "domainName":"apple.com",
 #     "username":"Stebe Jobs",
 #     "password":"password",
-#     "user_agent":"firefox"
+#     "userAgent":"firefox"
 # }
 
-# db.add_interactions(person)
+# db.add_user_record(
+#     person["username"],
+#     person["password"],
+#     person["ip"],
+#     person["domainName"],
+#     person["userAgent"]
+# )
 
 # db.aggregate_user_signin(
 #     ip="1.255.453",

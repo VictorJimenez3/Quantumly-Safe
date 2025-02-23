@@ -12,8 +12,8 @@ import time, threading, json
 import os
 
 #local files
+from quantum import quantum_random_forest
 from db import DB
-quantum_random_forest = lambda data: None 
 
 #app definition
 app = Flask(__name__)
@@ -127,7 +127,6 @@ def _3():
         print(f"ERR, cannot cast request body to JSON entity: {e}")
 
     # Check if the user exists in the database
-    print(data["domainName"], data["username"])
     u = db.get_users_by_username(data["domainName"], data["username"])  # Uncomment and implement this line to fetch user from DB
 
     print("USERS EXISTING FOR SIGN-IN", u)
@@ -143,16 +142,15 @@ def _3():
 
     login_user(User(u), remember=True)
 
-    print(data)
+    db.aggregate_user_signin(data["ip"], data["domainName"], data["username"], data["failedAttempts"], data["totalAttempts"])
 
-    db.aggregate_user_signin(data["ip"], data["domain"], data["username"], data["failedAttempts"], data["totalAttempts"])
-
-    example = db.get_users_by_username(data["domain"], data["username"])[0]
-    print(example)
+    example = db.get_users_by_username(data["domainName"], data["username"])[0]
+    print(f"current user: {example}")
     
     return jsonify({
         "status" : 200,
         "is-attacking": quantum_random_forest(aggregate_and_format_for_qrf(current_user))
+    
     })
 
 @app.route('/api/signup', methods=['POST'])
@@ -163,9 +161,8 @@ def _4():
         data = json.loads(body.decode("utf-8"))
     except Exception as e:
         print(f"ERR, cannot cast request body to JSON entity: {e}")
+        return {"status": 400}
     
-    print(data)
-    print(data["domainName"], data["username"])
     u = db.get_users_by_username(data["domainName"], data["username"]) 
 
     print("USERS EXISTING FOR SIGN-UP: ", u)
@@ -177,7 +174,7 @@ def _4():
 
     login_user(user, remember=True)
 
-    db.add_interactions(data) #make user, no aggregation needed
+    db.add_user_record(data["username"], data["password"], data["ip"], data["domainName"], data["userAgent"]) #make user, no aggregation needed
 
     return jsonify({
         "status" : 200,
