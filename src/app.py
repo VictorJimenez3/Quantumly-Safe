@@ -11,7 +11,7 @@ import time, threading, json
 import os
 
 #local files
-from db import get_user, get_users_by_username
+from db import DB
 quantum_random_forest = lambda data: None 
 
 #app definition
@@ -20,6 +20,8 @@ CORS(app)
 app.secret_key = os.environ.get("SECRET_KEY", "")
 socketio = SocketIO(app, cors_allowed_origins="*")
 login_manager = LoginManager(app)
+
+db = DB()
 
 def aggregate_and_format_for_qrf(data: dict):
     """
@@ -63,7 +65,7 @@ class User(UserMixin):
     @login_manager.user_loader
     def load_user(uuid):
 
-        user_data = get_user(uuid)
+        user_data = db.get_user(uuid)
 
         return User(data = user_data)
 
@@ -85,10 +87,15 @@ def _1():
     form = lambda x: jsonify({"flag" : x})
     body = request.data
 
-    u = get_users_by_username(domain = current_user.data.domain, username = current_user.data.username)
+    try:
+        data = json.loads(body.decode("utf-8"))
+    except Exception as e:
+        print(f"ERR, cannot cast request body to JSON entity: {e}")
+
+    u = db.get_users_by_username(domain = data["domain"], username = data["username"])
     
     if u is not None and len(u):
-        if(check_password_hash(u["password"], body['password'])):
+        if(check_password_hash(u[0]["password"], data['password'])):
             return form(1)
         return form(0)
     else:
@@ -97,7 +104,13 @@ def _1():
 @app.route("/api/send_preliminary_data", methods=['POST']) #DATA AQUISITION DONE
 def _2():
     body = request.data
-    print("prelinimnary_data: ",body)
+
+    try:
+        data = json.loads(body.decode("utf-8"))
+    except Exception as e:
+        print(f"ERR, cannot cast request body to JSON entity: {e}")
+
+    print("preliminary_data: ", data)
 
     #TODO grab variables, store
 
@@ -106,24 +119,25 @@ def _2():
 @app.route('/api/login', methods=['POST'])
 def _3():
     body = request.data
-    # print("login data: ",body)
+    
     try:
         data = json.loads(body.decode("utf-8"))
     except Exception as e:
         print(f"ERR, cannot cast request body to JSON entity: {e}")
-    current_user
-    # Check if the user exists in the database
-    # u = get_user(body["username"])  # Uncomment and implement this line to fetch user from DB
-    # u = None  # Placeholder for user fetching logic
 
-    # if u is None:
-    #     return jsonify({"status": 404, "message": "User not found"}), 404
+    # Check if the user exists in the database
+    u = db.get_users_by_username(data["domain"], data["username"])  # Uncomment and implement this line to fetch user from DB
+
+    if u is None or not len(u):
+        return jsonify({"status": 404, "message": "User not found"})
+
+    u = u[0] #we assume only one user pops up (hopefully!!)
 
     # # Verify the password
-    # if not check_password_hash(u["hashed_password"], request.form['password']):
-    #     return jsonify({"status": 401, "message": "Invalid password"}), 401
+    if not check_password_hash(u["password"], data['password']):
+        return jsonify({"status": 401, "message": "Invalid password"}), 401
 
-    # login_user(u, remember=True)
+    login_user(u, remember=True)
 
     print(data)
 
@@ -143,20 +157,18 @@ def _4():
     
     print(data)
 
-    # u = get_user(body["username"])  # Uncomment and implement this line to fetch user from DB
+    u = db.get_users_by_username(data["domain"], data["username"]) 
 
-    # if u is not None:
-    #     return jsonify({"status": 401, "message": f"User {data['username']} exists already"}), 404
+    if u is not None or len(u):
+        return jsonify({"status": 401, "message": f"User {data['username']} exists already"}), 404
 
-    # # Verify the password
-    # if not check_password_hash(u["hashed_password"], ['password']):
-    #     return jsonify({"status": 401, "message": "Invalid password"}), 401
+    # Verify the password
+    if not check_password_hash(u["password"], data['password']):
+        return jsonify({"status": 401, "message": "Invalid password"}), 401
 
-    # user = User(body) #make user
+    user = User(data) #make user
 
-    # login_user(user, remember=True)
-
-    # set_user(body)
+    login_user(user, remember=True)
 
     return jsonify({
         "status" : 200,

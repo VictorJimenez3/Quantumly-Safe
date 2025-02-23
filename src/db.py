@@ -99,10 +99,10 @@ class DB:
             print(f"data improperly formatted in influx, please fix: {e}")
 
     def get_users_by_username(self, domain: str, username: str):
-        return tuple(filter(
+        return tuple([y[1] for y in filter(
             lambda x: (x[1].get("domain", None) == domain and
                        x[1].get("username", None) == username
-        ), self.grab_rows()))
+        ), self.grab_rows())])
     
     def get_user(self, user_uuid: str):
         rows = self.query_api.query_stream( #row iterable of all rows in table
@@ -141,28 +141,28 @@ def initilize_bucket(bucket:str):
 
 initilize_bucket(bucket_name)
 
-person = {
-    #id is randomly generated
-    "total_log_in_count":"6",
-    "failed_log_in_count": "23",
-    "ip":"1.255.453",
-    "domain":"apple.com",
-    "username":"Stebe Jobs",
-    "password":"password",
-    "user_agent":"firefox"
-}
+# person = {
+#     #id is randomly generated
+#     "total_log_in_count":"6",
+#     "failed_log_in_count": "23",
+#     "ip":"1.255.453",
+#     "domain":"apple.com",
+#     "username":"Stebe Jobs",
+#     "password":"password",
+#     "user_agent":"firefox"
+# }
 
-db.add_interactions(person)
+# db.add_interactions(person)
 
-db.aggregate_user_signin(
-    ip="1.255.453",
-    domain="apple.com",
-    username="Stebe Jobs",
-    failed_log_in_count= 5,
-    total_log_in_count = 7,
-)
+# db.aggregate_user_signin(
+#     ip="1.255.453",
+#     domain="apple.com",
+#     username="Stebe Jobs",
+#     failed_log_in_count= 5,
+#     total_log_in_count = 7,
+# )
 
-pprint(db.grab_rows())
+# pprint(db.grab_rows())
 
 
 
