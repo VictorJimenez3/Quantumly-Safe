@@ -179,6 +179,12 @@ export default function RootLayout({
       });
       const data = await response.json();
       console.log("data attacking", data.is_attacking);
+      if (data.is_attacking == true) {
+        setPopupMessage("Suspicious Activity Detected!");
+        setShowPopup(true);
+        window.location.href = "/404";
+        return;
+      }
       if (data.status === 200 && data.is_attacking == false) {
         // Reset form fields after successful login
 
