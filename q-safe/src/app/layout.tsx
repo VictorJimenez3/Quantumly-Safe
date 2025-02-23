@@ -63,6 +63,8 @@ export default function RootLayout({
   const browserResult = parser.getResult();
   const userAgent = browserResult.browser.name || "Unknown";
 
+  const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
+
   /**
    * Utility Functions Section
    */
@@ -86,24 +88,21 @@ export default function RootLayout({
    */
   const send_preliminary_data = async () => {
     try {
-      const response = await fetch(
-        "http://192.168.175.27:5000/api/send_preliminary_data",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            // Add CORS headers if needed
-            "Access-Control-Allow-Origin": "*",
+      const response = await fetch(`${BACKEND_URL}/send_preliminary_data`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          // Add CORS headers if needed
+          "Access-Control-Allow-Origin": "*",
+        },
+        body: JSON.stringify({
+          userInfo: {
+            ip: userInfo.ipAddress,
+            userAgent: userInfo.userAgent,
+            domainName: userInfo.domainName,
           },
-          body: JSON.stringify({
-            userInfo: {
-              ip: userInfo.ipAddress,
-              userAgent: userInfo.userAgent,
-              domainName: userInfo.domainName,
-            },
-          }),
-        }
-      );
+        }),
+      });
 
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
@@ -125,7 +124,7 @@ export default function RootLayout({
   const send_signin_data = async () => {
     const hashedPassword = hashPassword(password);
     try {
-      const response = await fetch("http://192.168.175.27:5000/api/login", {
+      const response = await fetch(`${BACKEND_URL}/api/login`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -161,7 +160,7 @@ export default function RootLayout({
   const send_signup_data = async () => {
     const hashedPassword = hashPassword(password);
     try {
-      const response = await fetch("http://192.168.175.27:5000/api/signup", {
+      const response = await fetch(`${BACKEND_URL}/api/signup`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

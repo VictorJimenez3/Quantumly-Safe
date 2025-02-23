@@ -24,6 +24,7 @@ export default function SignUp() {
     return SHA256(password).toString();
   };
 
+  const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -66,7 +67,7 @@ export default function SignUp() {
     const hashedPassword = hashPassword(password);
 
     try {
-      const response = await fetch("http://192.168.175.27:5000/api/signup", {
+      const response = await fetch(`${BACKEND_URL}/api/signup`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
