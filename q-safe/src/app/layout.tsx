@@ -313,7 +313,8 @@ export default function RootLayout({
           domainName: userInfo.domainName,
         }),
       });
-      if (!response == 200) {
+      data = response.json();
+      if (data.response == 200) {
         setPopupMessage("Successfully Signed Up!");
         setShowPopup(true);
       } else {
