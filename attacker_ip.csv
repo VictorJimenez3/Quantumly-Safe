@@ -1,0 +1,23 @@
+Source IP,Label
+172.16.0.1,DDoS
+192.168.10.50,DDoS
+172.16.0.1,PortScan
+192.168.10.12,Bot
+192.168.10.9,Bot
+205.174.165.73,Bot
+192.168.10.15,Bot
+192.168.10.14,Bot
+192.168.10.5,Bot
+192.168.10.8,Bot
+192.168.10.17,Bot
+192.168.10.8,Infiltration
+172.16.0.1,FTP-Patator
+172.16.0.1,SSH-Patator
+172.16.0.1,DoS slowloris
+172.16.0.1,DoS Slowhttptest
+172.16.0.1,DoS Hulk
+172.16.0.1,DoS GoldenEye
+172.16.0.1,Heartbleed
+172.16.0.1	Web Attack Brute Force
+172.16.0.1	Web Attack XSS
+172.16.0.1	Web Attack Sql Injection
